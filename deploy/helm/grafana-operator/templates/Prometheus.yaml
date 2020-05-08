@@ -1,0 +1,23 @@
+apiVersion: integreatly.org/v1alpha1
+kind: GrafanaDataSource
+metadata:
+  name: {{ .Values.env }}-grafanadatasource
+  namespace: {{ .Release.Namespace }}
+  labels:
+    app.kubernetes.io/name: {{ include "grafana.name" . }}
+    app.kubernetes.io/instance: {{ .Release.Name }}
+    app.kubernetes.io/managed-by: {{ .Release.Service }}
+    app: {{ .Release.Namespace }}
+spec:
+  name: {{ .Values.env }}-grafanadatasource.yaml
+  datasources:
+    - name: env-4
+      type: prometheus
+      access: proxy
+      url: {{ tpl .Values.endpoint.prometheus .}}
+      isDefault: false
+      version: 1
+      editable: true
+      jsonData:
+        tlsSkipVerify: true
+        timeInterval: "5s"

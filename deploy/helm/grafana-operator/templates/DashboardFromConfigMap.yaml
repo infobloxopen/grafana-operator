@@ -1,0 +1,19 @@
+apiVersion: integreatly.org/v1alpha1
+kind: GrafanaDashboard
+metadata:
+  name: {{ .Release.Namespace }}-dashboard
+  labels:
+    app: grafana
+spec:
+  name: {{ .Release.Namespace }}-dashboard.json
+  configMapRef:
+    name: {{ .Release.Namespace }}-dashboard
+    key: dashboardJSON
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ .Release.Namespace }}-dashboard
+data:
+  dashboardJSON: |-
+    {{- .Files.Get "files/AuthZDashBoard.json" | nindent 4  }}
