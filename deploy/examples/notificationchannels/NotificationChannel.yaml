@@ -1,0 +1,22 @@
+apiVersion: integreatly.org/v1alpha1
+kind: GrafanaNotificationChannel
+metadata:
+  name: email1-channel
+  labels:
+    app: grafana
+spec:
+  name: email-channel.json
+  json: >
+    {
+      "uid": "PD-alert-notification",
+      "name": "PD alert notification",
+      "type":  "pagerduty",
+      "isDefault": true,
+      "sendReminder": true,
+      "frequency": "5m",
+      "settings": {
+        "integrationKey": "put key here",
+        "autoResolve": true,
+        "uploadImage": true
+     }
+    }
