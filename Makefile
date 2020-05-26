@@ -1,10 +1,9 @@
-ORG?=integreatly
+ORG?=infoblox
 NAMESPACE=grafana
 PROJECT=grafana-operator
-REG?=quay.io
 SHELL=/bin/bash
 TAG?=latest
-PKG=github.com/integr8ly/grafana-operator
+PKG=github.com/infobloxopen/grafana-operator
 COMPILE_TARGET=./tmp/_output/bin/$(PROJECT)
 
 .PHONY: setup/dep
@@ -40,11 +39,11 @@ code/fix:
 
 .PHONY: image/build
 image/build: code/compile
-	@operator-sdk build ${REG}/${ORG}/${PROJECT}:${TAG}
+	@operator-sdk build ${ORG}/${PROJECT}:${TAG}
 
 .PHONY: image/push
 image/push:
-	docker push ${REG}/${ORG}/${PROJECT}:${TAG}
+	docker push ${ORG}/${PROJECT}:${TAG}
 
 .PHONY: image/build/push
 image/build/push: image/build image/push
