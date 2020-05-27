@@ -221,7 +221,6 @@ func (r *ReconcileGrafanaNotificationChannel) reconcileNotificationChannels(requ
 		knownHash := findHash(&notificationchannel)
 		pipeline := NewNotificationChannelPipeline(r.client, &notificationchannel)
 		processed, err := pipeline.ProcessNotificationChannel(knownHash)
-		log.Info(fmt.Sprintf("Processed. %v", string(processed)))
 		if err != nil {
 			log.Error(err, fmt.Sprintf("cannot process notificationchannel %v/%v", notificationchannel.Namespace, notificationchannel.Name))
 			r.manageError(&notificationchannel, err)

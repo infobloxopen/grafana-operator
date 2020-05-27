@@ -87,6 +87,7 @@ rules:
   - grafanadatasources
   - grafanadatasources/status
   - grafananotificationchannels
+  - grafananotificationchannels/status
   verbs:
   - get
   - list

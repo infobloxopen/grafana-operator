@@ -1,8 +1,9 @@
+GIT_COMMIT := $(shell git describe --tags --always || echo pre-commit)
 ORG?=infoblox
 NAMESPACE=grafana
 PROJECT=grafana-operator
 SHELL=/bin/bash
-TAG?=latest
+TAG?=$(GIT_COMMIT)
 PKG=github.com/infobloxopen/grafana-operator
 COMPILE_TARGET=./tmp/_output/bin/$(PROJECT)
 
@@ -52,3 +53,5 @@ image/build/push: image/build image/push
 test/unit:
 	@echo Running tests:
 	go test -v -race -cover ./pkg/...
+clean/image:
+	@docker rmi -f $(shell docker images -q $(SERVER_IMAGE)) || true

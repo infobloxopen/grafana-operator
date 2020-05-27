@@ -1,15 +1,15 @@
 apiVersion: integreatly.org/v1alpha1
 kind: GrafanaNotificationChannel
 metadata:
-  name: PD-channel
+  name: pager-duty-channel
   labels:
     app: grafana
 spec:
-  name: PD-channel.json
+  name: pager-duty-channel.json
   json: >
     {
-      "uid": "PD-alert-notification",
-      "name": "PD alert notification",
+      "uid": "pager-duty-alert-notification",
+      "name": "Pager Duty alert notification",
       "type":  "pagerduty",
       "isDefault": true,
       "sendReminder": true,
