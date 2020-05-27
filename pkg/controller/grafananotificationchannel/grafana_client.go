@@ -21,10 +21,10 @@ const (
 )
 
 const (
-	opCreate = iota
-	opRead
-	opUpdate
-	opDelete
+	opCreate = "creating"
+	opRead   = "reading"
+	opUpdate = "updating"
+	opDelete = "deleting"
 )
 
 type GrafanaResponse struct {
@@ -82,19 +82,19 @@ func NewGrafanaClient(url, user, password string, timeoutSeconds time.Duration) 
 
 // Submit channel json to grafana
 func (r *GrafanaClientImpl) CreateNotificationChannel(channel []byte) (GrafanaResponse, error) {
-	log.Info(fmt.Sprintf("Debug create new channel"))
+	log.Info(fmt.Sprintf("creating new channel"))
 	return r.doRequest(opCreate, channel, "")
 }
 
 // Update existing channel
 func (r *GrafanaClientImpl) UpdateNotificationChannel(channel []byte, UID string) (GrafanaResponse, error) {
-	log.Info(fmt.Sprintf("Debug update channel UID: %v", UID))
+	log.Info(fmt.Sprintf("updating channel UID: %v", UID))
 	return r.doRequest(opUpdate, channel, UID)
 }
 
 // Get channel by UID
 func (r *GrafanaClientImpl) GetNotificationChannel(UID string) (GrafanaResponse, error) {
-	log.Info(fmt.Sprintf("Debug check channel UID: %v", UID))
+	log.Info(fmt.Sprintf("checking channel UID: %v", UID))
 	emptyChannel := make([]byte, 0)
 	return r.doRequest(opRead, emptyChannel, UID)
 }
@@ -102,11 +102,11 @@ func (r *GrafanaClientImpl) GetNotificationChannel(UID string) (GrafanaResponse,
 // Delete a channel given by a UID
 func (r *GrafanaClientImpl) DeleteNotificationChannelByUID(UID string) (GrafanaResponse, error) {
 	emptyChannel := make([]byte, 0)
-	log.Info(fmt.Sprintf("Debug delete channel UID: %v", UID))
+	log.Info(fmt.Sprintf("deleting channel UID: %v", UID))
 	return r.doRequest(opDelete, emptyChannel, UID)
 }
 
-func (r *GrafanaClientImpl) doRequest(op int, channel []byte, UID string) (GrafanaResponse, error) {
+func (r *GrafanaClientImpl) doRequest(op string, channel []byte, UID string) (GrafanaResponse, error) {
 	response := newResponse()
 
 	var method, rawUrl string
@@ -140,7 +140,7 @@ func (r *GrafanaClientImpl) doRequest(op int, channel []byte, UID string) (Grafa
 	if err != nil {
 		return response, err
 	}
-	log.Info(fmt.Sprintf("Debug request %v", req))
+	log.Info(fmt.Sprintf("request %v", req))
 	setHeaders(req)
 
 	resp, err := r.client.Do(req)
@@ -151,8 +151,8 @@ func (r *GrafanaClientImpl) doRequest(op int, channel []byte, UID string) (Grafa
 
 	if resp.StatusCode != 200 {
 		return response, errors.New(fmt.Sprintf(
-			"error deleting notificationChannel, expected status 200 but got %v",
-			resp.StatusCode))
+			"error %v notificationChannel, expected status 200 but got %v",
+			op, resp.StatusCode))
 	}
 
 	data, err := ioutil.ReadAll(resp.Body)
@@ -160,7 +160,7 @@ func (r *GrafanaClientImpl) doRequest(op int, channel []byte, UID string) (Grafa
 		return response, err
 	}
 
-	log.Info(fmt.Sprintf("Debug response %v", string(data)))
+	log.Info(fmt.Sprintf("response %v", string(data)))
 	err = json.Unmarshal(data, &response)
 	return response, err
 }

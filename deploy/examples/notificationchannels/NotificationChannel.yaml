@@ -1,11 +1,11 @@
 apiVersion: integreatly.org/v1alpha1
 kind: GrafanaNotificationChannel
 metadata:
-  name: email1-channel
+  name: PD-channel
   labels:
     app: grafana
 spec:
-  name: email-channel.json
+  name: PD-channel.json
   json: >
     {
       "uid": "PD-alert-notification",
@@ -13,7 +13,8 @@ spec:
       "type":  "pagerduty",
       "isDefault": true,
       "sendReminder": true,
-      "frequency": "5m",
+      "frequency": "15m",
+      "disableResolveMessage": true,
       "settings": {
         "integrationKey": "put key here",
         "autoResolve": true,
