@@ -53,5 +53,7 @@ image/build/push: image/build image/push
 test/unit:
 	@echo Running tests:
 	go test -v -race -cover ./pkg/...
+
 clean/image:
 	@docker rmi -f $(shell docker images -q $(SERVER_IMAGE)) || true
+
