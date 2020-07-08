@@ -1756,6 +1756,13 @@ func (in *GrafanaSpec) DeepCopyInto(out *GrafanaSpec) {
 		*out = new(GrafanaCompat)
 		**out = **in
 	}
+	if in.DBPasswordRef != nil {
+		in, out := &in.DBPasswordRef, &out.DBPasswordRef
+		*out = make(map[string]string, len(*in))
+		for key, val := range *in {
+			(*out)[key] = val
+		}
+	}
 	return
 }
 

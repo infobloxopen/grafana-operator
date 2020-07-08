@@ -2,6 +2,7 @@ package model
 
 import (
 	"fmt"
+
 	"github.com/integr8ly/grafana-operator/v3/pkg/apis/integreatly/v1alpha1"
 	"github.com/integr8ly/grafana-operator/v3/pkg/controller/config"
 	v1 "k8s.io/api/apps/v1"
@@ -296,7 +297,7 @@ func getContainers(cr *v1alpha1.Grafana, configHash, dsHash string) []v13.Contai
 	image := cfg.GetConfigString(config.ConfigGrafanaImage, GrafanaImage)
 	tag := cfg.GetConfigString(config.ConfigGrafanaImageTag, GrafanaVersion)
 
-	containers = append(containers, v13.Container{
+	container := v13.Container{
 		Name:       "grafana",
 		Image:      fmt.Sprintf("%s:%s", image, tag),
 		Args:       []string{"-config=/etc/grafana/grafana.ini"},
@@ -347,8 +348,23 @@ func getContainers(cr *v1alpha1.Grafana, configHash, dsHash string) []v13.Contai
 		TerminationMessagePath:   "/dev/termination-log",
 		TerminationMessagePolicy: "File",
 		ImagePullPolicy:          "IfNotPresent",
-	})
+	}
 
+	if cr.Spec.DBPasswordRef != nil {
+		envRef := v13.EnvVar{
+			Name: GrafanaDBPasswordVar,
+			ValueFrom: &v13.EnvVarSource{
+				SecretKeyRef: &v13.SecretKeySelector{
+					LocalObjectReference: v13.LocalObjectReference{
+						Name: cr.Spec.DBPasswordRef["secretRef"],
+					},
+					Key: cr.Spec.DBPasswordRef["key"],
+				},
+			},
+		}
+		container.Env = append(container.Env, envRef)
+	}
+	containers = append(containers, container)
 	// Add extra containers
 	for _, container := range cr.Spec.Containers {
 		container.VolumeMounts = getExtraContainerVolumeMounts(cr, container.VolumeMounts)
