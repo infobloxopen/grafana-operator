@@ -1758,10 +1758,8 @@ func (in *GrafanaSpec) DeepCopyInto(out *GrafanaSpec) {
 	}
 	if in.DBPasswordRef != nil {
 		in, out := &in.DBPasswordRef, &out.DBPasswordRef
-		*out = make(map[string]string, len(*in))
-		for key, val := range *in {
-			(*out)[key] = val
-		}
+		*out = new(v1.SecretKeySelector)
+		(*in).DeepCopyInto(*out)
 	}
 	return
 }

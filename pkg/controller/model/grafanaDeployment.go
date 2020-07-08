@@ -352,14 +352,9 @@ func getContainers(cr *v1alpha1.Grafana, configHash, dsHash string) []v13.Contai
 
 	if cr.Spec.DBPasswordRef != nil {
 		envRef := v13.EnvVar{
-			Name: GrafanaDBPasswordVar,
+			Name: GrafanaDBPasswordEnvVar,
 			ValueFrom: &v13.EnvVarSource{
-				SecretKeyRef: &v13.SecretKeySelector{
-					LocalObjectReference: v13.LocalObjectReference{
-						Name: cr.Spec.DBPasswordRef["secretRef"],
-					},
-					Key: cr.Spec.DBPasswordRef["key"],
-				},
+				SecretKeyRef: cr.Spec.DBPasswordRef,
 			},
 		}
 		container.Env = append(container.Env, envRef)

@@ -29,7 +29,7 @@ type GrafanaSpec struct {
 	ServiceAccount         *GrafanaServiceAccount   `json:"serviceAccount,omitempty"`
 	Client                 *GrafanaClient           `json:"client,omitempty"`
 	Compat                 *GrafanaCompat           `json:"compat"`
-	DBPasswordRef          map[string]string        `json:"dbpasswordref,omitempty"`
+	DBPasswordRef          *v1.SecretKeySelector    `json:"dbpasswordref,omitempty"`
 }
 
 // Backwards compatibility switches
