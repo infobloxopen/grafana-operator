@@ -2,6 +2,8 @@ FROM registry.access.redhat.com/ubi8/ubi-minimal:8.3
 
 RUN mkdir -p /opt/jsonnet && chown nobody /opt/jsonnet
 
+RUN microdnf update
+
 USER nobody
 
 ADD grafonnet-lib/grafonnet/ /opt/jsonnet/grafonnet
