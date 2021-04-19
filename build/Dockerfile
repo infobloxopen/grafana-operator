@@ -1,6 +1,4 @@
-FROM registry.access.redhat.com/ubi8/ubi-minimal:8.3
-
-RUN mkdir -p /opt/jsonnet && chown nobody /opt/jsonnet
+FROM gcr.io/distroless/static
 
 USER nobody
 
