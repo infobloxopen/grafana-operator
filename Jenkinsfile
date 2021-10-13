@@ -8,8 +8,11 @@ pipeline {
   tools {
     go "Go 1.16.3"
   }
+  environment {
+    PROJECT = "src/github.com/integr8ly/grafana-operator"
+  }
   options {
-    checkoutToSubdirectory('grafana-operator')
+    checkoutToSubdirectory('src/github.com/integr8ly/grafana-operator')
   }
   stages {
     stage("Setup") {
@@ -19,7 +22,7 @@ pipeline {
     }
     stage("Build Image") {
       steps {
-        dir("grafana-operator") {
+        dir("${PROJECT}") {
           sh "make setup/travis image/build"
         }
       }
@@ -27,12 +30,17 @@ pipeline {
   }
   post {
     success {
-      finalizeBuild(
-        sh(
-          script: 'make image/show',
-          returnStdout: true
+      dir("${PROJECT}") {
+        finalizeBuild(
+          sh(
+            script: 'make image/show',
+            returnStdout: true
+          )
         )
-      )
+      }
+    }
+    cleanup {
+      cleanWs()
     }
   }
 }
