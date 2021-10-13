@@ -34,7 +34,7 @@ code/fix:
 
 .PHONY: image/build
 image/build: code/compile
-	@operator-sdk build ${ORG}/${PROJECT}:${TAG}
+	@operator-sdk build ${ORG}/${PROJECT}:${TAG} --verbose
 
 .PHONY: image/push
 image/push:
