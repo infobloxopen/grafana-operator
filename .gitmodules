@@ -4,4 +4,4 @@
 	ignore = dirty
 [submodule "grafana_plugins_init"]
 	path = grafana_plugins_init
-	url = git@github.com:grafana-operator/grafana_plugins_init.git
+	url = git@github.com:infobloxopen/grafana_plugins_init.git
