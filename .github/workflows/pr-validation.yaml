@@ -14,7 +14,7 @@ jobs:
       - name: Setup go
         uses: actions/setup-go@v3
         with:
-          go-version: "1.19"
+          go-version: "1.18"
       - name: golangci-lint
         uses: golangci/golangci-lint-action@v2.5.2
         with:
@@ -29,7 +29,7 @@ jobs:
       - name: Setup go
         uses: actions/setup-go@v3
         with:
-          go-version: "1.19"
+          go-version: "1.18"
       - name: Run fmt
         run: |
           make fmt
@@ -49,7 +49,7 @@ jobs:
       - name: Setup go
         uses: actions/setup-go@v3
         with:
-          go-version: "1.19"
+          go-version: "1.18"
       - name: Run manifests
         run: |
           make manifests
@@ -69,7 +69,7 @@ jobs:
       - name: Setup go
         uses: actions/setup-go@v3
         with:
-          go-version: "1.19"
+          go-version: "1.18"
       - name: Run api-docs
         run: |
           make api-docs
@@ -89,7 +89,7 @@ jobs:
       - name: Setup go
         uses: actions/setup-go@v3
         with:
-          go-version: "1.19"
+          go-version: "1.18"
       - name: Run test
         shell: bash
         run: |
@@ -139,7 +139,7 @@ jobs:
       - name: Setup go
         uses: actions/setup-go@v3
         with:
-          go-version: "1.19"
+          go-version: "1.18"
       - name: Prepare
         id: prep
         run: |
