@@ -3,10 +3,10 @@
 
 pipeline {
   agent {
-    label 'ubuntu_docker_label'
+    label 'ubuntu_20_04_label'
   }
   tools {
-    go "Go 1.18"
+    go "Go 1.20"
   }
   environment {
     PROJECT = "src/github.com/integr8ly/grafana-operator"
