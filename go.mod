@@ -5,7 +5,7 @@ go 1.18
 require (
 	github.com/blang/semver v3.5.1+incompatible
 	github.com/ghodss/yaml v1.0.0
-	github.com/go-logr/logr v1.2.3
+	github.com/go-logr/logr v1.3.0
 	github.com/google/go-jsonnet v0.18.0
 	github.com/openshift/api v0.0.0-20220715133027-dab5b363ebd1
 	github.com/operator-framework/operator-lib v0.11.0
