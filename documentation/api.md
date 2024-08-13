@@ -102,7 +102,10 @@ GrafanaDashboardSpec defines the desired state of GrafanaDashboard
         <td><b>contentCacheDuration</b></td>
         <td>string</td>
         <td>
-          ContentCacheDuration sets how often the operator should resync with the external source when using the `grafanaCom.id` or `url` field to specify the source of the dashboard. The default value is decided by the `dashboardContentCacheDuration` field in the `Grafana` resource. The default is 0 which is interpreted as never refetching.<br/>
+          ContentCacheDuration sets how often the operator should resync with the external source when using
+the `grafanaCom.id` or `url` field to specify the source of the dashboard. The default value is
+decided by the `dashboardContentCacheDuration` field in the `Grafana` resource. The default is 0 which
+is interpreted as never refetching.<br/>
         </td>
         <td>false</td>
       </tr><tr>
@@ -137,7 +140,8 @@ GrafanaDashboardSpec defines the desired state of GrafanaDashboard
         <td><b><a href="#grafanadashboardspecgzipconfigmapref">gzipConfigMapRef</a></b></td>
         <td>object</td>
         <td>
-          GzipConfigMapRef is a reference to a ConfigMap binaryData field containing the dashboard's JSON, compressed with Gzip.<br/>
+          GzipConfigMapRef is a reference to a ConfigMap binaryData field containing
+the dashboard's JSON, compressed with Gzip.<br/>
         </td>
         <td>false</td>
       </tr><tr>
@@ -208,7 +212,9 @@ ConfigMapRef is a reference to a ConfigMap data field containing the dashboard's
         <td><b>name</b></td>
         <td>string</td>
         <td>
-          Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names TODO: Add other useful fields. apiVersion, kind, uid?<br/>
+          Name of the referent.
+More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+TODO: Add other useful fields. apiVersion, kind, uid?<br/>
         </td>
         <td>false</td>
       </tr><tr>
@@ -295,7 +301,8 @@ ConfigMapRef is a reference to a ConfigMap data field containing the dashboard's
 
 
 
-GzipConfigMapRef is a reference to a ConfigMap binaryData field containing the dashboard's JSON, compressed with Gzip.
+GzipConfigMapRef is a reference to a ConfigMap binaryData field containing
+the dashboard's JSON, compressed with Gzip.
 
 <table>
     <thead>
@@ -317,7 +324,9 @@ GzipConfigMapRef is a reference to a ConfigMap binaryData field containing the d
         <td><b>name</b></td>
         <td>string</td>
         <td>
-          Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names TODO: Add other useful fields. apiVersion, kind, uid?<br/>
+          Name of the referent.
+More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+TODO: Add other useful fields. apiVersion, kind, uid?<br/>
         </td>
         <td>false</td>
       </tr><tr>
@@ -642,7 +651,8 @@ GrafanaDataSourceSpec defines the desired state of GrafanaDataSource
         <td><b><a href="#grafanadatasourcespecdatasourcesindexjsondata">jsonData</a></b></td>
         <td>object</td>
         <td>
-          GrafanaDataSourceJsonData contains the most common json options See https://grafana.com/docs/administration/provisioning/#datasources<br/>
+          GrafanaDataSourceJsonData contains the most common json options
+See https://grafana.com/docs/administration/provisioning/#datasources<br/>
         </td>
         <td>false</td>
       </tr><tr>
@@ -663,7 +673,8 @@ GrafanaDataSourceSpec defines the desired state of GrafanaDataSource
         <td><b><a href="#grafanadatasourcespecdatasourcesindexsecurejsondata">secureJsonData</a></b></td>
         <td>object</td>
         <td>
-          GrafanaDataSourceSecureJsonData contains the most common secure json options See https://grafana.com/docs/administration/provisioning/#datasources<br/>
+          GrafanaDataSourceSecureJsonData contains the most common secure json options
+See https://grafana.com/docs/administration/provisioning/#datasources<br/>
         </td>
         <td>false</td>
       </tr><tr>
@@ -710,7 +721,8 @@ GrafanaDataSourceSpec defines the desired state of GrafanaDataSource
 
 
 
-GrafanaDataSourceJsonData contains the most common json options See https://grafana.com/docs/administration/provisioning/#datasources
+GrafanaDataSourceJsonData contains the most common json options
+See https://grafana.com/docs/administration/provisioning/#datasources
 
 <table>
     <thead>
@@ -725,7 +737,9 @@ GrafanaDataSourceJsonData contains the most common json options See https://graf
         <td><b>addCorsHeader</b></td>
         <td>boolean</td>
         <td>
-          Useful fields for clickhouse datasource See https://github.com/Vertamedia/clickhouse-grafana/tree/master/dist/README.md#configure-the-datasource-with-provisioning See https://github.com/Vertamedia/clickhouse-grafana/tree/master/src/datasource.ts#L44<br/>
+          Useful fields for clickhouse datasource
+See https://github.com/Vertamedia/clickhouse-grafana/tree/master/dist/README.md#configure-the-datasource-with-provisioning
+See https://github.com/Vertamedia/clickhouse-grafana/tree/master/src/datasource.ts#L44<br/>
         </td>
         <td>false</td>
       </tr><tr>
@@ -907,7 +921,8 @@ GrafanaDataSourceJsonData contains the most common json options See https://graf
         <td><b>httpHeaderName1</b></td>
         <td>string</td>
         <td>
-          Custom HTTP headers for datasources See https://grafana.com/docs/grafana/latest/administration/provisioning/#datasources<br/>
+          Custom HTTP headers for datasources
+See https://grafana.com/docs/grafana/latest/administration/provisioning/#datasources<br/>
         </td>
         <td>false</td>
       </tr><tr>
@@ -1271,7 +1286,8 @@ GrafanaDataSourceJsonData contains the most common json options See https://graf
         <td><b>url</b></td>
         <td>string</td>
         <td>
-          Fields for Instana data sources See https://github.com/instana/instana-grafana-datasource/blob/main/provisioning/datasources/datasource.yml<br/>
+          Fields for Instana data sources
+See https://github.com/instana/instana-grafana-datasource/blob/main/provisioning/datasources/datasource.yml<br/>
         </td>
         <td>false</td>
       </tr><tr>
@@ -1578,7 +1594,8 @@ Fields for tracing data sources
 
 
 
-GrafanaDataSourceSecureJsonData contains the most common secure json options See https://grafana.com/docs/administration/provisioning/#datasources
+GrafanaDataSourceSecureJsonData contains the most common secure json options
+See https://grafana.com/docs/administration/provisioning/#datasources
 
 <table>
     <thead>
@@ -1628,7 +1645,8 @@ GrafanaDataSourceSecureJsonData contains the most common secure json options See
         <td><b>httpHeaderValue1</b></td>
         <td>string</td>
         <td>
-          Custom HTTP headers for datasources See https://grafana.com/docs/grafana/latest/administration/provisioning/#datasources<br/>
+          Custom HTTP headers for datasources
+See https://grafana.com/docs/grafana/latest/administration/provisioning/#datasources<br/>
         </td>
         <td>false</td>
       </tr><tr>
@@ -1875,7 +1893,8 @@ GrafanaFolder is the Schema for the grafana folders and folderpermissions API
         <td><b><a href="#grafanafolderspecpermissionsindex">permissions</a></b></td>
         <td>[]object</td>
         <td>
-          FolderPermissions shall contain the _complete_ permissions for the folder. Any permission not listed here, will be removed from the folder.<br/>
+          FolderPermissions shall contain the _complete_ permissions for the folder.
+Any permission not listed here, will be removed from the folder.<br/>
         </td>
         <td>false</td>
       </tr></tbody>
@@ -2173,7 +2192,8 @@ Grafana is the Schema for the grafanas API
         <td><b>dashboardContentCacheDuration</b></td>
         <td>string</td>
         <td>
-          DashboardContentCacheDuration sets a default for when a `GrafanaDashboard` resource doesn't specify a `contentCacheDuration`. If left unset or 0 the default behavior is to cache indefinitely.<br/>
+          DashboardContentCacheDuration sets a default for when a `GrafanaDashboard` resource doesn't specify a `contentCacheDuration`.
+If left unset or 0 the default behavior is to cache indefinitely.<br/>
         </td>
         <td>false</td>
       </tr><tr>
@@ -2187,7 +2207,9 @@ Grafana is the Schema for the grafanas API
         <td><b><a href="#grafanaspecdashboardnamespaceselector">dashboardNamespaceSelector</a></b></td>
         <td>object</td>
         <td>
-          A label selector is a label query over a set of resources. The result of matchLabels and matchExpressions are ANDed. An empty label selector matches all objects. A null label selector matches no objects.<br/>
+          A label selector is a label query over a set of resources. The result of matchLabels and
+matchExpressions are ANDed. An empty label selector matches all objects. A null
+label selector matches no objects.<br/>
         </td>
         <td>false</td>
       </tr><tr>
@@ -4534,14 +4556,16 @@ GrafanaConfig is the configuration for grafana
         <td><b>plugin_admin_enabled</b></td>
         <td>boolean</td>
         <td>
-          Available to Grafana administrators only, enables installing / uninstalling / updating plugins directly from the Grafana UI. Set to true by default. Setting it to false will hide the install / uninstall / update controls. For more information, refer to https://grafana.com/docs/grafana/next/administration/plugin-management/#plugin-catalog<br/>
+          Available to Grafana administrators only, enables installing / uninstalling / updating plugins directly from the Grafana UI. Set to true by default. Setting it to false will hide the install / uninstall / update controls.
+For more information, refer to https://grafana.com/docs/grafana/next/administration/plugin-management/#plugin-catalog<br/>
         </td>
         <td>true</td>
       </tr><tr>
         <td><b>allow_loading_unsigned_plugins</b></td>
         <td>string</td>
         <td>
-          Enter a comma-separated list of plugin identifiers to identify plugins to load even if they are unsigned. Plugins with modified signatures are never loaded. We do not recommend using this option. For more information, refer to https://grafana.com/docs/grafana/next/administration/plugin-management/#plugin-signatures<br/>
+          Enter a comma-separated list of plugin identifiers to identify plugins to load even if they are unsigned. Plugins with modified signatures are never loaded.
+We do not recommend using this option. For more information, refer to https://grafana.com/docs/grafana/next/administration/plugin-management/#plugin-signatures<br/>
         </td>
         <td>false</td>
       </tr><tr>
@@ -5219,133 +5243,206 @@ A single application container that you want to run within a pod.
         <td><b>name</b></td>
         <td>string</td>
         <td>
-          Name of the container specified as a DNS_LABEL. Each container in a pod must have a unique name (DNS_LABEL). Cannot be updated.<br/>
+          Name of the container specified as a DNS_LABEL.
+Each container in a pod must have a unique name (DNS_LABEL).
+Cannot be updated.<br/>
         </td>
         <td>true</td>
       </tr><tr>
         <td><b>args</b></td>
         <td>[]string</td>
         <td>
-          Arguments to the entrypoint. The container image's CMD is used if this is not provided. Variable references $(VAR_NAME) are expanded using the container's environment. If a variable cannot be resolved, the reference in the input string will be unchanged. Double $$ are reduced to a single $, which allows for escaping the $(VAR_NAME) syntax: i.e. "$$(VAR_NAME)" will produce the string literal "$(VAR_NAME)". Escaped references will never be expanded, regardless of whether the variable exists or not. Cannot be updated. More info: https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument-container/#running-a-command-in-a-shell<br/>
+          Arguments to the entrypoint.
+The container image's CMD is used if this is not provided.
+Variable references $(VAR_NAME) are expanded using the container's environment. If a variable
+cannot be resolved, the reference in the input string will be unchanged. Double $$ are reduced
+to a single $, which allows for escaping the $(VAR_NAME) syntax: i.e. "$$(VAR_NAME)" will
+produce the string literal "$(VAR_NAME)". Escaped references will never be expanded, regardless
+of whether the variable exists or not. Cannot be updated.
+More info: https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument-container/#running-a-command-in-a-shell<br/>
         </td>
         <td>false</td>
       </tr><tr>
         <td><b>command</b></td>
         <td>[]string</td>
         <td>
-          Entrypoint array. Not executed within a shell. The container image's ENTRYPOINT is used if this is not provided. Variable references $(VAR_NAME) are expanded using the container's environment. If a variable cannot be resolved, the reference in the input string will be unchanged. Double $$ are reduced to a single $, which allows for escaping the $(VAR_NAME) syntax: i.e. "$$(VAR_NAME)" will produce the string literal "$(VAR_NAME)". Escaped references will never be expanded, regardless of whether the variable exists or not. Cannot be updated. More info: https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument-container/#running-a-command-in-a-shell<br/>
+          Entrypoint array. Not executed within a shell.
+The container image's ENTRYPOINT is used if this is not provided.
+Variable references $(VAR_NAME) are expanded using the container's environment. If a variable
+cannot be resolved, the reference in the input string will be unchanged. Double $$ are reduced
+to a single $, which allows for escaping the $(VAR_NAME) syntax: i.e. "$$(VAR_NAME)" will
+produce the string literal "$(VAR_NAME)". Escaped references will never be expanded, regardless
+of whether the variable exists or not. Cannot be updated.
+More info: https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument-container/#running-a-command-in-a-shell<br/>
         </td>
         <td>false</td>
       </tr><tr>
         <td><b><a href="#grafanaspeccontainersindexenvindex">env</a></b></td>
         <td>[]object</td>
         <td>
-          List of environment variables to set in the container. Cannot be updated.<br/>
+          List of environment variables to set in the container.
+Cannot be updated.<br/>
         </td>
         <td>false</td>
       </tr><tr>
         <td><b><a href="#grafanaspeccontainersindexenvfromindex">envFrom</a></b></td>
         <td>[]object</td>
         <td>
-          List of sources to populate environment variables in the container. The keys defined within a source must be a C_IDENTIFIER. All invalid keys will be reported as an event when the container is starting. When a key exists in multiple sources, the value associated with the last source will take precedence. Values defined by an Env with a duplicate key will take precedence. Cannot be updated.<br/>
+          List of sources to populate environment variables in the container.
+The keys defined within a source must be a C_IDENTIFIER. All invalid keys
+will be reported as an event when the container is starting. When a key exists in multiple
+sources, the value associated with the last source will take precedence.
+Values defined by an Env with a duplicate key will take precedence.
+Cannot be updated.<br/>
         </td>
         <td>false</td>
       </tr><tr>
         <td><b>image</b></td>
         <td>string</td>
         <td>
-          Container image name. More info: https://kubernetes.io/docs/concepts/containers/images This field is optional to allow higher level config management to default or override container images in workload controllers like Deployments and StatefulSets.<br/>
+          Container image name.
+More info: https://kubernetes.io/docs/concepts/containers/images
+This field is optional to allow higher level config management to default or override
+container images in workload controllers like Deployments and StatefulSets.<br/>
         </td>
         <td>false</td>
       </tr><tr>
         <td><b>imagePullPolicy</b></td>
         <td>string</td>
         <td>
-          Image pull policy. One of Always, Never, IfNotPresent. Defaults to Always if :latest tag is specified, or IfNotPresent otherwise. Cannot be updated. More info: https://kubernetes.io/docs/concepts/containers/images#updating-images<br/>
+          Image pull policy.
+One of Always, Never, IfNotPresent.
+Defaults to Always if :latest tag is specified, or IfNotPresent otherwise.
+Cannot be updated.
+More info: https://kubernetes.io/docs/concepts/containers/images#updating-images<br/>
         </td>
         <td>false</td>
       </tr><tr>
         <td><b><a href="#grafanaspeccontainersindexlifecycle">lifecycle</a></b></td>
         <td>object</td>
         <td>
-          Actions that the management system should take in response to container lifecycle events. Cannot be updated.<br/>
+          Actions that the management system should take in response to container lifecycle events.
+Cannot be updated.<br/>
         </td>
         <td>false</td>
       </tr><tr>
         <td><b><a href="#grafanaspeccontainersindexlivenessprobe">livenessProbe</a></b></td>
         <td>object</td>
         <td>
-          Periodic probe of container liveness. Container will be restarted if the probe fails. Cannot be updated. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes<br/>
+          Periodic probe of container liveness.
+Container will be restarted if the probe fails.
+Cannot be updated.
+More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes<br/>
         </td>
         <td>false</td>
       </tr><tr>
         <td><b><a href="#grafanaspeccontainersindexportsindex">ports</a></b></td>
         <td>[]object</td>
         <td>
-          List of ports to expose from the container. Exposing a port here gives the system additional information about the network connections a container uses, but is primarily informational. Not specifying a port here DOES NOT prevent that port from being exposed. Any port which is listening on the default "0.0.0.0" address inside a container will be accessible from the network. Cannot be updated.<br/>
+          List of ports to expose from the container. Exposing a port here gives
+the system additional information about the network connections a
+container uses, but is primarily informational. Not specifying a port here
+DOES NOT prevent that port from being exposed. Any port which is
+listening on the default "0.0.0.0" address inside a container will be
+accessible from the network.
+Cannot be updated.<br/>
         </td>
         <td>false</td>
       </tr><tr>
         <td><b><a href="#grafanaspeccontainersindexreadinessprobe">readinessProbe</a></b></td>
         <td>object</td>
         <td>
-          Periodic probe of container service readiness. Container will be removed from service endpoints if the probe fails. Cannot be updated. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes<br/>
+          Periodic probe of container service readiness.
+Container will be removed from service endpoints if the probe fails.
+Cannot be updated.
+More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes<br/>
         </td>
         <td>false</td>
       </tr><tr>
         <td><b><a href="#grafanaspeccontainersindexresources">resources</a></b></td>
         <td>object</td>
         <td>
-          Compute Resources required by this container. Cannot be updated. More info: https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/<br/>
+          Compute Resources required by this container.
+Cannot be updated.
+More info: https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/<br/>
         </td>
         <td>false</td>
       </tr><tr>
         <td><b><a href="#grafanaspeccontainersindexsecuritycontext">securityContext</a></b></td>
         <td>object</td>
         <td>
-          SecurityContext defines the security options the container should be run with. If set, the fields of SecurityContext override the equivalent fields of PodSecurityContext. More info: https://kubernetes.io/docs/tasks/configure-pod-container/security-context/<br/>
+          SecurityContext defines the security options the container should be run with.
+If set, the fields of SecurityContext override the equivalent fields of PodSecurityContext.
+More info: https://kubernetes.io/docs/tasks/configure-pod-container/security-context/<br/>
         </td>
         <td>false</td>
       </tr><tr>
         <td><b><a href="#grafanaspeccontainersindexstartupprobe">startupProbe</a></b></td>
         <td>object</td>
         <td>
-          StartupProbe indicates that the Pod has successfully initialized. If specified, no other probes are executed until this completes successfully. If this probe fails, the Pod will be restarted, just as if the livenessProbe failed. This can be used to provide different probe parameters at the beginning of a Pod's lifecycle, when it might take a long time to load data or warm a cache, than during steady-state operation. This cannot be updated. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes<br/>
+          StartupProbe indicates that the Pod has successfully initialized.
+If specified, no other probes are executed until this completes successfully.
+If this probe fails, the Pod will be restarted, just as if the livenessProbe failed.
+This can be used to provide different probe parameters at the beginning of a Pod's lifecycle,
+when it might take a long time to load data or warm a cache, than during steady-state operation.
+This cannot be updated.
+More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes<br/>
         </td>
         <td>false</td>
       </tr><tr>
         <td><b>stdin</b></td>
         <td>boolean</td>
         <td>
-          Whether this container should allocate a buffer for stdin in the container runtime. If this is not set, reads from stdin in the container will always result in EOF. Default is false.<br/>
+          Whether this container should allocate a buffer for stdin in the container runtime. If this
+is not set, reads from stdin in the container will always result in EOF.
+Default is false.<br/>
         </td>
         <td>false</td>
       </tr><tr>
         <td><b>stdinOnce</b></td>
         <td>boolean</td>
         <td>
-          Whether the container runtime should close the stdin channel after it has been opened by a single attach. When stdin is true the stdin stream will remain open across multiple attach sessions. If stdinOnce is set to true, stdin is opened on container start, is empty until the first client attaches to stdin, and then remains open and accepts data until the client disconnects, at which time stdin is closed and remains closed until the container is restarted. If this flag is false, a container processes that reads from stdin will never receive an EOF. Default is false<br/>
+          Whether the container runtime should close the stdin channel after it has been opened by
+a single attach. When stdin is true the stdin stream will remain open across multiple attach
+sessions. If stdinOnce is set to true, stdin is opened on container start, is empty until the
+first client attaches to stdin, and then remains open and accepts data until the client disconnects,
+at which time stdin is closed and remains closed until the container is restarted. If this
+flag is false, a container processes that reads from stdin will never receive an EOF.
+Default is false<br/>
         </td>
         <td>false</td>
       </tr><tr>
         <td><b>terminationMessagePath</b></td>
         <td>string</td>
         <td>
-          Optional: Path at which the file to which the container's termination message will be written is mounted into the container's filesystem. Message written is intended to be brief final status, such as an assertion failure message. Will be truncated by the node if greater than 4096 bytes. The total message length across all containers will be limited to 12kb. Defaults to /dev/termination-log. Cannot be updated.<br/>
+          Optional: Path at which the file to which the container's termination message
+will be written is mounted into the container's filesystem.
+Message written is intended to be brief final status, such as an assertion failure message.
+Will be truncated by the node if greater than 4096 bytes. The total message length across
+all containers will be limited to 12kb.
+Defaults to /dev/termination-log.
+Cannot be updated.<br/>
         </td>
         <td>false</td>
       </tr><tr>
         <td><b>terminationMessagePolicy</b></td>
         <td>string</td>
         <td>
-          Indicate how the termination message should be populated. File will use the contents of terminationMessagePath to populate the container status message on both success and failure. FallbackToLogsOnError will use the last chunk of container log output if the termination message file is empty and the container exited with an error. The log output is limited to 2048 bytes or 80 lines, whichever is smaller. Defaults to File. Cannot be updated.<br/>
+          Indicate how the termination message should be populated. File will use the contents of
+terminationMessagePath to populate the container status message on both success and failure.
+FallbackToLogsOnError will use the last chunk of container log output if the termination
+message file is empty and the container exited with an error.
+The log output is limited to 2048 bytes or 80 lines, whichever is smaller.
+Defaults to File.
+Cannot be updated.<br/>
         </td>
         <td>false</td>
       </tr><tr>
         <td><b>tty</b></td>
         <td>boolean</td>
         <td>
-          Whether this container should allocate a TTY for itself, also requires 'stdin' to be true. Default is false.<br/>
+          Whether this container should allocate a TTY for itself, also requires 'stdin' to be true.
+Default is false.<br/>
         </td>
         <td>false</td>
       </tr><tr>
@@ -5359,14 +5456,18 @@ A single application container that you want to run within a pod.
         <td><b><a href="#grafanaspeccontainersindexvolumemountsindex">volumeMounts</a></b></td>
         <td>[]object</td>
         <td>
-          Pod volumes to mount into the container's filesystem. Cannot be updated.<br/>
+          Pod volumes to mount into the container's filesystem.
+Cannot be updated.<br/>
         </td>
         <td>false</td>
       </tr><tr>
         <td><b>workingDir</b></td>
         <td>string</td>
         <td>
-          Container's working directory. If not specified, the container runtime's default will be used, which might be configured in the container image. Cannot be updated.<br/>
+          Container's working directory.
+If not specified, the container runtime's default will be used, which
+might be configured in the container image.
+Cannot be updated.<br/>
         </td>
         <td>false</td>
       </tr></tbody>
@@ -5400,7 +5501,15 @@ EnvVar represents an environment variable present in a Container.
         <td><b>value</b></td>
         <td>string</td>
         <td>
-          Variable references $(VAR_NAME) are expanded using the previously defined environment variables in the container and any service environment variables. If a variable cannot be resolved, the reference in the input string will be unchanged. Double $$ are reduced to a single $, which allows for escaping the $(VAR_NAME) syntax: i.e. "$$(VAR_NAME)" will produce the string literal "$(VAR_NAME)". Escaped references will never be expanded, regardless of whether the variable exists or not. Defaults to "".<br/>
+          Variable references $(VAR_NAME) are expanded
+using the previously defined environment variables in the container and
+any service environment variables. If a variable cannot be resolved,
+the reference in the input string will be unchanged. Double $$ are reduced
+to a single $, which allows for escaping the $(VAR_NAME) syntax: i.e.
+"$$(VAR_NAME)" will produce the string literal "$(VAR_NAME)".
+Escaped references will never be expanded, regardless of whether the variable
+exists or not.
+Defaults to "".<br/>
         </td>
         <td>false</td>
       </tr><tr>
@@ -5441,14 +5550,16 @@ Source for the environment variable's value. Cannot be used if value is not empt
         <td><b><a href="#grafanaspeccontainersindexenvindexvaluefromfieldref">fieldRef</a></b></td>
         <td>object</td>
         <td>
-          Selects a field of the pod: supports metadata.name, metadata.namespace, `metadata.labels['<KEY>']`, `metadata.annotations['<KEY>']`, spec.nodeName, spec.serviceAccountName, status.hostIP, status.podIP, status.podIPs.<br/>
+          Selects a field of the pod: supports metadata.name, metadata.namespace, `metadata.labels['<KEY>']`, `metadata.annotations['<KEY>']`,
+spec.nodeName, spec.serviceAccountName, status.hostIP, status.podIP, status.podIPs.<br/>
         </td>
         <td>false</td>
       </tr><tr>
         <td><b><a href="#grafanaspeccontainersindexenvindexvaluefromresourcefieldref">resourceFieldRef</a></b></td>
         <td>object</td>
         <td>
-          Selects a resource of the container: only resources limits and requests (limits.cpu, limits.memory, limits.ephemeral-storage, requests.cpu, requests.memory and requests.ephemeral-storage) are currently supported.<br/>
+          Selects a resource of the container: only resources limits and requests
+(limits.cpu, limits.memory, limits.ephemeral-storage, requests.cpu, requests.memory and requests.ephemeral-storage) are currently supported.<br/>
         </td>
         <td>false</td>
       </tr><tr>
@@ -5489,7 +5600,9 @@ Selects a key of a ConfigMap.
         <td><b>name</b></td>
         <td>string</td>
         <td>
-          Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names TODO: Add other useful fields. apiVersion, kind, uid?<br/>
+          Name of the referent.
+More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+TODO: Add other useful fields. apiVersion, kind, uid?<br/>
         </td>
         <td>false</td>
       </tr><tr>
@@ -5508,7 +5621,8 @@ Selects a key of a ConfigMap.
 
 
 
-Selects a field of the pod: supports metadata.name, metadata.namespace, `metadata.labels['<KEY>']`, `metadata.annotations['<KEY>']`, spec.nodeName, spec.serviceAccountName, status.hostIP, status.podIP, status.podIPs.
+Selects a field of the pod: supports metadata.name, metadata.namespace, `metadata.labels['<KEY>']`, `metadata.annotations['<KEY>']`,
+spec.nodeName, spec.serviceAccountName, status.hostIP, status.podIP, status.podIPs.
 
 <table>
     <thead>
@@ -5542,7 +5656,8 @@ Selects a field of the pod: supports metadata.name, metadata.namespace, `metadat
 
 
 
-Selects a resource of the container: only resources limits and requests (limits.cpu, limits.memory, limits.ephemeral-storage, requests.cpu, requests.memory and requests.ephemeral-storage) are currently supported.
+Selects a resource of the container: only resources limits and requests
+(limits.cpu, limits.memory, limits.ephemeral-storage, requests.cpu, requests.memory and requests.ephemeral-storage) are currently supported.
 
 <table>
     <thead>
@@ -5605,7 +5720,9 @@ Selects a key of a secret in the pod's namespace
         <td><b>name</b></td>
         <td>string</td>
         <td>
-          Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names TODO: Add other useful fields. apiVersion, kind, uid?<br/>
+          Name of the referent.
+More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+TODO: Add other useful fields. apiVersion, kind, uid?<br/>
         </td>
         <td>false</td>
       </tr><tr>
@@ -5680,7 +5797,9 @@ The ConfigMap to select from
         <td><b>name</b></td>
         <td>string</td>
         <td>
-          Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names TODO: Add other useful fields. apiVersion, kind, uid?<br/>
+          Name of the referent.
+More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+TODO: Add other useful fields. apiVersion, kind, uid?<br/>
         </td>
         <td>false</td>
       </tr><tr>
@@ -5714,7 +5833,9 @@ The Secret to select from
         <td><b>name</b></td>
         <td>string</td>
         <td>
-          Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names TODO: Add other useful fields. apiVersion, kind, uid?<br/>
+          Name of the referent.
+More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+TODO: Add other useful fields. apiVersion, kind, uid?<br/>
         </td>
         <td>false</td>
       </tr><tr>
@@ -5733,7 +5854,8 @@ The Secret to select from
 
 
 
-Actions that the management system should take in response to container lifecycle events. Cannot be updated.
+Actions that the management system should take in response to container lifecycle events.
+Cannot be updated.
 
 <table>
     <thead>
@@ -5748,14 +5870,25 @@ Actions that the management system should take in response to container lifecycl
         <td><b><a href="#grafanaspeccontainersindexlifecyclepoststart">postStart</a></b></td>
         <td>object</td>
         <td>
-          PostStart is called immediately after a container is created. If the handler fails, the container is terminated and restarted according to its restart policy. Other management of the container blocks until the hook completes. More info: https://kubernetes.io/docs/concepts/containers/container-lifecycle-hooks/#container-hooks<br/>
+          PostStart is called immediately after a container is created. If the handler fails,
+the container is terminated and restarted according to its restart policy.
+Other management of the container blocks until the hook completes.
+More info: https://kubernetes.io/docs/concepts/containers/container-lifecycle-hooks/#container-hooks<br/>
         </td>
         <td>false</td>
       </tr><tr>
         <td><b><a href="#grafanaspeccontainersindexlifecycleprestop">preStop</a></b></td>
         <td>object</td>
         <td>
-          PreStop is called immediately before a container is terminated due to an API request or management event such as liveness/startup probe failure, preemption, resource contention, etc. The handler is not called if the container crashes or exits. The Pod's termination grace period countdown begins before the PreStop hook is executed. Regardless of the outcome of the handler, the container will eventually terminate within the Pod's termination grace period (unless delayed by finalizers). Other management of the container blocks until the hook completes or until the termination grace period is reached. More info: https://kubernetes.io/docs/concepts/containers/container-lifecycle-hooks/#container-hooks<br/>
+          PreStop is called immediately before a container is terminated due to an
+API request or management event such as liveness/startup probe failure,
+preemption, resource contention, etc. The handler is not called if the
+container crashes or exits. The Pod's termination grace period countdown begins before the
+PreStop hook is executed. Regardless of the outcome of the handler, the
+container will eventually terminate within the Pod's termination grace
+period (unless delayed by finalizers). Other management of the container blocks until the hook completes
+or until the termination grace period is reached.
+More info: https://kubernetes.io/docs/concepts/containers/container-lifecycle-hooks/#container-hooks<br/>
         </td>
         <td>false</td>
       </tr></tbody>
@@ -5767,7 +5900,10 @@ Actions that the management system should take in response to container lifecycl
 
 
 
-PostStart is called immediately after a container is created. If the handler fails, the container is terminated and restarted according to its restart policy. Other management of the container blocks until the hook completes. More info: https://kubernetes.io/docs/concepts/containers/container-lifecycle-hooks/#container-hooks
+PostStart is called immediately after a container is created. If the handler fails,
+the container is terminated and restarted according to its restart policy.
+Other management of the container blocks until the hook completes.
+More info: https://kubernetes.io/docs/concepts/containers/container-lifecycle-hooks/#container-hooks
 
 <table>
     <thead>
@@ -5796,7 +5932,9 @@ PostStart is called immediately after a container is created. If the handler fai
         <td><b><a href="#grafanaspeccontainersindexlifecyclepoststarttcpsocket">tcpSocket</a></b></td>
         <td>object</td>
         <td>
-          Deprecated. TCPSocket is NOT supported as a LifecycleHandler and kept for the backward compatibility. There are no validation of this field and lifecycle hooks will fail in runtime when tcp handler is specified.<br/>
+          Deprecated. TCPSocket is NOT supported as a LifecycleHandler and kept
+for the backward compatibility. There are no validation of this field and
+lifecycle hooks will fail in runtime when tcp handler is specified.<br/>
         </td>
         <td>false</td>
       </tr></tbody>
@@ -5823,7 +5961,11 @@ Exec specifies the action to take.
         <td><b>command</b></td>
         <td>[]string</td>
         <td>
-          Command is the command line to execute inside the container, the working directory for the command  is root ('/') in the container's filesystem. The command is simply exec'd, it is not run inside a shell, so traditional shell instructions ('|', etc) won't work. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy.<br/>
+          Command is the command line to execute inside the container, the working directory for the
+command  is root ('/') in the container's filesystem. The command is simply exec'd, it is
+not run inside a shell, so traditional shell instructions ('|', etc) won't work. To use
+a shell, you need to explicitly call out to that shell.
+Exit status of 0 is treated as live/healthy and non-zero is unhealthy.<br/>
         </td>
         <td>false</td>
       </tr></tbody>
@@ -5850,14 +5992,17 @@ HTTPGet specifies the http request to perform.
         <td><b>port</b></td>
         <td>int or string</td>
         <td>
-          Name or number of the port to access on the container. Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.<br/>
+          Name or number of the port to access on the container.
+Number must be in the range 1 to 65535.
+Name must be an IANA_SVC_NAME.<br/>
         </td>
         <td>true</td>
       </tr><tr>
         <td><b>host</b></td>
         <td>string</td>
         <td>
-          Host name to connect to, defaults to the pod IP. You probably want to set "Host" in httpHeaders instead.<br/>
+          Host name to connect to, defaults to the pod IP. You probably want to set
+"Host" in httpHeaders instead.<br/>
         </td>
         <td>false</td>
       </tr><tr>
@@ -5878,7 +6023,8 @@ HTTPGet specifies the http request to perform.
         <td><b>scheme</b></td>
         <td>string</td>
         <td>
-          Scheme to use for connecting to the host. Defaults to HTTP.<br/>
+          Scheme to use for connecting to the host.
+Defaults to HTTP.<br/>
         </td>
         <td>false</td>
       </tr></tbody>
@@ -5924,7 +6070,9 @@ HTTPHeader describes a custom header to be used in HTTP probes
 
 
 
-Deprecated. TCPSocket is NOT supported as a LifecycleHandler and kept for the backward compatibility. There are no validation of this field and lifecycle hooks will fail in runtime when tcp handler is specified.
+Deprecated. TCPSocket is NOT supported as a LifecycleHandler and kept
+for the backward compatibility. There are no validation of this field and
+lifecycle hooks will fail in runtime when tcp handler is specified.
 
 <table>
     <thead>
@@ -5939,7 +6087,9 @@ Deprecated. TCPSocket is NOT supported as a LifecycleHandler and kept for the ba
         <td><b>port</b></td>
         <td>int or string</td>
         <td>
-          Number or name of the port to access on the container. Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.<br/>
+          Number or name of the port to access on the container.
+Number must be in the range 1 to 65535.
+Name must be an IANA_SVC_NAME.<br/>
         </td>
         <td>true</td>
       </tr><tr>
@@ -5958,7 +6108,15 @@ Deprecated. TCPSocket is NOT supported as a LifecycleHandler and kept for the ba
 
 
 
-PreStop is called immediately before a container is terminated due to an API request or management event such as liveness/startup probe failure, preemption, resource contention, etc. The handler is not called if the container crashes or exits. The Pod's termination grace period countdown begins before the PreStop hook is executed. Regardless of the outcome of the handler, the container will eventually terminate within the Pod's termination grace period (unless delayed by finalizers). Other management of the container blocks until the hook completes or until the termination grace period is reached. More info: https://kubernetes.io/docs/concepts/containers/container-lifecycle-hooks/#container-hooks
+PreStop is called immediately before a container is terminated due to an
+API request or management event such as liveness/startup probe failure,
+preemption, resource contention, etc. The handler is not called if the
+container crashes or exits. The Pod's termination grace period countdown begins before the
+PreStop hook is executed. Regardless of the outcome of the handler, the
+container will eventually terminate within the Pod's termination grace
+period (unless delayed by finalizers). Other management of the container blocks until the hook completes
+or until the termination grace period is reached.
+More info: https://kubernetes.io/docs/concepts/containers/container-lifecycle-hooks/#container-hooks
 
 <table>
     <thead>
@@ -5987,7 +6145,9 @@ PreStop is called immediately before a container is terminated due to an API req
         <td><b><a href="#grafanaspeccontainersindexlifecycleprestoptcpsocket">tcpSocket</a></b></td>
         <td>object</td>
         <td>
-          Deprecated. TCPSocket is NOT supported as a LifecycleHandler and kept for the backward compatibility. There are no validation of this field and lifecycle hooks will fail in runtime when tcp handler is specified.<br/>
+          Deprecated. TCPSocket is NOT supported as a LifecycleHandler and kept
+for the backward compatibility. There are no validation of this field and
+lifecycle hooks will fail in runtime when tcp handler is specified.<br/>
         </td>
         <td>false</td>
       </tr></tbody>
@@ -6014,7 +6174,11 @@ Exec specifies the action to take.
         <td><b>command</b></td>
         <td>[]string</td>
         <td>
-          Command is the command line to execute inside the container, the working directory for the command  is root ('/') in the container's filesystem. The command is simply exec'd, it is not run inside a shell, so traditional shell instructions ('|', etc) won't work. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy.<br/>
+          Command is the command line to execute inside the container, the working directory for the
+command  is root ('/') in the container's filesystem. The command is simply exec'd, it is
+not run inside a shell, so traditional shell instructions ('|', etc) won't work. To use
+a shell, you need to explicitly call out to that shell.
+Exit status of 0 is treated as live/healthy and non-zero is unhealthy.<br/>
         </td>
         <td>false</td>
       </tr></tbody>
@@ -6041,14 +6205,17 @@ HTTPGet specifies the http request to perform.
         <td><b>port</b></td>
         <td>int or string</td>
         <td>
-          Name or number of the port to access on the container. Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.<br/>
+          Name or number of the port to access on the container.
+Number must be in the range 1 to 65535.
+Name must be an IANA_SVC_NAME.<br/>
         </td>
         <td>true</td>
       </tr><tr>
         <td><b>host</b></td>
         <td>string</td>
         <td>
-          Host name to connect to, defaults to the pod IP. You probably want to set "Host" in httpHeaders instead.<br/>
+          Host name to connect to, defaults to the pod IP. You probably want to set
+"Host" in httpHeaders instead.<br/>
         </td>
         <td>false</td>
       </tr><tr>
@@ -6069,7 +6236,8 @@ HTTPGet specifies the http request to perform.
         <td><b>scheme</b></td>
         <td>string</td>
         <td>
-          Scheme to use for connecting to the host. Defaults to HTTP.<br/>
+          Scheme to use for connecting to the host.
+Defaults to HTTP.<br/>
         </td>
         <td>false</td>
       </tr></tbody>
@@ -6115,7 +6283,9 @@ HTTPHeader describes a custom header to be used in HTTP probes
 
 
 
-Deprecated. TCPSocket is NOT supported as a LifecycleHandler and kept for the backward compatibility. There are no validation of this field and lifecycle hooks will fail in runtime when tcp handler is specified.
+Deprecated. TCPSocket is NOT supported as a LifecycleHandler and kept
+for the backward compatibility. There are no validation of this field and
+lifecycle hooks will fail in runtime when tcp handler is specified.
 
 <table>
     <thead>
@@ -6130,7 +6300,9 @@ Deprecated. TCPSocket is NOT supported as a LifecycleHandler and kept for the ba
         <td><b>port</b></td>
         <td>int or string</td>
         <td>
-          Number or name of the port to access on the container. Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.<br/>
+          Number or name of the port to access on the container.
+Number must be in the range 1 to 65535.
+Name must be an IANA_SVC_NAME.<br/>
         </td>
         <td>true</td>
       </tr><tr>
@@ -6149,7 +6321,10 @@ Deprecated. TCPSocket is NOT supported as a LifecycleHandler and kept for the ba
 
 
 
-Periodic probe of container liveness. Container will be restarted if the probe fails. Cannot be updated. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes
+Periodic probe of container liveness.
+Container will be restarted if the probe fails.
+Cannot be updated.
+More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes
 
 <table>
     <thead>
@@ -6171,7 +6346,8 @@ Periodic probe of container liveness. Container will be restarted if the probe f
         <td><b>failureThreshold</b></td>
         <td>integer</td>
         <td>
-          Minimum consecutive failures for the probe to be considered failed after having succeeded. Defaults to 3. Minimum value is 1.<br/>
+          Minimum consecutive failures for the probe to be considered failed after having succeeded.
+Defaults to 3. Minimum value is 1.<br/>
           <br/>
             <i>Format</i>: int32<br/>
         </td>
@@ -6180,7 +6356,8 @@ Periodic probe of container liveness. Container will be restarted if the probe f
         <td><b><a href="#grafanaspeccontainersindexlivenessprobegrpc">grpc</a></b></td>
         <td>object</td>
         <td>
-          GRPC specifies an action involving a GRPC port. This is a beta field and requires enabling GRPCContainerProbe feature gate.<br/>
+          GRPC specifies an action involving a GRPC port.
+This is a beta field and requires enabling GRPCContainerProbe feature gate.<br/>
         </td>
         <td>false</td>
       </tr><tr>
@@ -6194,7 +6371,8 @@ Periodic probe of container liveness. Container will be restarted if the probe f
         <td><b>initialDelaySeconds</b></td>
         <td>integer</td>
         <td>
-          Number of seconds after the container has started before liveness probes are initiated. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes<br/>
+          Number of seconds after the container has started before liveness probes are initiated.
+More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes<br/>
           <br/>
             <i>Format</i>: int32<br/>
         </td>
@@ -6203,7 +6381,8 @@ Periodic probe of container liveness. Container will be restarted if the probe f
         <td><b>periodSeconds</b></td>
         <td>integer</td>
         <td>
-          How often (in seconds) to perform the probe. Default to 10 seconds. Minimum value is 1.<br/>
+          How often (in seconds) to perform the probe.
+Default to 10 seconds. Minimum value is 1.<br/>
           <br/>
             <i>Format</i>: int32<br/>
         </td>
@@ -6212,7 +6391,8 @@ Periodic probe of container liveness. Container will be restarted if the probe f
         <td><b>successThreshold</b></td>
         <td>integer</td>
         <td>
-          Minimum consecutive successes for the probe to be considered successful after having failed. Defaults to 1. Must be 1 for liveness and startup. Minimum value is 1.<br/>
+          Minimum consecutive successes for the probe to be considered successful after having failed.
+Defaults to 1. Must be 1 for liveness and startup. Minimum value is 1.<br/>
           <br/>
             <i>Format</i>: int32<br/>
         </td>
@@ -6228,7 +6408,16 @@ Periodic probe of container liveness. Container will be restarted if the probe f
         <td><b>terminationGracePeriodSeconds</b></td>
         <td>integer</td>
         <td>
-          Optional duration in seconds the pod needs to terminate gracefully upon probe failure. The grace period is the duration in seconds after the processes running in the pod are sent a termination signal and the time when the processes are forcibly halted with a kill signal. Set this value longer than the expected cleanup time for your process. If this value is nil, the pod's terminationGracePeriodSeconds will be used. Otherwise, this value overrides the value provided by the pod spec. Value must be non-negative integer. The value zero indicates stop immediately via the kill signal (no opportunity to shut down). This is a beta field and requires enabling ProbeTerminationGracePeriod feature gate. Minimum value is 1. spec.terminationGracePeriodSeconds is used if unset.<br/>
+          Optional duration in seconds the pod needs to terminate gracefully upon probe failure.
+The grace period is the duration in seconds after the processes running in the pod are sent
+a termination signal and the time when the processes are forcibly halted with a kill signal.
+Set this value longer than the expected cleanup time for your process.
+If this value is nil, the pod's terminationGracePeriodSeconds will be used. Otherwise, this
+value overrides the value provided by the pod spec.
+Value must be non-negative integer. The value zero indicates stop immediately via
+the kill signal (no opportunity to shut down).
+This is a beta field and requires enabling ProbeTerminationGracePeriod feature gate.
+Minimum value is 1. spec.terminationGracePeriodSeconds is used if unset.<br/>
           <br/>
             <i>Format</i>: int64<br/>
         </td>
@@ -6237,7 +6426,9 @@ Periodic probe of container liveness. Container will be restarted if the probe f
         <td><b>timeoutSeconds</b></td>
         <td>integer</td>
         <td>
-          Number of seconds after which the probe times out. Defaults to 1 second. Minimum value is 1. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes<br/>
+          Number of seconds after which the probe times out.
+Defaults to 1 second. Minimum value is 1.
+More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes<br/>
           <br/>
             <i>Format</i>: int32<br/>
         </td>
@@ -6266,7 +6457,11 @@ Exec specifies the action to take.
         <td><b>command</b></td>
         <td>[]string</td>
         <td>
-          Command is the command line to execute inside the container, the working directory for the command  is root ('/') in the container's filesystem. The command is simply exec'd, it is not run inside a shell, so traditional shell instructions ('|', etc) won't work. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy.<br/>
+          Command is the command line to execute inside the container, the working directory for the
+command  is root ('/') in the container's filesystem. The command is simply exec'd, it is
+not run inside a shell, so traditional shell instructions ('|', etc) won't work. To use
+a shell, you need to explicitly call out to that shell.
+Exit status of 0 is treated as live/healthy and non-zero is unhealthy.<br/>
         </td>
         <td>false</td>
       </tr></tbody>
@@ -6278,7 +6473,8 @@ Exec specifies the action to take.
 
 
 
-GRPC specifies an action involving a GRPC port. This is a beta field and requires enabling GRPCContainerProbe feature gate.
+GRPC specifies an action involving a GRPC port.
+This is a beta field and requires enabling GRPCContainerProbe feature gate.
 
 <table>
     <thead>
@@ -6302,8 +6498,11 @@ GRPC specifies an action involving a GRPC port. This is a beta field and require
         <td><b>service</b></td>
         <td>string</td>
         <td>
-          Service is the name of the service to place in the gRPC HealthCheckRequest (see https://github.com/grpc/grpc/blob/master/doc/health-checking.md). 
- If this is not specified, the default behavior is defined by gRPC.<br/>
+          Service is the name of the service to place in the gRPC HealthCheckRequest
+(see https://github.com/grpc/grpc/blob/master/doc/health-checking.md).
+
+
+If this is not specified, the default behavior is defined by gRPC.<br/>
         </td>
         <td>false</td>
       </tr></tbody>
@@ -6330,14 +6529,17 @@ HTTPGet specifies the http request to perform.
         <td><b>port</b></td>
         <td>int or string</td>
         <td>
-          Name or number of the port to access on the container. Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.<br/>
+          Name or number of the port to access on the container.
+Number must be in the range 1 to 65535.
+Name must be an IANA_SVC_NAME.<br/>
         </td>
         <td>true</td>
       </tr><tr>
         <td><b>host</b></td>
         <td>string</td>
         <td>
-          Host name to connect to, defaults to the pod IP. You probably want to set "Host" in httpHeaders instead.<br/>
+          Host name to connect to, defaults to the pod IP. You probably want to set
+"Host" in httpHeaders instead.<br/>
         </td>
         <td>false</td>
       </tr><tr>
@@ -6358,7 +6560,8 @@ HTTPGet specifies the http request to perform.
         <td><b>scheme</b></td>
         <td>string</td>
         <td>
-          Scheme to use for connecting to the host. Defaults to HTTP.<br/>
+          Scheme to use for connecting to the host.
+Defaults to HTTP.<br/>
         </td>
         <td>false</td>
       </tr></tbody>
@@ -6419,7 +6622,9 @@ TCPSocket specifies an action involving a TCP port.
         <td><b>port</b></td>
         <td>int or string</td>
         <td>
-          Number or name of the port to access on the container. Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.<br/>
+          Number or name of the port to access on the container.
+Number must be in the range 1 to 65535.
+Name must be an IANA_SVC_NAME.<br/>
         </td>
         <td>true</td>
       </tr><tr>
@@ -6453,7 +6658,8 @@ ContainerPort represents a network port in a single container.
         <td><b>containerPort</b></td>
         <td>integer</td>
         <td>
-          Number of port to expose on the pod's IP address. This must be a valid port number, 0 < x < 65536.<br/>
+          Number of port to expose on the pod's IP address.
+This must be a valid port number, 0 < x < 65536.<br/>
           <br/>
             <i>Format</i>: int32<br/>
         </td>
@@ -6469,7 +6675,10 @@ ContainerPort represents a network port in a single container.
         <td><b>hostPort</b></td>
         <td>integer</td>
         <td>
-          Number of port to expose on the host. If specified, this must be a valid port number, 0 < x < 65536. If HostNetwork is specified, this must match ContainerPort. Most containers do not need this.<br/>
+          Number of port to expose on the host.
+If specified, this must be a valid port number, 0 < x < 65536.
+If HostNetwork is specified, this must match ContainerPort.
+Most containers do not need this.<br/>
           <br/>
             <i>Format</i>: int32<br/>
         </td>
@@ -6478,14 +6687,17 @@ ContainerPort represents a network port in a single container.
         <td><b>name</b></td>
         <td>string</td>
         <td>
-          If specified, this must be an IANA_SVC_NAME and unique within the pod. Each named port in a pod must have a unique name. Name for the port that can be referred to by services.<br/>
+          If specified, this must be an IANA_SVC_NAME and unique within the pod. Each
+named port in a pod must have a unique name. Name for the port that can be
+referred to by services.<br/>
         </td>
         <td>false</td>
       </tr><tr>
         <td><b>protocol</b></td>
         <td>string</td>
         <td>
-          Protocol for port. Must be UDP, TCP, or SCTP. Defaults to "TCP".<br/>
+          Protocol for port. Must be UDP, TCP, or SCTP.
+Defaults to "TCP".<br/>
           <br/>
             <i>Default</i>: TCP<br/>
         </td>
@@ -6499,7 +6711,10 @@ ContainerPort represents a network port in a single container.
 
 
 
-Periodic probe of container service readiness. Container will be removed from service endpoints if the probe fails. Cannot be updated. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes
+Periodic probe of container service readiness.
+Container will be removed from service endpoints if the probe fails.
+Cannot be updated.
+More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes
 
 <table>
     <thead>
@@ -6521,7 +6736,8 @@ Periodic probe of container service readiness. Container will be removed from se
         <td><b>failureThreshold</b></td>
         <td>integer</td>
         <td>
-          Minimum consecutive failures for the probe to be considered failed after having succeeded. Defaults to 3. Minimum value is 1.<br/>
+          Minimum consecutive failures for the probe to be considered failed after having succeeded.
+Defaults to 3. Minimum value is 1.<br/>
           <br/>
             <i>Format</i>: int32<br/>
         </td>
@@ -6530,7 +6746,8 @@ Periodic probe of container service readiness. Container will be removed from se
         <td><b><a href="#grafanaspeccontainersindexreadinessprobegrpc">grpc</a></b></td>
         <td>object</td>
         <td>
-          GRPC specifies an action involving a GRPC port. This is a beta field and requires enabling GRPCContainerProbe feature gate.<br/>
+          GRPC specifies an action involving a GRPC port.
+This is a beta field and requires enabling GRPCContainerProbe feature gate.<br/>
         </td>
         <td>false</td>
       </tr><tr>
@@ -6544,7 +6761,8 @@ Periodic probe of container service readiness. Container will be removed from se
         <td><b>initialDelaySeconds</b></td>
         <td>integer</td>
         <td>
-          Number of seconds after the container has started before liveness probes are initiated. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes<br/>
+          Number of seconds after the container has started before liveness probes are initiated.
+More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes<br/>
           <br/>
             <i>Format</i>: int32<br/>
         </td>
@@ -6553,7 +6771,8 @@ Periodic probe of container service readiness. Container will be removed from se
         <td><b>periodSeconds</b></td>
         <td>integer</td>
         <td>
-          How often (in seconds) to perform the probe. Default to 10 seconds. Minimum value is 1.<br/>
+          How often (in seconds) to perform the probe.
+Default to 10 seconds. Minimum value is 1.<br/>
           <br/>
             <i>Format</i>: int32<br/>
         </td>
@@ -6562,7 +6781,8 @@ Periodic probe of container service readiness. Container will be removed from se
         <td><b>successThreshold</b></td>
         <td>integer</td>
         <td>
-          Minimum consecutive successes for the probe to be considered successful after having failed. Defaults to 1. Must be 1 for liveness and startup. Minimum value is 1.<br/>
+          Minimum consecutive successes for the probe to be considered successful after having failed.
+Defaults to 1. Must be 1 for liveness and startup. Minimum value is 1.<br/>
           <br/>
             <i>Format</i>: int32<br/>
         </td>
@@ -6578,7 +6798,16 @@ Periodic probe of container service readiness. Container will be removed from se
         <td><b>terminationGracePeriodSeconds</b></td>
         <td>integer</td>
         <td>
-          Optional duration in seconds the pod needs to terminate gracefully upon probe failure. The grace period is the duration in seconds after the processes running in the pod are sent a termination signal and the time when the processes are forcibly halted with a kill signal. Set this value longer than the expected cleanup time for your process. If this value is nil, the pod's terminationGracePeriodSeconds will be used. Otherwise, this value overrides the value provided by the pod spec. Value must be non-negative integer. The value zero indicates stop immediately via the kill signal (no opportunity to shut down). This is a beta field and requires enabling ProbeTerminationGracePeriod feature gate. Minimum value is 1. spec.terminationGracePeriodSeconds is used if unset.<br/>
+          Optional duration in seconds the pod needs to terminate gracefully upon probe failure.
+The grace period is the duration in seconds after the processes running in the pod are sent
+a termination signal and the time when the processes are forcibly halted with a kill signal.
+Set this value longer than the expected cleanup time for your process.
+If this value is nil, the pod's terminationGracePeriodSeconds will be used. Otherwise, this
+value overrides the value provided by the pod spec.
+Value must be non-negative integer. The value zero indicates stop immediately via
+the kill signal (no opportunity to shut down).
+This is a beta field and requires enabling ProbeTerminationGracePeriod feature gate.
+Minimum value is 1. spec.terminationGracePeriodSeconds is used if unset.<br/>
           <br/>
             <i>Format</i>: int64<br/>
         </td>
@@ -6587,7 +6816,9 @@ Periodic probe of container service readiness. Container will be removed from se
         <td><b>timeoutSeconds</b></td>
         <td>integer</td>
         <td>
-          Number of seconds after which the probe times out. Defaults to 1 second. Minimum value is 1. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes<br/>
+          Number of seconds after which the probe times out.
+Defaults to 1 second. Minimum value is 1.
+More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes<br/>
           <br/>
             <i>Format</i>: int32<br/>
         </td>
@@ -6616,7 +6847,11 @@ Exec specifies the action to take.
         <td><b>command</b></td>
         <td>[]string</td>
         <td>
-          Command is the command line to execute inside the container, the working directory for the command  is root ('/') in the container's filesystem. The command is simply exec'd, it is not run inside a shell, so traditional shell instructions ('|', etc) won't work. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy.<br/>
+          Command is the command line to execute inside the container, the working directory for the
+command  is root ('/') in the container's filesystem. The command is simply exec'd, it is
+not run inside a shell, so traditional shell instructions ('|', etc) won't work. To use
+a shell, you need to explicitly call out to that shell.
+Exit status of 0 is treated as live/healthy and non-zero is unhealthy.<br/>
         </td>
         <td>false</td>
       </tr></tbody>
@@ -6628,7 +6863,8 @@ Exec specifies the action to take.
 
 
 
-GRPC specifies an action involving a GRPC port. This is a beta field and requires enabling GRPCContainerProbe feature gate.
+GRPC specifies an action involving a GRPC port.
+This is a beta field and requires enabling GRPCContainerProbe feature gate.
 
 <table>
     <thead>
@@ -6652,8 +6888,11 @@ GRPC specifies an action involving a GRPC port. This is a beta field and require
         <td><b>service</b></td>
         <td>string</td>
         <td>
-          Service is the name of the service to place in the gRPC HealthCheckRequest (see https://github.com/grpc/grpc/blob/master/doc/health-checking.md). 
- If this is not specified, the default behavior is defined by gRPC.<br/>
+          Service is the name of the service to place in the gRPC HealthCheckRequest
+(see https://github.com/grpc/grpc/blob/master/doc/health-checking.md).
+
+
+If this is not specified, the default behavior is defined by gRPC.<br/>
         </td>
         <td>false</td>
       </tr></tbody>
@@ -6680,14 +6919,17 @@ HTTPGet specifies the http request to perform.
         <td><b>port</b></td>
         <td>int or string</td>
         <td>
-          Name or number of the port to access on the container. Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.<br/>
+          Name or number of the port to access on the container.
+Number must be in the range 1 to 65535.
+Name must be an IANA_SVC_NAME.<br/>
         </td>
         <td>true</td>
       </tr><tr>
         <td><b>host</b></td>
         <td>string</td>
         <td>
-          Host name to connect to, defaults to the pod IP. You probably want to set "Host" in httpHeaders instead.<br/>
+          Host name to connect to, defaults to the pod IP. You probably want to set
+"Host" in httpHeaders instead.<br/>
         </td>
         <td>false</td>
       </tr><tr>
@@ -6708,7 +6950,8 @@ HTTPGet specifies the http request to perform.
         <td><b>scheme</b></td>
         <td>string</td>
         <td>
-          Scheme to use for connecting to the host. Defaults to HTTP.<br/>
+          Scheme to use for connecting to the host.
+Defaults to HTTP.<br/>
         </td>
         <td>false</td>
       </tr></tbody>
@@ -6769,7 +7012,9 @@ TCPSocket specifies an action involving a TCP port.
         <td><b>port</b></td>
         <td>int or string</td>
         <td>
-          Number or name of the port to access on the container. Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.<br/>
+          Number or name of the port to access on the container.
+Number must be in the range 1 to 65535.
+Name must be an IANA_SVC_NAME.<br/>
         </td>
         <td>true</td>
       </tr><tr>
@@ -6788,7 +7033,9 @@ TCPSocket specifies an action involving a TCP port.
 
 
 
-Compute Resources required by this container. Cannot be updated. More info: https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/
+Compute Resources required by this container.
+Cannot be updated.
+More info: https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/
 
 <table>
     <thead>
@@ -6803,14 +7050,18 @@ Compute Resources required by this container. Cannot be updated. More info: http
         <td><b>limits</b></td>
         <td>map[string]int or string</td>
         <td>
-          Limits describes the maximum amount of compute resources allowed. More info: https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/<br/>
+          Limits describes the maximum amount of compute resources allowed.
+More info: https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/<br/>
         </td>
         <td>false</td>
       </tr><tr>
         <td><b>requests</b></td>
         <td>map[string]int or string</td>
         <td>
-          Requests describes the minimum amount of compute resources required. If Requests is omitted for a container, it defaults to Limits if that is explicitly specified, otherwise to an implementation-defined value. More info: https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/<br/>
+          Requests describes the minimum amount of compute resources required.
+If Requests is omitted for a container, it defaults to Limits if that is explicitly specified,
+otherwise to an implementation-defined value.
+More info: https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/<br/>
         </td>
         <td>false</td>
       </tr></tbody>
@@ -6822,7 +7073,9 @@ Compute Resources required by this container. Cannot be updated. More info: http
 
 
 
-SecurityContext defines the security options the container should be run with. If set, the fields of SecurityContext override the equivalent fields of PodSecurityContext. More info: https://kubernetes.io/docs/tasks/configure-pod-container/security-context/
+SecurityContext defines the security options the container should be run with.
+If set, the fields of SecurityContext override the equivalent fields of PodSecurityContext.
+More info: https://kubernetes.io/docs/tasks/configure-pod-container/security-context/
 
 <table>
     <thead>
@@ -6837,42 +7090,63 @@ SecurityContext defines the security options the container should be run with. I
         <td><b>allowPrivilegeEscalation</b></td>
         <td>boolean</td>
         <td>
-          AllowPrivilegeEscalation controls whether a process can gain more privileges than its parent process. This bool directly controls if the no_new_privs flag will be set on the container process. AllowPrivilegeEscalation is true always when the container is: 1) run as Privileged 2) has CAP_SYS_ADMIN Note that this field cannot be set when spec.os.name is windows.<br/>
+          AllowPrivilegeEscalation controls whether a process can gain more
+privileges than its parent process. This bool directly controls if
+the no_new_privs flag will be set on the container process.
+AllowPrivilegeEscalation is true always when the container is:
+1) run as Privileged
+2) has CAP_SYS_ADMIN
+Note that this field cannot be set when spec.os.name is windows.<br/>
         </td>
         <td>false</td>
       </tr><tr>
         <td><b><a href="#grafanaspeccontainersindexsecuritycontextcapabilities">capabilities</a></b></td>
         <td>object</td>
         <td>
-          The capabilities to add/drop when running containers. Defaults to the default set of capabilities granted by the container runtime. Note that this field cannot be set when spec.os.name is windows.<br/>
+          The capabilities to add/drop when running containers.
+Defaults to the default set of capabilities granted by the container runtime.
+Note that this field cannot be set when spec.os.name is windows.<br/>
         </td>
         <td>false</td>
       </tr><tr>
         <td><b>privileged</b></td>
         <td>boolean</td>
         <td>
-          Run container in privileged mode. Processes in privileged containers are essentially equivalent to root on the host. Defaults to false. Note that this field cannot be set when spec.os.name is windows.<br/>
+          Run container in privileged mode.
+Processes in privileged containers are essentially equivalent to root on the host.
+Defaults to false.
+Note that this field cannot be set when spec.os.name is windows.<br/>
         </td>
         <td>false</td>
       </tr><tr>
         <td><b>procMount</b></td>
         <td>string</td>
         <td>
-          procMount denotes the type of proc mount to use for the containers. The default is DefaultProcMount which uses the container runtime defaults for readonly paths and masked paths. This requires the ProcMountType feature flag to be enabled. Note that this field cannot be set when spec.os.name is windows.<br/>
+          procMount denotes the type of proc mount to use for the containers.
+The default is DefaultProcMount which uses the container runtime defaults for
+readonly paths and masked paths.
+This requires the ProcMountType feature flag to be enabled.
+Note that this field cannot be set when spec.os.name is windows.<br/>
         </td>
         <td>false</td>
       </tr><tr>
         <td><b>readOnlyRootFilesystem</b></td>
         <td>boolean</td>
         <td>
-          Whether this container has a read-only root filesystem. Default is false. Note that this field cannot be set when spec.os.name is windows.<br/>
+          Whether this container has a read-only root filesystem.
+Default is false.
+Note that this field cannot be set when spec.os.name is windows.<br/>
         </td>
         <td>false</td>
       </tr><tr>
         <td><b>runAsGroup</b></td>
         <td>integer</td>
         <td>
-          The GID to run the entrypoint of the container process. Uses runtime default if unset. May also be set in PodSecurityContext.  If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence. Note that this field cannot be set when spec.os.name is windows.<br/>
+          The GID to run the entrypoint of the container process.
+Uses runtime default if unset.
+May also be set in PodSecurityContext.  If set in both SecurityContext and
+PodSecurityContext, the value specified in SecurityContext takes precedence.
+Note that this field cannot be set when spec.os.name is windows.<br/>
           <br/>
             <i>Format</i>: int64<br/>
         </td>
@@ -6881,14 +7155,23 @@ SecurityContext defines the security options the container should be run with. I
         <td><b>runAsNonRoot</b></td>
         <td>boolean</td>
         <td>
-          Indicates that the container must run as a non-root user. If true, the Kubelet will validate the image at runtime to ensure that it does not run as UID 0 (root) and fail to start the container if it does. If unset or false, no such validation will be performed. May also be set in PodSecurityContext.  If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence.<br/>
+          Indicates that the container must run as a non-root user.
+If true, the Kubelet will validate the image at runtime to ensure that it
+does not run as UID 0 (root) and fail to start the container if it does.
+If unset or false, no such validation will be performed.
+May also be set in PodSecurityContext.  If set in both SecurityContext and
+PodSecurityContext, the value specified in SecurityContext takes precedence.<br/>
         </td>
         <td>false</td>
       </tr><tr>
         <td><b>runAsUser</b></td>
         <td>integer</td>
         <td>
-          The UID to run the entrypoint of the container process. Defaults to user specified in image metadata if unspecified. May also be set in PodSecurityContext.  If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence. Note that this field cannot be set when spec.os.name is windows.<br/>
+          The UID to run the entrypoint of the container process.
+Defaults to user specified in image metadata if unspecified.
+May also be set in PodSecurityContext.  If set in both SecurityContext and
+PodSecurityContext, the value specified in SecurityContext takes precedence.
+Note that this field cannot be set when spec.os.name is windows.<br/>
           <br/>
             <i>Format</i>: int64<br/>
         </td>
@@ -6897,21 +7180,31 @@ SecurityContext defines the security options the container should be run with. I
         <td><b><a href="#grafanaspeccontainersindexsecuritycontextselinuxoptions">seLinuxOptions</a></b></td>
         <td>object</td>
         <td>
-          The SELinux context to be applied to the container. If unspecified, the container runtime will allocate a random SELinux context for each container.  May also be set in PodSecurityContext.  If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence. Note that this field cannot be set when spec.os.name is windows.<br/>
+          The SELinux context to be applied to the container.
+If unspecified, the container runtime will allocate a random SELinux context for each
+container.  May also be set in PodSecurityContext.  If set in both SecurityContext and
+PodSecurityContext, the value specified in SecurityContext takes precedence.
+Note that this field cannot be set when spec.os.name is windows.<br/>
         </td>
         <td>false</td>
       </tr><tr>
         <td><b><a href="#grafanaspeccontainersindexsecuritycontextseccompprofile">seccompProfile</a></b></td>
         <td>object</td>
         <td>
-          The seccomp options to use by this container. If seccomp options are provided at both the pod & container level, the container options override the pod options. Note that this field cannot be set when spec.os.name is windows.<br/>
+          The seccomp options to use by this container. If seccomp options are
+provided at both the pod & container level, the container options
+override the pod options.
+Note that this field cannot be set when spec.os.name is windows.<br/>
         </td>
         <td>false</td>
       </tr><tr>
         <td><b><a href="#grafanaspeccontainersindexsecuritycontextwindowsoptions">windowsOptions</a></b></td>
         <td>object</td>
         <td>
-          The Windows specific settings applied to all containers. If unspecified, the options from the PodSecurityContext will be used. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence. Note that this field cannot be set when spec.os.name is linux.<br/>
+          The Windows specific settings applied to all containers.
+If unspecified, the options from the PodSecurityContext will be used.
+If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence.
+Note that this field cannot be set when spec.os.name is linux.<br/>
         </td>
         <td>false</td>
       </tr></tbody>
@@ -6923,7 +7216,9 @@ SecurityContext defines the security options the container should be run with. I
 
 
 
-The capabilities to add/drop when running containers. Defaults to the default set of capabilities granted by the container runtime. Note that this field cannot be set when spec.os.name is windows.
+The capabilities to add/drop when running containers.
+Defaults to the default set of capabilities granted by the container runtime.
+Note that this field cannot be set when spec.os.name is windows.
 
 <table>
     <thead>
@@ -6957,7 +7252,11 @@ The capabilities to add/drop when running containers. Defaults to the default se
 
 
 
-The SELinux context to be applied to the container. If unspecified, the container runtime will allocate a random SELinux context for each container.  May also be set in PodSecurityContext.  If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence. Note that this field cannot be set when spec.os.name is windows.
+The SELinux context to be applied to the container.
+If unspecified, the container runtime will allocate a random SELinux context for each
+container.  May also be set in PodSecurityContext.  If set in both SecurityContext and
+PodSecurityContext, the value specified in SecurityContext takes precedence.
+Note that this field cannot be set when spec.os.name is windows.
 
 <table>
     <thead>
@@ -7005,7 +7304,10 @@ The SELinux context to be applied to the container. If unspecified, the containe
 
 
 
-The seccomp options to use by this container. If seccomp options are provided at both the pod & container level, the container options override the pod options. Note that this field cannot be set when spec.os.name is windows.
+The seccomp options to use by this container. If seccomp options are
+provided at both the pod & container level, the container options
+override the pod options.
+Note that this field cannot be set when spec.os.name is windows.
 
 <table>
     <thead>
@@ -7020,15 +7322,23 @@ The seccomp options to use by this container. If seccomp options are provided at
         <td><b>type</b></td>
         <td>string</td>
         <td>
-          type indicates which kind of seccomp profile will be applied. Valid options are: 
- Localhost - a profile defined in a file on the node should be used. RuntimeDefault - the container runtime default profile should be used. Unconfined - no profile should be applied.<br/>
+          type indicates which kind of seccomp profile will be applied.
+Valid options are:
+
+
+Localhost - a profile defined in a file on the node should be used.
+RuntimeDefault - the container runtime default profile should be used.
+Unconfined - no profile should be applied.<br/>
         </td>
         <td>true</td>
       </tr><tr>
         <td><b>localhostProfile</b></td>
         <td>string</td>
         <td>
-          localhostProfile indicates a profile defined in a file on the node should be used. The profile must be preconfigured on the node to work. Must be a descending path, relative to the kubelet's configured seccomp profile location. Must only be set if type is "Localhost".<br/>
+          localhostProfile indicates a profile defined in a file on the node should be used.
+The profile must be preconfigured on the node to work.
+Must be a descending path, relative to the kubelet's configured seccomp profile location.
+Must only be set if type is "Localhost".<br/>
         </td>
         <td>false</td>
       </tr></tbody>
@@ -7040,7 +7350,10 @@ The seccomp options to use by this container. If seccomp options are provided at
 
 
 
-The Windows specific settings applied to all containers. If unspecified, the options from the PodSecurityContext will be used. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence. Note that this field cannot be set when spec.os.name is linux.
+The Windows specific settings applied to all containers.
+If unspecified, the options from the PodSecurityContext will be used.
+If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence.
+Note that this field cannot be set when spec.os.name is linux.
 
 <table>
     <thead>
@@ -7055,7 +7368,9 @@ The Windows specific settings applied to all containers. If unspecified, the opt
         <td><b>gmsaCredentialSpec</b></td>
         <td>string</td>
         <td>
-          GMSACredentialSpec is where the GMSA admission webhook (https://github.com/kubernetes-sigs/windows-gmsa) inlines the contents of the GMSA credential spec named by the GMSACredentialSpecName field.<br/>
+          GMSACredentialSpec is where the GMSA admission webhook
+(https://github.com/kubernetes-sigs/windows-gmsa) inlines the contents of the
+GMSA credential spec named by the GMSACredentialSpecName field.<br/>
         </td>
         <td>false</td>
       </tr><tr>
@@ -7069,14 +7384,23 @@ The Windows specific settings applied to all containers. If unspecified, the opt
         <td><b>hostProcess</b></td>
         <td>boolean</td>
         <td>
-          HostProcess determines if a container should be run as a 'Host Process' container. This field is alpha-level and will only be honored by components that enable the WindowsHostProcessContainers feature flag. Setting this field without the feature flag will result in errors when validating the Pod. All of a Pod's containers must have the same effective HostProcess value (it is not allowed to have a mix of HostProcess containers and non-HostProcess containers).  In addition, if HostProcess is true then HostNetwork must also be set to true.<br/>
+          HostProcess determines if a container should be run as a 'Host Process' container.
+This field is alpha-level and will only be honored by components that enable the
+WindowsHostProcessContainers feature flag. Setting this field without the feature
+flag will result in errors when validating the Pod. All of a Pod's containers must
+have the same effective HostProcess value (it is not allowed to have a mix of HostProcess
+containers and non-HostProcess containers).  In addition, if HostProcess is true
+then HostNetwork must also be set to true.<br/>
         </td>
         <td>false</td>
       </tr><tr>
         <td><b>runAsUserName</b></td>
         <td>string</td>
         <td>
-          The UserName in Windows to run the entrypoint of the container process. Defaults to the user specified in image metadata if unspecified. May also be set in PodSecurityContext. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence.<br/>
+          The UserName in Windows to run the entrypoint of the container process.
+Defaults to the user specified in image metadata if unspecified.
+May also be set in PodSecurityContext. If set in both SecurityContext and
+PodSecurityContext, the value specified in SecurityContext takes precedence.<br/>
         </td>
         <td>false</td>
       </tr></tbody>
@@ -7088,7 +7412,13 @@ The Windows specific settings applied to all containers. If unspecified, the opt
 
 
 
-StartupProbe indicates that the Pod has successfully initialized. If specified, no other probes are executed until this completes successfully. If this probe fails, the Pod will be restarted, just as if the livenessProbe failed. This can be used to provide different probe parameters at the beginning of a Pod's lifecycle, when it might take a long time to load data or warm a cache, than during steady-state operation. This cannot be updated. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes
+StartupProbe indicates that the Pod has successfully initialized.
+If specified, no other probes are executed until this completes successfully.
+If this probe fails, the Pod will be restarted, just as if the livenessProbe failed.
+This can be used to provide different probe parameters at the beginning of a Pod's lifecycle,
+when it might take a long time to load data or warm a cache, than during steady-state operation.
+This cannot be updated.
+More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes
 
 <table>
     <thead>
@@ -7110,7 +7440,8 @@ StartupProbe indicates that the Pod has successfully initialized. If specified, 
         <td><b>failureThreshold</b></td>
         <td>integer</td>
         <td>
-          Minimum consecutive failures for the probe to be considered failed after having succeeded. Defaults to 3. Minimum value is 1.<br/>
+          Minimum consecutive failures for the probe to be considered failed after having succeeded.
+Defaults to 3. Minimum value is 1.<br/>
           <br/>
             <i>Format</i>: int32<br/>
         </td>
@@ -7119,7 +7450,8 @@ StartupProbe indicates that the Pod has successfully initialized. If specified, 
         <td><b><a href="#grafanaspeccontainersindexstartupprobegrpc">grpc</a></b></td>
         <td>object</td>
         <td>
-          GRPC specifies an action involving a GRPC port. This is a beta field and requires enabling GRPCContainerProbe feature gate.<br/>
+          GRPC specifies an action involving a GRPC port.
+This is a beta field and requires enabling GRPCContainerProbe feature gate.<br/>
         </td>
         <td>false</td>
       </tr><tr>
@@ -7133,7 +7465,8 @@ StartupProbe indicates that the Pod has successfully initialized. If specified, 
         <td><b>initialDelaySeconds</b></td>
         <td>integer</td>
         <td>
-          Number of seconds after the container has started before liveness probes are initiated. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes<br/>
+          Number of seconds after the container has started before liveness probes are initiated.
+More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes<br/>
           <br/>
             <i>Format</i>: int32<br/>
         </td>
@@ -7142,7 +7475,8 @@ StartupProbe indicates that the Pod has successfully initialized. If specified, 
         <td><b>periodSeconds</b></td>
         <td>integer</td>
         <td>
-          How often (in seconds) to perform the probe. Default to 10 seconds. Minimum value is 1.<br/>
+          How often (in seconds) to perform the probe.
+Default to 10 seconds. Minimum value is 1.<br/>
           <br/>
             <i>Format</i>: int32<br/>
         </td>
@@ -7151,7 +7485,8 @@ StartupProbe indicates that the Pod has successfully initialized. If specified, 
         <td><b>successThreshold</b></td>
         <td>integer</td>
         <td>
-          Minimum consecutive successes for the probe to be considered successful after having failed. Defaults to 1. Must be 1 for liveness and startup. Minimum value is 1.<br/>
+          Minimum consecutive successes for the probe to be considered successful after having failed.
+Defaults to 1. Must be 1 for liveness and startup. Minimum value is 1.<br/>
           <br/>
             <i>Format</i>: int32<br/>
         </td>
@@ -7167,7 +7502,16 @@ StartupProbe indicates that the Pod has successfully initialized. If specified, 
         <td><b>terminationGracePeriodSeconds</b></td>
         <td>integer</td>
         <td>
-          Optional duration in seconds the pod needs to terminate gracefully upon probe failure. The grace period is the duration in seconds after the processes running in the pod are sent a termination signal and the time when the processes are forcibly halted with a kill signal. Set this value longer than the expected cleanup time for your process. If this value is nil, the pod's terminationGracePeriodSeconds will be used. Otherwise, this value overrides the value provided by the pod spec. Value must be non-negative integer. The value zero indicates stop immediately via the kill signal (no opportunity to shut down). This is a beta field and requires enabling ProbeTerminationGracePeriod feature gate. Minimum value is 1. spec.terminationGracePeriodSeconds is used if unset.<br/>
+          Optional duration in seconds the pod needs to terminate gracefully upon probe failure.
+The grace period is the duration in seconds after the processes running in the pod are sent
+a termination signal and the time when the processes are forcibly halted with a kill signal.
+Set this value longer than the expected cleanup time for your process.
+If this value is nil, the pod's terminationGracePeriodSeconds will be used. Otherwise, this
+value overrides the value provided by the pod spec.
+Value must be non-negative integer. The value zero indicates stop immediately via
+the kill signal (no opportunity to shut down).
+This is a beta field and requires enabling ProbeTerminationGracePeriod feature gate.
+Minimum value is 1. spec.terminationGracePeriodSeconds is used if unset.<br/>
           <br/>
             <i>Format</i>: int64<br/>
         </td>
@@ -7176,7 +7520,9 @@ StartupProbe indicates that the Pod has successfully initialized. If specified, 
         <td><b>timeoutSeconds</b></td>
         <td>integer</td>
         <td>
-          Number of seconds after which the probe times out. Defaults to 1 second. Minimum value is 1. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes<br/>
+          Number of seconds after which the probe times out.
+Defaults to 1 second. Minimum value is 1.
+More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes<br/>
           <br/>
             <i>Format</i>: int32<br/>
         </td>
@@ -7205,7 +7551,11 @@ Exec specifies the action to take.
         <td><b>command</b></td>
         <td>[]string</td>
         <td>
-          Command is the command line to execute inside the container, the working directory for the command  is root ('/') in the container's filesystem. The command is simply exec'd, it is not run inside a shell, so traditional shell instructions ('|', etc) won't work. To use a shell, you need to explicitly call out to that shell. Exit status of 0 is treated as live/healthy and non-zero is unhealthy.<br/>
+          Command is the command line to execute inside the container, the working directory for the
+command  is root ('/') in the container's filesystem. The command is simply exec'd, it is
+not run inside a shell, so traditional shell instructions ('|', etc) won't work. To use
+a shell, you need to explicitly call out to that shell.
+Exit status of 0 is treated as live/healthy and non-zero is unhealthy.<br/>
         </td>
         <td>false</td>
       </tr></tbody>
@@ -7217,7 +7567,8 @@ Exec specifies the action to take.
 
 
 
-GRPC specifies an action involving a GRPC port. This is a beta field and requires enabling GRPCContainerProbe feature gate.
+GRPC specifies an action involving a GRPC port.
+This is a beta field and requires enabling GRPCContainerProbe feature gate.
 
 <table>
     <thead>
@@ -7241,8 +7592,11 @@ GRPC specifies an action involving a GRPC port. This is a beta field and require
         <td><b>service</b></td>
         <td>string</td>
         <td>
-          Service is the name of the service to place in the gRPC HealthCheckRequest (see https://github.com/grpc/grpc/blob/master/doc/health-checking.md). 
- If this is not specified, the default behavior is defined by gRPC.<br/>
+          Service is the name of the service to place in the gRPC HealthCheckRequest
+(see https://github.com/grpc/grpc/blob/master/doc/health-checking.md).
+
+
+If this is not specified, the default behavior is defined by gRPC.<br/>
         </td>
         <td>false</td>
       </tr></tbody>
@@ -7269,14 +7623,17 @@ HTTPGet specifies the http request to perform.
         <td><b>port</b></td>
         <td>int or string</td>
         <td>
-          Name or number of the port to access on the container. Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.<br/>
+          Name or number of the port to access on the container.
+Number must be in the range 1 to 65535.
+Name must be an IANA_SVC_NAME.<br/>
         </td>
         <td>true</td>
       </tr><tr>
         <td><b>host</b></td>
         <td>string</td>
         <td>
-          Host name to connect to, defaults to the pod IP. You probably want to set "Host" in httpHeaders instead.<br/>
+          Host name to connect to, defaults to the pod IP. You probably want to set
+"Host" in httpHeaders instead.<br/>
         </td>
         <td>false</td>
       </tr><tr>
@@ -7297,7 +7654,8 @@ HTTPGet specifies the http request to perform.
         <td><b>scheme</b></td>
         <td>string</td>
         <td>
-          Scheme to use for connecting to the host. Defaults to HTTP.<br/>
+          Scheme to use for connecting to the host.
+Defaults to HTTP.<br/>
         </td>
         <td>false</td>
       </tr></tbody>
@@ -7358,7 +7716,9 @@ TCPSocket specifies an action involving a TCP port.
         <td><b>port</b></td>
         <td>int or string</td>
         <td>
-          Number or name of the port to access on the container. Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.<br/>
+          Number or name of the port to access on the container.
+Number must be in the range 1 to 65535.
+Name must be an IANA_SVC_NAME.<br/>
         </td>
         <td>true</td>
       </tr><tr>
@@ -7426,7 +7786,8 @@ VolumeMount describes a mounting of a Volume within a container.
         <td><b>mountPath</b></td>
         <td>string</td>
         <td>
-          Path within the container at which the volume should be mounted.  Must not contain ':'.<br/>
+          Path within the container at which the volume should be mounted.  Must
+not contain ':'.<br/>
         </td>
         <td>true</td>
       </tr><tr>
@@ -7440,28 +7801,36 @@ VolumeMount describes a mounting of a Volume within a container.
         <td><b>mountPropagation</b></td>
         <td>string</td>
         <td>
-          mountPropagation determines how mounts are propagated from the host to container and the other way around. When not set, MountPropagationNone is used. This field is beta in 1.10.<br/>
+          mountPropagation determines how mounts are propagated from the host
+to container and the other way around.
+When not set, MountPropagationNone is used.
+This field is beta in 1.10.<br/>
         </td>
         <td>false</td>
       </tr><tr>
         <td><b>readOnly</b></td>
         <td>boolean</td>
         <td>
-          Mounted read-only if true, read-write otherwise (false or unspecified). Defaults to false.<br/>
+          Mounted read-only if true, read-write otherwise (false or unspecified).
+Defaults to false.<br/>
         </td>
         <td>false</td>
       </tr><tr>
         <td><b>subPath</b></td>
         <td>string</td>
         <td>
-          Path within the volume from which the container's volume should be mounted. Defaults to "" (volume's root).<br/>
+          Path within the volume from which the container's volume should be mounted.
+Defaults to "" (volume's root).<br/>
         </td>
         <td>false</td>
       </tr><tr>
         <td><b>subPathExpr</b></td>
         <td>string</td>
         <td>
-          Expanded path within the volume from which the container's volume should be mounted. Behaves similarly to SubPath but environment variable references $(VAR_NAME) are expanded using the container's environment. Defaults to "" (volume's root). SubPathExpr and SubPath are mutually exclusive.<br/>
+          Expanded path within the volume from which the container's volume should be mounted.
+Behaves similarly to SubPath but environment variable references $(VAR_NAME) are expanded using the container's environment.
+Defaults to "" (volume's root).
+SubPathExpr and SubPath are mutually exclusive.<br/>
         </td>
         <td>false</td>
       </tr></tbody>
@@ -7473,7 +7842,9 @@ VolumeMount describes a mounting of a Volume within a container.
 
 
 
-A label selector is a label query over a set of resources. The result of matchLabels and matchExpressions are ANDed. An empty label selector matches all objects. A null label selector matches no objects.
+A label selector is a label query over a set of resources. The result of matchLabels and
+matchExpressions are ANDed. An empty label selector matches all objects. A null
+label selector matches no objects.
 
 <table>
     <thead>
@@ -7495,7 +7866,9 @@ A label selector is a label query over a set of resources. The result of matchLa
         <td><b>matchLabels</b></td>
         <td>map[string]string</td>
         <td>
-          matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels map is equivalent to an element of matchExpressions, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.<br/>
+          matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels
+map is equivalent to an element of matchExpressions, whose key field is "key", the
+operator is "In", and the values array contains only "value". The requirements are ANDed.<br/>
         </td>
         <td>false</td>
       </tr></tbody>
@@ -7507,7 +7880,8 @@ A label selector is a label query over a set of resources. The result of matchLa
 
 
 
-A label selector requirement is a selector that contains values, a key, and an operator that relates the key and values.
+A label selector requirement is a selector that contains values, a key, and an operator that
+relates the key and values.
 
 <table>
     <thead>
@@ -7529,14 +7903,18 @@ A label selector requirement is a selector that contains values, a key, and an o
         <td><b>operator</b></td>
         <td>string</td>
         <td>
-          operator represents a key's relationship to a set of values. Valid operators are In, NotIn, Exists and DoesNotExist.<br/>
+          operator represents a key's relationship to a set of values.
+Valid operators are In, NotIn, Exists and DoesNotExist.<br/>
         </td>
         <td>true</td>
       </tr><tr>
         <td><b>values</b></td>
         <td>[]string</td>
         <td>
-          values is an array of string values. If the operator is In or NotIn, the values array must be non-empty. If the operator is Exists or DoesNotExist, the values array must be empty. This array is replaced during a strategic merge patch.<br/>
+          values is an array of string values. If the operator is In or NotIn,
+the values array must be non-empty. If the operator is Exists or DoesNotExist,
+the values array must be empty. This array is replaced during a strategic
+merge patch.<br/>
         </td>
         <td>false</td>
       </tr></tbody>
@@ -7548,7 +7926,9 @@ A label selector requirement is a selector that contains values, a key, and an o
 
 
 
-A label selector is a label query over a set of resources. The result of matchLabels and matchExpressions are ANDed. An empty label selector matches all objects. A null label selector matches no objects.
+A label selector is a label query over a set of resources. The result of matchLabels and
+matchExpressions are ANDed. An empty label selector matches all objects. A null
+label selector matches no objects.
 
 <table>
     <thead>
@@ -7570,7 +7950,9 @@ A label selector is a label query over a set of resources. The result of matchLa
         <td><b>matchLabels</b></td>
         <td>map[string]string</td>
         <td>
-          matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels map is equivalent to an element of matchExpressions, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.<br/>
+          matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels
+map is equivalent to an element of matchExpressions, whose key field is "key", the
+operator is "In", and the values array contains only "value". The requirements are ANDed.<br/>
         </td>
         <td>false</td>
       </tr></tbody>
@@ -7582,7 +7964,8 @@ A label selector is a label query over a set of resources. The result of matchLa
 
 
 
-A label selector requirement is a selector that contains values, a key, and an operator that relates the key and values.
+A label selector requirement is a selector that contains values, a key, and an operator that
+relates the key and values.
 
 <table>
     <thead>
@@ -7604,14 +7987,18 @@ A label selector requirement is a selector that contains values, a key, and an o
         <td><b>operator</b></td>
         <td>string</td>
         <td>
-          operator represents a key's relationship to a set of values. Valid operators are In, NotIn, Exists and DoesNotExist.<br/>
+          operator represents a key's relationship to a set of values.
+Valid operators are In, NotIn, Exists and DoesNotExist.<br/>
         </td>
         <td>true</td>
       </tr><tr>
         <td><b>values</b></td>
         <td>[]string</td>
         <td>
-          values is an array of string values. If the operator is In or NotIn, the values array must be non-empty. If the operator is Exists or DoesNotExist, the values array must be empty. This array is replaced during a strategic merge patch.<br/>
+          values is an array of string values. If the operator is In or NotIn,
+the values array must be non-empty. If the operator is Exists or DoesNotExist,
+the values array must be empty. This array is replaced during a strategic
+merge patch.<br/>
         </td>
         <td>false</td>
       </tr></tbody>
@@ -7707,7 +8094,9 @@ SecretKeySelector selects a key of a Secret.
         <td><b>name</b></td>
         <td>string</td>
         <td>
-          Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names TODO: Add other useful fields. apiVersion, kind, uid?<br/>
+          Name of the referent.
+More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+TODO: Add other useful fields. apiVersion, kind, uid?<br/>
         </td>
         <td>false</td>
       </tr><tr>
@@ -7755,7 +8144,9 @@ GrafanaDeployment provides a means to configure the deployment
         <td><b><a href="#grafanaspecdeploymentcontainersecuritycontext">containerSecurityContext</a></b></td>
         <td>object</td>
         <td>
-          SecurityContext holds security configuration that will be applied to a container. Some fields are present in both SecurityContext and PodSecurityContext.  When both are set, the values in SecurityContext take precedence.<br/>
+          SecurityContext holds security configuration that will be applied to a container.
+Some fields are present in both SecurityContext and PodSecurityContext.  When both
+are set, the values in SecurityContext take precedence.<br/>
         </td>
         <td>false</td>
       </tr><tr>
@@ -7797,7 +8188,8 @@ GrafanaDeployment provides a means to configure the deployment
         <td><b><a href="#grafanaspecdeploymenthttpproxy">httpProxy</a></b></td>
         <td>object</td>
         <td>
-          GrafanaHttpProxy provides a means to configure the Grafana deployment to use an HTTP(S) proxy when making requests and resolving plugins.<br/>
+          GrafanaHttpProxy provides a means to configure the Grafana deployment
+to use an HTTP(S) proxy when making requests and resolving plugins.<br/>
         </td>
         <td>false</td>
       </tr><tr>
@@ -7834,7 +8226,9 @@ GrafanaDeployment provides a means to configure the deployment
         <td><b><a href="#grafanaspecdeploymentsecuritycontext">securityContext</a></b></td>
         <td>object</td>
         <td>
-          PodSecurityContext holds pod-level security attributes and common container settings. Some fields are also present in container.securityContext.  Field values of container.securityContext take precedence over field values of PodSecurityContext.<br/>
+          PodSecurityContext holds pod-level security attributes and common container settings.
+Some fields are also present in container.securityContext.  Field values of
+container.securityContext take precedence over field values of PodSecurityContext.<br/>
         </td>
         <td>false</td>
       </tr><tr>
@@ -7932,14 +8326,26 @@ Describes node affinity scheduling rules for the pod.
         <td><b><a href="#grafanaspecdeploymentaffinitynodeaffinitypreferredduringschedulingignoredduringexecutionindex">preferredDuringSchedulingIgnoredDuringExecution</a></b></td>
         <td>[]object</td>
         <td>
-          The scheduler will prefer to schedule pods to nodes that satisfy the affinity expressions specified by this field, but it may choose a node that violates one or more of the expressions. The node that is most preferred is the one with the greatest sum of weights, i.e. for each node that meets all of the scheduling requirements (resource request, requiredDuringScheduling affinity expressions, etc.), compute a sum by iterating through the elements of this field and adding "weight" to the sum if the node matches the corresponding matchExpressions; the node(s) with the highest sum are the most preferred.<br/>
+          The scheduler will prefer to schedule pods to nodes that satisfy
+the affinity expressions specified by this field, but it may choose
+a node that violates one or more of the expressions. The node that is
+most preferred is the one with the greatest sum of weights, i.e.
+for each node that meets all of the scheduling requirements (resource
+request, requiredDuringScheduling affinity expressions, etc.),
+compute a sum by iterating through the elements of this field and adding
+"weight" to the sum if the node matches the corresponding matchExpressions; the
+node(s) with the highest sum are the most preferred.<br/>
         </td>
         <td>false</td>
       </tr><tr>
         <td><b><a href="#grafanaspecdeploymentaffinitynodeaffinityrequiredduringschedulingignoredduringexecution">requiredDuringSchedulingIgnoredDuringExecution</a></b></td>
         <td>object</td>
         <td>
-          If the affinity requirements specified by this field are not met at scheduling time, the pod will not be scheduled onto the node. If the affinity requirements specified by this field cease to be met at some point during pod execution (e.g. due to an update), the system may or may not try to eventually evict the pod from its node.<br/>
+          If the affinity requirements specified by this field are not met at
+scheduling time, the pod will not be scheduled onto the node.
+If the affinity requirements specified by this field cease to be met
+at some point during pod execution (e.g. due to an update), the system
+may or may not try to eventually evict the pod from its node.<br/>
         </td>
         <td>false</td>
       </tr></tbody>
@@ -7951,7 +8357,8 @@ Describes node affinity scheduling rules for the pod.
 
 
 
-An empty preferred scheduling term matches all objects with implicit weight 0 (i.e. it's a no-op). A null preferred scheduling term matches no objects (i.e. is also a no-op).
+An empty preferred scheduling term matches all objects with implicit weight 0
+(i.e. it's a no-op). A null preferred scheduling term matches no objects (i.e. is also a no-op).
 
 <table>
     <thead>
@@ -8021,7 +8428,8 @@ A node selector term, associated with the corresponding weight.
 
 
 
-A node selector requirement is a selector that contains values, a key, and an operator that relates the key and values.
+A node selector requirement is a selector that contains values, a key, and an operator
+that relates the key and values.
 
 <table>
     <thead>
@@ -8043,14 +8451,19 @@ A node selector requirement is a selector that contains values, a key, and an op
         <td><b>operator</b></td>
         <td>string</td>
         <td>
-          Represents a key's relationship to a set of values. Valid operators are In, NotIn, Exists, DoesNotExist. Gt, and Lt.<br/>
+          Represents a key's relationship to a set of values.
+Valid operators are In, NotIn, Exists, DoesNotExist. Gt, and Lt.<br/>
         </td>
         <td>true</td>
       </tr><tr>
         <td><b>values</b></td>
         <td>[]string</td>
         <td>
-          An array of string values. If the operator is In or NotIn, the values array must be non-empty. If the operator is Exists or DoesNotExist, the values array must be empty. If the operator is Gt or Lt, the values array must have a single element, which will be interpreted as an integer. This array is replaced during a strategic merge patch.<br/>
+          An array of string values. If the operator is In or NotIn,
+the values array must be non-empty. If the operator is Exists or DoesNotExist,
+the values array must be empty. If the operator is Gt or Lt, the values
+array must have a single element, which will be interpreted as an integer.
+This array is replaced during a strategic merge patch.<br/>
         </td>
         <td>false</td>
       </tr></tbody>
@@ -8062,7 +8475,8 @@ A node selector requirement is a selector that contains values, a key, and an op
 
 
 
-A node selector requirement is a selector that contains values, a key, and an operator that relates the key and values.
+A node selector requirement is a selector that contains values, a key, and an operator
+that relates the key and values.
 
 <table>
     <thead>
@@ -8084,14 +8498,19 @@ A node selector requirement is a selector that contains values, a key, and an op
         <td><b>operator</b></td>
         <td>string</td>
         <td>
-          Represents a key's relationship to a set of values. Valid operators are In, NotIn, Exists, DoesNotExist. Gt, and Lt.<br/>
+          Represents a key's relationship to a set of values.
+Valid operators are In, NotIn, Exists, DoesNotExist. Gt, and Lt.<br/>
         </td>
         <td>true</td>
       </tr><tr>
         <td><b>values</b></td>
         <td>[]string</td>
         <td>
-          An array of string values. If the operator is In or NotIn, the values array must be non-empty. If the operator is Exists or DoesNotExist, the values array must be empty. If the operator is Gt or Lt, the values array must have a single element, which will be interpreted as an integer. This array is replaced during a strategic merge patch.<br/>
+          An array of string values. If the operator is In or NotIn,
+the values array must be non-empty. If the operator is Exists or DoesNotExist,
+the values array must be empty. If the operator is Gt or Lt, the values
+array must have a single element, which will be interpreted as an integer.
+This array is replaced during a strategic merge patch.<br/>
         </td>
         <td>false</td>
       </tr></tbody>
@@ -8103,7 +8522,11 @@ A node selector requirement is a selector that contains values, a key, and an op
 
 
 
-If the affinity requirements specified by this field are not met at scheduling time, the pod will not be scheduled onto the node. If the affinity requirements specified by this field cease to be met at some point during pod execution (e.g. due to an update), the system may or may not try to eventually evict the pod from its node.
+If the affinity requirements specified by this field are not met at
+scheduling time, the pod will not be scheduled onto the node.
+If the affinity requirements specified by this field cease to be met
+at some point during pod execution (e.g. due to an update), the system
+may or may not try to eventually evict the pod from its node.
 
 <table>
     <thead>
@@ -8130,7 +8553,9 @@ If the affinity requirements specified by this field are not met at scheduling t
 
 
 
-A null or empty node selector term matches no objects. The requirements of them are ANDed. The TopologySelectorTerm type implements a subset of the NodeSelectorTerm.
+A null or empty node selector term matches no objects. The requirements of
+them are ANDed.
+The TopologySelectorTerm type implements a subset of the NodeSelectorTerm.
 
 <table>
     <thead>
@@ -8164,7 +8589,8 @@ A null or empty node selector term matches no objects. The requirements of them 
 
 
 
-A node selector requirement is a selector that contains values, a key, and an operator that relates the key and values.
+A node selector requirement is a selector that contains values, a key, and an operator
+that relates the key and values.
 
 <table>
     <thead>
@@ -8186,14 +8612,19 @@ A node selector requirement is a selector that contains values, a key, and an op
         <td><b>operator</b></td>
         <td>string</td>
         <td>
-          Represents a key's relationship to a set of values. Valid operators are In, NotIn, Exists, DoesNotExist. Gt, and Lt.<br/>
+          Represents a key's relationship to a set of values.
+Valid operators are In, NotIn, Exists, DoesNotExist. Gt, and Lt.<br/>
         </td>
         <td>true</td>
       </tr><tr>
         <td><b>values</b></td>
         <td>[]string</td>
         <td>
-          An array of string values. If the operator is In or NotIn, the values array must be non-empty. If the operator is Exists or DoesNotExist, the values array must be empty. If the operator is Gt or Lt, the values array must have a single element, which will be interpreted as an integer. This array is replaced during a strategic merge patch.<br/>
+          An array of string values. If the operator is In or NotIn,
+the values array must be non-empty. If the operator is Exists or DoesNotExist,
+the values array must be empty. If the operator is Gt or Lt, the values
+array must have a single element, which will be interpreted as an integer.
+This array is replaced during a strategic merge patch.<br/>
         </td>
         <td>false</td>
       </tr></tbody>
@@ -8205,7 +8636,8 @@ A node selector requirement is a selector that contains values, a key, and an op
 
 
 
-A node selector requirement is a selector that contains values, a key, and an operator that relates the key and values.
+A node selector requirement is a selector that contains values, a key, and an operator
+that relates the key and values.
 
 <table>
     <thead>
@@ -8227,14 +8659,19 @@ A node selector requirement is a selector that contains values, a key, and an op
         <td><b>operator</b></td>
         <td>string</td>
         <td>
-          Represents a key's relationship to a set of values. Valid operators are In, NotIn, Exists, DoesNotExist. Gt, and Lt.<br/>
+          Represents a key's relationship to a set of values.
+Valid operators are In, NotIn, Exists, DoesNotExist. Gt, and Lt.<br/>
         </td>
         <td>true</td>
       </tr><tr>
         <td><b>values</b></td>
         <td>[]string</td>
         <td>
-          An array of string values. If the operator is In or NotIn, the values array must be non-empty. If the operator is Exists or DoesNotExist, the values array must be empty. If the operator is Gt or Lt, the values array must have a single element, which will be interpreted as an integer. This array is replaced during a strategic merge patch.<br/>
+          An array of string values. If the operator is In or NotIn,
+the values array must be non-empty. If the operator is Exists or DoesNotExist,
+the values array must be empty. If the operator is Gt or Lt, the values
+array must have a single element, which will be interpreted as an integer.
+This array is replaced during a strategic merge patch.<br/>
         </td>
         <td>false</td>
       </tr></tbody>
@@ -8261,14 +8698,28 @@ Describes pod affinity scheduling rules (e.g. co-locate this pod in the same nod
         <td><b><a href="#grafanaspecdeploymentaffinitypodaffinitypreferredduringschedulingignoredduringexecutionindex">preferredDuringSchedulingIgnoredDuringExecution</a></b></td>
         <td>[]object</td>
         <td>
-          The scheduler will prefer to schedule pods to nodes that satisfy the affinity expressions specified by this field, but it may choose a node that violates one or more of the expressions. The node that is most preferred is the one with the greatest sum of weights, i.e. for each node that meets all of the scheduling requirements (resource request, requiredDuringScheduling affinity expressions, etc.), compute a sum by iterating through the elements of this field and adding "weight" to the sum if the node has pods which matches the corresponding podAffinityTerm; the node(s) with the highest sum are the most preferred.<br/>
+          The scheduler will prefer to schedule pods to nodes that satisfy
+the affinity expressions specified by this field, but it may choose
+a node that violates one or more of the expressions. The node that is
+most preferred is the one with the greatest sum of weights, i.e.
+for each node that meets all of the scheduling requirements (resource
+request, requiredDuringScheduling affinity expressions, etc.),
+compute a sum by iterating through the elements of this field and adding
+"weight" to the sum if the node has pods which matches the corresponding podAffinityTerm; the
+node(s) with the highest sum are the most preferred.<br/>
         </td>
         <td>false</td>
       </tr><tr>
         <td><b><a href="#grafanaspecdeploymentaffinitypodaffinityrequiredduringschedulingignoredduringexecutionindex">requiredDuringSchedulingIgnoredDuringExecution</a></b></td>
         <td>[]object</td>
         <td>
-          If the affinity requirements specified by this field are not met at scheduling time, the pod will not be scheduled onto the node. If the affinity requirements specified by this field cease to be met at some point during pod execution (e.g. due to a pod label update), the system may or may not try to eventually evict the pod from its node. When there are multiple elements, the lists of nodes corresponding to each podAffinityTerm are intersected, i.e. all terms must be satisfied.<br/>
+          If the affinity requirements specified by this field are not met at
+scheduling time, the pod will not be scheduled onto the node.
+If the affinity requirements specified by this field cease to be met
+at some point during pod execution (e.g. due to a pod label update), the
+system may or may not try to eventually evict the pod from its node.
+When there are multiple elements, the lists of nodes corresponding to each
+podAffinityTerm are intersected, i.e. all terms must be satisfied.<br/>
         </td>
         <td>false</td>
       </tr></tbody>
@@ -8302,7 +8753,8 @@ The weights of all of the matched WeightedPodAffinityTerm fields are added per-n
         <td><b>weight</b></td>
         <td>integer</td>
         <td>
-          weight associated with matching the corresponding podAffinityTerm, in the range 1-100.<br/>
+          weight associated with matching the corresponding podAffinityTerm,
+in the range 1-100.<br/>
           <br/>
             <i>Format</i>: int32<br/>
         </td>
@@ -8331,7 +8783,11 @@ Required. A pod affinity term, associated with the corresponding weight.
         <td><b>topologyKey</b></td>
         <td>string</td>
         <td>
-          This pod should be co-located (affinity) or not co-located (anti-affinity) with the pods matching the labelSelector in the specified namespaces, where co-located is defined as running on a node whose value of the label with key topologyKey matches that of any node on which any of the selected pods is running. Empty topologyKey is not allowed.<br/>
+          This pod should be co-located (affinity) or not co-located (anti-affinity) with the pods matching
+the labelSelector in the specified namespaces, where co-located is defined as running on a node
+whose value of the label with key topologyKey matches that of any node on which any of the
+selected pods is running.
+Empty topologyKey is not allowed.<br/>
         </td>
         <td>true</td>
       </tr><tr>
@@ -8345,14 +8801,21 @@ Required. A pod affinity term, associated with the corresponding weight.
         <td><b><a href="#grafanaspecdeploymentaffinitypodaffinitypreferredduringschedulingignoredduringexecutionindexpodaffinitytermnamespaceselector">namespaceSelector</a></b></td>
         <td>object</td>
         <td>
-          A label query over the set of namespaces that the term applies to. The term is applied to the union of the namespaces selected by this field and the ones listed in the namespaces field. null selector and null or empty namespaces list means "this pod's namespace". An empty selector ({}) matches all namespaces.<br/>
+          A label query over the set of namespaces that the term applies to.
+The term is applied to the union of the namespaces selected by this field
+and the ones listed in the namespaces field.
+null selector and null or empty namespaces list means "this pod's namespace".
+An empty selector ({}) matches all namespaces.<br/>
         </td>
         <td>false</td>
       </tr><tr>
         <td><b>namespaces</b></td>
         <td>[]string</td>
         <td>
-          namespaces specifies a static list of namespace names that the term applies to. The term is applied to the union of the namespaces listed in this field and the ones selected by namespaceSelector. null or empty namespaces list and null namespaceSelector means "this pod's namespace".<br/>
+          namespaces specifies a static list of namespace names that the term applies to.
+The term is applied to the union of the namespaces listed in this field
+and the ones selected by namespaceSelector.
+null or empty namespaces list and null namespaceSelector means "this pod's namespace".<br/>
         </td>
         <td>false</td>
       </tr></tbody>
@@ -8386,7 +8849,9 @@ A label query over a set of resources, in this case pods.
         <td><b>matchLabels</b></td>
         <td>map[string]string</td>
         <td>
-          matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels map is equivalent to an element of matchExpressions, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.<br/>
+          matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels
+map is equivalent to an element of matchExpressions, whose key field is "key", the
+operator is "In", and the values array contains only "value". The requirements are ANDed.<br/>
         </td>
         <td>false</td>
       </tr></tbody>
@@ -8398,7 +8863,8 @@ A label query over a set of resources, in this case pods.
 
 
 
-A label selector requirement is a selector that contains values, a key, and an operator that relates the key and values.
+A label selector requirement is a selector that contains values, a key, and an operator that
+relates the key and values.
 
 <table>
     <thead>
@@ -8420,14 +8886,18 @@ A label selector requirement is a selector that contains values, a key, and an o
         <td><b>operator</b></td>
         <td>string</td>
         <td>
-          operator represents a key's relationship to a set of values. Valid operators are In, NotIn, Exists and DoesNotExist.<br/>
+          operator represents a key's relationship to a set of values.
+Valid operators are In, NotIn, Exists and DoesNotExist.<br/>
         </td>
         <td>true</td>
       </tr><tr>
         <td><b>values</b></td>
         <td>[]string</td>
         <td>
-          values is an array of string values. If the operator is In or NotIn, the values array must be non-empty. If the operator is Exists or DoesNotExist, the values array must be empty. This array is replaced during a strategic merge patch.<br/>
+          values is an array of string values. If the operator is In or NotIn,
+the values array must be non-empty. If the operator is Exists or DoesNotExist,
+the values array must be empty. This array is replaced during a strategic
+merge patch.<br/>
         </td>
         <td>false</td>
       </tr></tbody>
@@ -8439,7 +8909,11 @@ A label selector requirement is a selector that contains values, a key, and an o
 
 
 
-A label query over the set of namespaces that the term applies to. The term is applied to the union of the namespaces selected by this field and the ones listed in the namespaces field. null selector and null or empty namespaces list means "this pod's namespace". An empty selector ({}) matches all namespaces.
+A label query over the set of namespaces that the term applies to.
+The term is applied to the union of the namespaces selected by this field
+and the ones listed in the namespaces field.
+null selector and null or empty namespaces list means "this pod's namespace".
+An empty selector ({}) matches all namespaces.
 
 <table>
     <thead>
@@ -8461,7 +8935,9 @@ A label query over the set of namespaces that the term applies to. The term is a
         <td><b>matchLabels</b></td>
         <td>map[string]string</td>
         <td>
-          matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels map is equivalent to an element of matchExpressions, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.<br/>
+          matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels
+map is equivalent to an element of matchExpressions, whose key field is "key", the
+operator is "In", and the values array contains only "value". The requirements are ANDed.<br/>
         </td>
         <td>false</td>
       </tr></tbody>
@@ -8473,7 +8949,8 @@ A label query over the set of namespaces that the term applies to. The term is a
 
 
 
-A label selector requirement is a selector that contains values, a key, and an operator that relates the key and values.
+A label selector requirement is a selector that contains values, a key, and an operator that
+relates the key and values.
 
 <table>
     <thead>
@@ -8495,14 +8972,18 @@ A label selector requirement is a selector that contains values, a key, and an o
         <td><b>operator</b></td>
         <td>string</td>
         <td>
-          operator represents a key's relationship to a set of values. Valid operators are In, NotIn, Exists and DoesNotExist.<br/>
+          operator represents a key's relationship to a set of values.
+Valid operators are In, NotIn, Exists and DoesNotExist.<br/>
         </td>
         <td>true</td>
       </tr><tr>
         <td><b>values</b></td>
         <td>[]string</td>
         <td>
-          values is an array of string values. If the operator is In or NotIn, the values array must be non-empty. If the operator is Exists or DoesNotExist, the values array must be empty. This array is replaced during a strategic merge patch.<br/>
+          values is an array of string values. If the operator is In or NotIn,
+the values array must be non-empty. If the operator is Exists or DoesNotExist,
+the values array must be empty. This array is replaced during a strategic
+merge patch.<br/>
         </td>
         <td>false</td>
       </tr></tbody>
@@ -8514,7 +8995,12 @@ A label selector requirement is a selector that contains values, a key, and an o
 
 
 
-Defines a set of pods (namely those matching the labelSelector relative to the given namespace(s)) that this pod should be co-located (affinity) or not co-located (anti-affinity) with, where co-located is defined as running on a node whose value of the label with key <topologyKey> matches that of any node on which a pod of the set of pods is running
+Defines a set of pods (namely those matching the labelSelector
+relative to the given namespace(s)) that this pod should be
+co-located (affinity) or not co-located (anti-affinity) with,
+where co-located is defined as running on a node whose value of
+the label with key <topologyKey> matches that of any node on which
+a pod of the set of pods is running
 
 <table>
     <thead>
@@ -8529,7 +9015,11 @@ Defines a set of pods (namely those matching the labelSelector relative to the g
         <td><b>topologyKey</b></td>
         <td>string</td>
         <td>
-          This pod should be co-located (affinity) or not co-located (anti-affinity) with the pods matching the labelSelector in the specified namespaces, where co-located is defined as running on a node whose value of the label with key topologyKey matches that of any node on which any of the selected pods is running. Empty topologyKey is not allowed.<br/>
+          This pod should be co-located (affinity) or not co-located (anti-affinity) with the pods matching
+the labelSelector in the specified namespaces, where co-located is defined as running on a node
+whose value of the label with key topologyKey matches that of any node on which any of the
+selected pods is running.
+Empty topologyKey is not allowed.<br/>
         </td>
         <td>true</td>
       </tr><tr>
@@ -8543,14 +9033,21 @@ Defines a set of pods (namely those matching the labelSelector relative to the g
         <td><b><a href="#grafanaspecdeploymentaffinitypodaffinityrequiredduringschedulingignoredduringexecutionindexnamespaceselector">namespaceSelector</a></b></td>
         <td>object</td>
         <td>
-          A label query over the set of namespaces that the term applies to. The term is applied to the union of the namespaces selected by this field and the ones listed in the namespaces field. null selector and null or empty namespaces list means "this pod's namespace". An empty selector ({}) matches all namespaces.<br/>
+          A label query over the set of namespaces that the term applies to.
+The term is applied to the union of the namespaces selected by this field
+and the ones listed in the namespaces field.
+null selector and null or empty namespaces list means "this pod's namespace".
+An empty selector ({}) matches all namespaces.<br/>
         </td>
         <td>false</td>
       </tr><tr>
         <td><b>namespaces</b></td>
         <td>[]string</td>
         <td>
-          namespaces specifies a static list of namespace names that the term applies to. The term is applied to the union of the namespaces listed in this field and the ones selected by namespaceSelector. null or empty namespaces list and null namespaceSelector means "this pod's namespace".<br/>
+          namespaces specifies a static list of namespace names that the term applies to.
+The term is applied to the union of the namespaces listed in this field
+and the ones selected by namespaceSelector.
+null or empty namespaces list and null namespaceSelector means "this pod's namespace".<br/>
         </td>
         <td>false</td>
       </tr></tbody>
@@ -8584,7 +9081,9 @@ A label query over a set of resources, in this case pods.
         <td><b>matchLabels</b></td>
         <td>map[string]string</td>
         <td>
-          matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels map is equivalent to an element of matchExpressions, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.<br/>
+          matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels
+map is equivalent to an element of matchExpressions, whose key field is "key", the
+operator is "In", and the values array contains only "value". The requirements are ANDed.<br/>
         </td>
         <td>false</td>
       </tr></tbody>
@@ -8596,7 +9095,8 @@ A label query over a set of resources, in this case pods.
 
 
 
-A label selector requirement is a selector that contains values, a key, and an operator that relates the key and values.
+A label selector requirement is a selector that contains values, a key, and an operator that
+relates the key and values.
 
 <table>
     <thead>
@@ -8618,14 +9118,18 @@ A label selector requirement is a selector that contains values, a key, and an o
         <td><b>operator</b></td>
         <td>string</td>
         <td>
-          operator represents a key's relationship to a set of values. Valid operators are In, NotIn, Exists and DoesNotExist.<br/>
+          operator represents a key's relationship to a set of values.
+Valid operators are In, NotIn, Exists and DoesNotExist.<br/>
         </td>
         <td>true</td>
       </tr><tr>
         <td><b>values</b></td>
         <td>[]string</td>
         <td>
-          values is an array of string values. If the operator is In or NotIn, the values array must be non-empty. If the operator is Exists or DoesNotExist, the values array must be empty. This array is replaced during a strategic merge patch.<br/>
+          values is an array of string values. If the operator is In or NotIn,
+the values array must be non-empty. If the operator is Exists or DoesNotExist,
+the values array must be empty. This array is replaced during a strategic
+merge patch.<br/>
         </td>
         <td>false</td>
       </tr></tbody>
@@ -8637,7 +9141,11 @@ A label selector requirement is a selector that contains values, a key, and an o
 
 
 
-A label query over the set of namespaces that the term applies to. The term is applied to the union of the namespaces selected by this field and the ones listed in the namespaces field. null selector and null or empty namespaces list means "this pod's namespace". An empty selector ({}) matches all namespaces.
+A label query over the set of namespaces that the term applies to.
+The term is applied to the union of the namespaces selected by this field
+and the ones listed in the namespaces field.
+null selector and null or empty namespaces list means "this pod's namespace".
+An empty selector ({}) matches all namespaces.
 
 <table>
     <thead>
@@ -8659,7 +9167,9 @@ A label query over the set of namespaces that the term applies to. The term is a
         <td><b>matchLabels</b></td>
         <td>map[string]string</td>
         <td>
-          matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels map is equivalent to an element of matchExpressions, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.<br/>
+          matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels
+map is equivalent to an element of matchExpressions, whose key field is "key", the
+operator is "In", and the values array contains only "value". The requirements are ANDed.<br/>
         </td>
         <td>false</td>
       </tr></tbody>
@@ -8671,7 +9181,8 @@ A label query over the set of namespaces that the term applies to. The term is a
 
 
 
-A label selector requirement is a selector that contains values, a key, and an operator that relates the key and values.
+A label selector requirement is a selector that contains values, a key, and an operator that
+relates the key and values.
 
 <table>
     <thead>
@@ -8693,14 +9204,18 @@ A label selector requirement is a selector that contains values, a key, and an o
         <td><b>operator</b></td>
         <td>string</td>
         <td>
-          operator represents a key's relationship to a set of values. Valid operators are In, NotIn, Exists and DoesNotExist.<br/>
+          operator represents a key's relationship to a set of values.
+Valid operators are In, NotIn, Exists and DoesNotExist.<br/>
         </td>
         <td>true</td>
       </tr><tr>
         <td><b>values</b></td>
         <td>[]string</td>
         <td>
-          values is an array of string values. If the operator is In or NotIn, the values array must be non-empty. If the operator is Exists or DoesNotExist, the values array must be empty. This array is replaced during a strategic merge patch.<br/>
+          values is an array of string values. If the operator is In or NotIn,
+the values array must be non-empty. If the operator is Exists or DoesNotExist,
+the values array must be empty. This array is replaced during a strategic
+merge patch.<br/>
         </td>
         <td>false</td>
       </tr></tbody>
@@ -8727,14 +9242,28 @@ Describes pod anti-affinity scheduling rules (e.g. avoid putting this pod in the
         <td><b><a href="#grafanaspecdeploymentaffinitypodantiaffinitypreferredduringschedulingignoredduringexecutionindex">preferredDuringSchedulingIgnoredDuringExecution</a></b></td>
         <td>[]object</td>
         <td>
-          The scheduler will prefer to schedule pods to nodes that satisfy the anti-affinity expressions specified by this field, but it may choose a node that violates one or more of the expressions. The node that is most preferred is the one with the greatest sum of weights, i.e. for each node that meets all of the scheduling requirements (resource request, requiredDuringScheduling anti-affinity expressions, etc.), compute a sum by iterating through the elements of this field and adding "weight" to the sum if the node has pods which matches the corresponding podAffinityTerm; the node(s) with the highest sum are the most preferred.<br/>
+          The scheduler will prefer to schedule pods to nodes that satisfy
+the anti-affinity expressions specified by this field, but it may choose
+a node that violates one or more of the expressions. The node that is
+most preferred is the one with the greatest sum of weights, i.e.
+for each node that meets all of the scheduling requirements (resource
+request, requiredDuringScheduling anti-affinity expressions, etc.),
+compute a sum by iterating through the elements of this field and adding
+"weight" to the sum if the node has pods which matches the corresponding podAffinityTerm; the
+node(s) with the highest sum are the most preferred.<br/>
         </td>
         <td>false</td>
       </tr><tr>
         <td><b><a href="#grafanaspecdeploymentaffinitypodantiaffinityrequiredduringschedulingignoredduringexecutionindex">requiredDuringSchedulingIgnoredDuringExecution</a></b></td>
         <td>[]object</td>
         <td>
-          If the anti-affinity requirements specified by this field are not met at scheduling time, the pod will not be scheduled onto the node. If the anti-affinity requirements specified by this field cease to be met at some point during pod execution (e.g. due to a pod label update), the system may or may not try to eventually evict the pod from its node. When there are multiple elements, the lists of nodes corresponding to each podAffinityTerm are intersected, i.e. all terms must be satisfied.<br/>
+          If the anti-affinity requirements specified by this field are not met at
+scheduling time, the pod will not be scheduled onto the node.
+If the anti-affinity requirements specified by this field cease to be met
+at some point during pod execution (e.g. due to a pod label update), the
+system may or may not try to eventually evict the pod from its node.
+When there are multiple elements, the lists of nodes corresponding to each
+podAffinityTerm are intersected, i.e. all terms must be satisfied.<br/>
         </td>
         <td>false</td>
       </tr></tbody>
@@ -8768,7 +9297,8 @@ The weights of all of the matched WeightedPodAffinityTerm fields are added per-n
         <td><b>weight</b></td>
         <td>integer</td>
         <td>
-          weight associated with matching the corresponding podAffinityTerm, in the range 1-100.<br/>
+          weight associated with matching the corresponding podAffinityTerm,
+in the range 1-100.<br/>
           <br/>
             <i>Format</i>: int32<br/>
         </td>
@@ -8797,7 +9327,11 @@ Required. A pod affinity term, associated with the corresponding weight.
         <td><b>topologyKey</b></td>
         <td>string</td>
         <td>
-          This pod should be co-located (affinity) or not co-located (anti-affinity) with the pods matching the labelSelector in the specified namespaces, where co-located is defined as running on a node whose value of the label with key topologyKey matches that of any node on which any of the selected pods is running. Empty topologyKey is not allowed.<br/>
+          This pod should be co-located (affinity) or not co-located (anti-affinity) with the pods matching
+the labelSelector in the specified namespaces, where co-located is defined as running on a node
+whose value of the label with key topologyKey matches that of any node on which any of the
+selected pods is running.
+Empty topologyKey is not allowed.<br/>
         </td>
         <td>true</td>
       </tr><tr>
@@ -8811,14 +9345,21 @@ Required. A pod affinity term, associated with the corresponding weight.
         <td><b><a href="#grafanaspecdeploymentaffinitypodantiaffinitypreferredduringschedulingignoredduringexecutionindexpodaffinitytermnamespaceselector">namespaceSelector</a></b></td>
         <td>object</td>
         <td>
-          A label query over the set of namespaces that the term applies to. The term is applied to the union of the namespaces selected by this field and the ones listed in the namespaces field. null selector and null or empty namespaces list means "this pod's namespace". An empty selector ({}) matches all namespaces.<br/>
+          A label query over the set of namespaces that the term applies to.
+The term is applied to the union of the namespaces selected by this field
+and the ones listed in the namespaces field.
+null selector and null or empty namespaces list means "this pod's namespace".
+An empty selector ({}) matches all namespaces.<br/>
         </td>
         <td>false</td>
       </tr><tr>
         <td><b>namespaces</b></td>
         <td>[]string</td>
         <td>
-          namespaces specifies a static list of namespace names that the term applies to. The term is applied to the union of the namespaces listed in this field and the ones selected by namespaceSelector. null or empty namespaces list and null namespaceSelector means "this pod's namespace".<br/>
+          namespaces specifies a static list of namespace names that the term applies to.
+The term is applied to the union of the namespaces listed in this field
+and the ones selected by namespaceSelector.
+null or empty namespaces list and null namespaceSelector means "this pod's namespace".<br/>
         </td>
         <td>false</td>
       </tr></tbody>
@@ -8852,7 +9393,9 @@ A label query over a set of resources, in this case pods.
         <td><b>matchLabels</b></td>
         <td>map[string]string</td>
         <td>
-          matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels map is equivalent to an element of matchExpressions, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.<br/>
+          matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels
+map is equivalent to an element of matchExpressions, whose key field is "key", the
+operator is "In", and the values array contains only "value". The requirements are ANDed.<br/>
         </td>
         <td>false</td>
       </tr></tbody>
@@ -8864,7 +9407,8 @@ A label query over a set of resources, in this case pods.
 
 
 
-A label selector requirement is a selector that contains values, a key, and an operator that relates the key and values.
+A label selector requirement is a selector that contains values, a key, and an operator that
+relates the key and values.
 
 <table>
     <thead>
@@ -8886,14 +9430,18 @@ A label selector requirement is a selector that contains values, a key, and an o
         <td><b>operator</b></td>
         <td>string</td>
         <td>
-          operator represents a key's relationship to a set of values. Valid operators are In, NotIn, Exists and DoesNotExist.<br/>
+          operator represents a key's relationship to a set of values.
+Valid operators are In, NotIn, Exists and DoesNotExist.<br/>
         </td>
         <td>true</td>
       </tr><tr>
         <td><b>values</b></td>
         <td>[]string</td>
         <td>
-          values is an array of string values. If the operator is In or NotIn, the values array must be non-empty. If the operator is Exists or DoesNotExist, the values array must be empty. This array is replaced during a strategic merge patch.<br/>
+          values is an array of string values. If the operator is In or NotIn,
+the values array must be non-empty. If the operator is Exists or DoesNotExist,
+the values array must be empty. This array is replaced during a strategic
+merge patch.<br/>
         </td>
         <td>false</td>
       </tr></tbody>
@@ -8905,7 +9453,11 @@ A label selector requirement is a selector that contains values, a key, and an o
 
 
 
-A label query over the set of namespaces that the term applies to. The term is applied to the union of the namespaces selected by this field and the ones listed in the namespaces field. null selector and null or empty namespaces list means "this pod's namespace". An empty selector ({}) matches all namespaces.
+A label query over the set of namespaces that the term applies to.
+The term is applied to the union of the namespaces selected by this field
+and the ones listed in the namespaces field.
+null selector and null or empty namespaces list means "this pod's namespace".
+An empty selector ({}) matches all namespaces.
 
 <table>
     <thead>
@@ -8927,7 +9479,9 @@ A label query over the set of namespaces that the term applies to. The term is a
         <td><b>matchLabels</b></td>
         <td>map[string]string</td>
         <td>
-          matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels map is equivalent to an element of matchExpressions, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.<br/>
+          matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels
+map is equivalent to an element of matchExpressions, whose key field is "key", the
+operator is "In", and the values array contains only "value". The requirements are ANDed.<br/>
         </td>
         <td>false</td>
       </tr></tbody>
@@ -8939,7 +9493,8 @@ A label query over the set of namespaces that the term applies to. The term is a
 
 
 
-A label selector requirement is a selector that contains values, a key, and an operator that relates the key and values.
+A label selector requirement is a selector that contains values, a key, and an operator that
+relates the key and values.
 
 <table>
     <thead>
@@ -8961,14 +9516,18 @@ A label selector requirement is a selector that contains values, a key, and an o
         <td><b>operator</b></td>
         <td>string</td>
         <td>
-          operator represents a key's relationship to a set of values. Valid operators are In, NotIn, Exists and DoesNotExist.<br/>
+          operator represents a key's relationship to a set of values.
+Valid operators are In, NotIn, Exists and DoesNotExist.<br/>
         </td>
         <td>true</td>
       </tr><tr>
         <td><b>values</b></td>
         <td>[]string</td>
         <td>
-          values is an array of string values. If the operator is In or NotIn, the values array must be non-empty. If the operator is Exists or DoesNotExist, the values array must be empty. This array is replaced during a strategic merge patch.<br/>
+          values is an array of string values. If the operator is In or NotIn,
+the values array must be non-empty. If the operator is Exists or DoesNotExist,
+the values array must be empty. This array is replaced during a strategic
+merge patch.<br/>
         </td>
         <td>false</td>
       </tr></tbody>
@@ -8980,7 +9539,12 @@ A label selector requirement is a selector that contains values, a key, and an o
 
 
 
-Defines a set of pods (namely those matching the labelSelector relative to the given namespace(s)) that this pod should be co-located (affinity) or not co-located (anti-affinity) with, where co-located is defined as running on a node whose value of the label with key <topologyKey> matches that of any node on which a pod of the set of pods is running
+Defines a set of pods (namely those matching the labelSelector
+relative to the given namespace(s)) that this pod should be
+co-located (affinity) or not co-located (anti-affinity) with,
+where co-located is defined as running on a node whose value of
+the label with key <topologyKey> matches that of any node on which
+a pod of the set of pods is running
 
 <table>
     <thead>
@@ -8995,7 +9559,11 @@ Defines a set of pods (namely those matching the labelSelector relative to the g
         <td><b>topologyKey</b></td>
         <td>string</td>
         <td>
-          This pod should be co-located (affinity) or not co-located (anti-affinity) with the pods matching the labelSelector in the specified namespaces, where co-located is defined as running on a node whose value of the label with key topologyKey matches that of any node on which any of the selected pods is running. Empty topologyKey is not allowed.<br/>
+          This pod should be co-located (affinity) or not co-located (anti-affinity) with the pods matching
+the labelSelector in the specified namespaces, where co-located is defined as running on a node
+whose value of the label with key topologyKey matches that of any node on which any of the
+selected pods is running.
+Empty topologyKey is not allowed.<br/>
         </td>
         <td>true</td>
       </tr><tr>
@@ -9009,14 +9577,21 @@ Defines a set of pods (namely those matching the labelSelector relative to the g
         <td><b><a href="#grafanaspecdeploymentaffinitypodantiaffinityrequiredduringschedulingignoredduringexecutionindexnamespaceselector">namespaceSelector</a></b></td>
         <td>object</td>
         <td>
-          A label query over the set of namespaces that the term applies to. The term is applied to the union of the namespaces selected by this field and the ones listed in the namespaces field. null selector and null or empty namespaces list means "this pod's namespace". An empty selector ({}) matches all namespaces.<br/>
+          A label query over the set of namespaces that the term applies to.
+The term is applied to the union of the namespaces selected by this field
+and the ones listed in the namespaces field.
+null selector and null or empty namespaces list means "this pod's namespace".
+An empty selector ({}) matches all namespaces.<br/>
         </td>
         <td>false</td>
       </tr><tr>
         <td><b>namespaces</b></td>
         <td>[]string</td>
         <td>
-          namespaces specifies a static list of namespace names that the term applies to. The term is applied to the union of the namespaces listed in this field and the ones selected by namespaceSelector. null or empty namespaces list and null namespaceSelector means "this pod's namespace".<br/>
+          namespaces specifies a static list of namespace names that the term applies to.
+The term is applied to the union of the namespaces listed in this field
+and the ones selected by namespaceSelector.
+null or empty namespaces list and null namespaceSelector means "this pod's namespace".<br/>
         </td>
         <td>false</td>
       </tr></tbody>
@@ -9050,7 +9625,9 @@ A label query over a set of resources, in this case pods.
         <td><b>matchLabels</b></td>
         <td>map[string]string</td>
         <td>
-          matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels map is equivalent to an element of matchExpressions, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.<br/>
+          matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels
+map is equivalent to an element of matchExpressions, whose key field is "key", the
+operator is "In", and the values array contains only "value". The requirements are ANDed.<br/>
         </td>
         <td>false</td>
       </tr></tbody>
@@ -9062,7 +9639,8 @@ A label query over a set of resources, in this case pods.
 
 
 
-A label selector requirement is a selector that contains values, a key, and an operator that relates the key and values.
+A label selector requirement is a selector that contains values, a key, and an operator that
+relates the key and values.
 
 <table>
     <thead>
@@ -9084,14 +9662,18 @@ A label selector requirement is a selector that contains values, a key, and an o
         <td><b>operator</b></td>
         <td>string</td>
         <td>
-          operator represents a key's relationship to a set of values. Valid operators are In, NotIn, Exists and DoesNotExist.<br/>
+          operator represents a key's relationship to a set of values.
+Valid operators are In, NotIn, Exists and DoesNotExist.<br/>
         </td>
         <td>true</td>
       </tr><tr>
         <td><b>values</b></td>
         <td>[]string</td>
         <td>
-          values is an array of string values. If the operator is In or NotIn, the values array must be non-empty. If the operator is Exists or DoesNotExist, the values array must be empty. This array is replaced during a strategic merge patch.<br/>
+          values is an array of string values. If the operator is In or NotIn,
+the values array must be non-empty. If the operator is Exists or DoesNotExist,
+the values array must be empty. This array is replaced during a strategic
+merge patch.<br/>
         </td>
         <td>false</td>
       </tr></tbody>
@@ -9103,7 +9685,11 @@ A label selector requirement is a selector that contains values, a key, and an o
 
 
 
-A label query over the set of namespaces that the term applies to. The term is applied to the union of the namespaces selected by this field and the ones listed in the namespaces field. null selector and null or empty namespaces list means "this pod's namespace". An empty selector ({}) matches all namespaces.
+A label query over the set of namespaces that the term applies to.
+The term is applied to the union of the namespaces selected by this field
+and the ones listed in the namespaces field.
+null selector and null or empty namespaces list means "this pod's namespace".
+An empty selector ({}) matches all namespaces.
 
 <table>
     <thead>
@@ -9125,7 +9711,9 @@ A label query over the set of namespaces that the term applies to. The term is a
         <td><b>matchLabels</b></td>
         <td>map[string]string</td>
         <td>
-          matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels map is equivalent to an element of matchExpressions, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.<br/>
+          matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels
+map is equivalent to an element of matchExpressions, whose key field is "key", the
+operator is "In", and the values array contains only "value". The requirements are ANDed.<br/>
         </td>
         <td>false</td>
       </tr></tbody>
@@ -9137,7 +9725,8 @@ A label query over the set of namespaces that the term applies to. The term is a
 
 
 
-A label selector requirement is a selector that contains values, a key, and an operator that relates the key and values.
+A label selector requirement is a selector that contains values, a key, and an operator that
+relates the key and values.
 
 <table>
     <thead>
@@ -9159,14 +9748,18 @@ A label selector requirement is a selector that contains values, a key, and an o
         <td><b>operator</b></td>
         <td>string</td>
         <td>
-          operator represents a key's relationship to a set of values. Valid operators are In, NotIn, Exists and DoesNotExist.<br/>
+          operator represents a key's relationship to a set of values.
+Valid operators are In, NotIn, Exists and DoesNotExist.<br/>
         </td>
         <td>true</td>
       </tr><tr>
         <td><b>values</b></td>
         <td>[]string</td>
         <td>
-          values is an array of string values. If the operator is In or NotIn, the values array must be non-empty. If the operator is Exists or DoesNotExist, the values array must be empty. This array is replaced during a strategic merge patch.<br/>
+          values is an array of string values. If the operator is In or NotIn,
+the values array must be non-empty. If the operator is Exists or DoesNotExist,
+the values array must be empty. This array is replaced during a strategic
+merge patch.<br/>
         </td>
         <td>false</td>
       </tr></tbody>
@@ -9178,7 +9771,9 @@ A label selector requirement is a selector that contains values, a key, and an o
 
 
 
-SecurityContext holds security configuration that will be applied to a container. Some fields are present in both SecurityContext and PodSecurityContext.  When both are set, the values in SecurityContext take precedence.
+SecurityContext holds security configuration that will be applied to a container.
+Some fields are present in both SecurityContext and PodSecurityContext.  When both
+are set, the values in SecurityContext take precedence.
 
 <table>
     <thead>
@@ -9193,42 +9788,63 @@ SecurityContext holds security configuration that will be applied to a container
         <td><b>allowPrivilegeEscalation</b></td>
         <td>boolean</td>
         <td>
-          AllowPrivilegeEscalation controls whether a process can gain more privileges than its parent process. This bool directly controls if the no_new_privs flag will be set on the container process. AllowPrivilegeEscalation is true always when the container is: 1) run as Privileged 2) has CAP_SYS_ADMIN Note that this field cannot be set when spec.os.name is windows.<br/>
+          AllowPrivilegeEscalation controls whether a process can gain more
+privileges than its parent process. This bool directly controls if
+the no_new_privs flag will be set on the container process.
+AllowPrivilegeEscalation is true always when the container is:
+1) run as Privileged
+2) has CAP_SYS_ADMIN
+Note that this field cannot be set when spec.os.name is windows.<br/>
         </td>
         <td>false</td>
       </tr><tr>
         <td><b><a href="#grafanaspecdeploymentcontainersecuritycontextcapabilities">capabilities</a></b></td>
         <td>object</td>
         <td>
-          The capabilities to add/drop when running containers. Defaults to the default set of capabilities granted by the container runtime. Note that this field cannot be set when spec.os.name is windows.<br/>
+          The capabilities to add/drop when running containers.
+Defaults to the default set of capabilities granted by the container runtime.
+Note that this field cannot be set when spec.os.name is windows.<br/>
         </td>
         <td>false</td>
       </tr><tr>
         <td><b>privileged</b></td>
         <td>boolean</td>
         <td>
-          Run container in privileged mode. Processes in privileged containers are essentially equivalent to root on the host. Defaults to false. Note that this field cannot be set when spec.os.name is windows.<br/>
+          Run container in privileged mode.
+Processes in privileged containers are essentially equivalent to root on the host.
+Defaults to false.
+Note that this field cannot be set when spec.os.name is windows.<br/>
         </td>
         <td>false</td>
       </tr><tr>
         <td><b>procMount</b></td>
         <td>string</td>
         <td>
-          procMount denotes the type of proc mount to use for the containers. The default is DefaultProcMount which uses the container runtime defaults for readonly paths and masked paths. This requires the ProcMountType feature flag to be enabled. Note that this field cannot be set when spec.os.name is windows.<br/>
+          procMount denotes the type of proc mount to use for the containers.
+The default is DefaultProcMount which uses the container runtime defaults for
+readonly paths and masked paths.
+This requires the ProcMountType feature flag to be enabled.
+Note that this field cannot be set when spec.os.name is windows.<br/>
         </td>
         <td>false</td>
       </tr><tr>
         <td><b>readOnlyRootFilesystem</b></td>
         <td>boolean</td>
         <td>
-          Whether this container has a read-only root filesystem. Default is false. Note that this field cannot be set when spec.os.name is windows.<br/>
+          Whether this container has a read-only root filesystem.
+Default is false.
+Note that this field cannot be set when spec.os.name is windows.<br/>
         </td>
         <td>false</td>
       </tr><tr>
         <td><b>runAsGroup</b></td>
         <td>integer</td>
         <td>
-          The GID to run the entrypoint of the container process. Uses runtime default if unset. May also be set in PodSecurityContext.  If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence. Note that this field cannot be set when spec.os.name is windows.<br/>
+          The GID to run the entrypoint of the container process.
+Uses runtime default if unset.
+May also be set in PodSecurityContext.  If set in both SecurityContext and
+PodSecurityContext, the value specified in SecurityContext takes precedence.
+Note that this field cannot be set when spec.os.name is windows.<br/>
           <br/>
             <i>Format</i>: int64<br/>
         </td>
@@ -9237,14 +9853,23 @@ SecurityContext holds security configuration that will be applied to a container
         <td><b>runAsNonRoot</b></td>
         <td>boolean</td>
         <td>
-          Indicates that the container must run as a non-root user. If true, the Kubelet will validate the image at runtime to ensure that it does not run as UID 0 (root) and fail to start the container if it does. If unset or false, no such validation will be performed. May also be set in PodSecurityContext.  If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence.<br/>
+          Indicates that the container must run as a non-root user.
+If true, the Kubelet will validate the image at runtime to ensure that it
+does not run as UID 0 (root) and fail to start the container if it does.
+If unset or false, no such validation will be performed.
+May also be set in PodSecurityContext.  If set in both SecurityContext and
+PodSecurityContext, the value specified in SecurityContext takes precedence.<br/>
         </td>
         <td>false</td>
       </tr><tr>
         <td><b>runAsUser</b></td>
         <td>integer</td>
         <td>
-          The UID to run the entrypoint of the container process. Defaults to user specified in image metadata if unspecified. May also be set in PodSecurityContext.  If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence. Note that this field cannot be set when spec.os.name is windows.<br/>
+          The UID to run the entrypoint of the container process.
+Defaults to user specified in image metadata if unspecified.
+May also be set in PodSecurityContext.  If set in both SecurityContext and
+PodSecurityContext, the value specified in SecurityContext takes precedence.
+Note that this field cannot be set when spec.os.name is windows.<br/>
           <br/>
             <i>Format</i>: int64<br/>
         </td>
@@ -9253,21 +9878,31 @@ SecurityContext holds security configuration that will be applied to a container
         <td><b><a href="#grafanaspecdeploymentcontainersecuritycontextselinuxoptions">seLinuxOptions</a></b></td>
         <td>object</td>
         <td>
-          The SELinux context to be applied to the container. If unspecified, the container runtime will allocate a random SELinux context for each container.  May also be set in PodSecurityContext.  If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence. Note that this field cannot be set when spec.os.name is windows.<br/>
+          The SELinux context to be applied to the container.
+If unspecified, the container runtime will allocate a random SELinux context for each
+container.  May also be set in PodSecurityContext.  If set in both SecurityContext and
+PodSecurityContext, the value specified in SecurityContext takes precedence.
+Note that this field cannot be set when spec.os.name is windows.<br/>
         </td>
         <td>false</td>
       </tr><tr>
         <td><b><a href="#grafanaspecdeploymentcontainersecuritycontextseccompprofile">seccompProfile</a></b></td>
         <td>object</td>
         <td>
-          The seccomp options to use by this container. If seccomp options are provided at both the pod & container level, the container options override the pod options. Note that this field cannot be set when spec.os.name is windows.<br/>
+          The seccomp options to use by this container. If seccomp options are
+provided at both the pod & container level, the container options
+override the pod options.
+Note that this field cannot be set when spec.os.name is windows.<br/>
         </td>
         <td>false</td>
       </tr><tr>
         <td><b><a href="#grafanaspecdeploymentcontainersecuritycontextwindowsoptions">windowsOptions</a></b></td>
         <td>object</td>
         <td>
-          The Windows specific settings applied to all containers. If unspecified, the options from the PodSecurityContext will be used. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence. Note that this field cannot be set when spec.os.name is linux.<br/>
+          The Windows specific settings applied to all containers.
+If unspecified, the options from the PodSecurityContext will be used.
+If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence.
+Note that this field cannot be set when spec.os.name is linux.<br/>
         </td>
         <td>false</td>
       </tr></tbody>
@@ -9279,7 +9914,9 @@ SecurityContext holds security configuration that will be applied to a container
 
 
 
-The capabilities to add/drop when running containers. Defaults to the default set of capabilities granted by the container runtime. Note that this field cannot be set when spec.os.name is windows.
+The capabilities to add/drop when running containers.
+Defaults to the default set of capabilities granted by the container runtime.
+Note that this field cannot be set when spec.os.name is windows.
 
 <table>
     <thead>
@@ -9313,7 +9950,11 @@ The capabilities to add/drop when running containers. Defaults to the default se
 
 
 
-The SELinux context to be applied to the container. If unspecified, the container runtime will allocate a random SELinux context for each container.  May also be set in PodSecurityContext.  If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence. Note that this field cannot be set when spec.os.name is windows.
+The SELinux context to be applied to the container.
+If unspecified, the container runtime will allocate a random SELinux context for each
+container.  May also be set in PodSecurityContext.  If set in both SecurityContext and
+PodSecurityContext, the value specified in SecurityContext takes precedence.
+Note that this field cannot be set when spec.os.name is windows.
 
 <table>
     <thead>
@@ -9361,7 +10002,10 @@ The SELinux context to be applied to the container. If unspecified, the containe
 
 
 
-The seccomp options to use by this container. If seccomp options are provided at both the pod & container level, the container options override the pod options. Note that this field cannot be set when spec.os.name is windows.
+The seccomp options to use by this container. If seccomp options are
+provided at both the pod & container level, the container options
+override the pod options.
+Note that this field cannot be set when spec.os.name is windows.
 
 <table>
     <thead>
@@ -9376,15 +10020,23 @@ The seccomp options to use by this container. If seccomp options are provided at
         <td><b>type</b></td>
         <td>string</td>
         <td>
-          type indicates which kind of seccomp profile will be applied. Valid options are: 
- Localhost - a profile defined in a file on the node should be used. RuntimeDefault - the container runtime default profile should be used. Unconfined - no profile should be applied.<br/>
+          type indicates which kind of seccomp profile will be applied.
+Valid options are:
+
+
+Localhost - a profile defined in a file on the node should be used.
+RuntimeDefault - the container runtime default profile should be used.
+Unconfined - no profile should be applied.<br/>
         </td>
         <td>true</td>
       </tr><tr>
         <td><b>localhostProfile</b></td>
         <td>string</td>
         <td>
-          localhostProfile indicates a profile defined in a file on the node should be used. The profile must be preconfigured on the node to work. Must be a descending path, relative to the kubelet's configured seccomp profile location. Must only be set if type is "Localhost".<br/>
+          localhostProfile indicates a profile defined in a file on the node should be used.
+The profile must be preconfigured on the node to work.
+Must be a descending path, relative to the kubelet's configured seccomp profile location.
+Must only be set if type is "Localhost".<br/>
         </td>
         <td>false</td>
       </tr></tbody>
@@ -9396,7 +10048,10 @@ The seccomp options to use by this container. If seccomp options are provided at
 
 
 
-The Windows specific settings applied to all containers. If unspecified, the options from the PodSecurityContext will be used. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence. Note that this field cannot be set when spec.os.name is linux.
+The Windows specific settings applied to all containers.
+If unspecified, the options from the PodSecurityContext will be used.
+If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence.
+Note that this field cannot be set when spec.os.name is linux.
 
 <table>
     <thead>
@@ -9411,7 +10066,9 @@ The Windows specific settings applied to all containers. If unspecified, the opt
         <td><b>gmsaCredentialSpec</b></td>
         <td>string</td>
         <td>
-          GMSACredentialSpec is where the GMSA admission webhook (https://github.com/kubernetes-sigs/windows-gmsa) inlines the contents of the GMSA credential spec named by the GMSACredentialSpecName field.<br/>
+          GMSACredentialSpec is where the GMSA admission webhook
+(https://github.com/kubernetes-sigs/windows-gmsa) inlines the contents of the
+GMSA credential spec named by the GMSACredentialSpecName field.<br/>
         </td>
         <td>false</td>
       </tr><tr>
@@ -9425,14 +10082,23 @@ The Windows specific settings applied to all containers. If unspecified, the opt
         <td><b>hostProcess</b></td>
         <td>boolean</td>
         <td>
-          HostProcess determines if a container should be run as a 'Host Process' container. This field is alpha-level and will only be honored by components that enable the WindowsHostProcessContainers feature flag. Setting this field without the feature flag will result in errors when validating the Pod. All of a Pod's containers must have the same effective HostProcess value (it is not allowed to have a mix of HostProcess containers and non-HostProcess containers).  In addition, if HostProcess is true then HostNetwork must also be set to true.<br/>
+          HostProcess determines if a container should be run as a 'Host Process' container.
+This field is alpha-level and will only be honored by components that enable the
+WindowsHostProcessContainers feature flag. Setting this field without the feature
+flag will result in errors when validating the Pod. All of a Pod's containers must
+have the same effective HostProcess value (it is not allowed to have a mix of HostProcess
+containers and non-HostProcess containers).  In addition, if HostProcess is true
+then HostNetwork must also be set to true.<br/>
         </td>
         <td>false</td>
       </tr><tr>
         <td><b>runAsUserName</b></td>
         <td>string</td>
         <td>
-          The UserName in Windows to run the entrypoint of the container process. Defaults to the user specified in image metadata if unspecified. May also be set in PodSecurityContext. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence.<br/>
+          The UserName in Windows to run the entrypoint of the container process.
+Defaults to the user specified in image metadata if unspecified.
+May also be set in PodSecurityContext. If set in both SecurityContext and
+PodSecurityContext, the value specified in SecurityContext takes precedence.<br/>
         </td>
         <td>false</td>
       </tr></tbody>
@@ -9466,7 +10132,15 @@ EnvVar represents an environment variable present in a Container.
         <td><b>value</b></td>
         <td>string</td>
         <td>
-          Variable references $(VAR_NAME) are expanded using the previously defined environment variables in the container and any service environment variables. If a variable cannot be resolved, the reference in the input string will be unchanged. Double $$ are reduced to a single $, which allows for escaping the $(VAR_NAME) syntax: i.e. "$$(VAR_NAME)" will produce the string literal "$(VAR_NAME)". Escaped references will never be expanded, regardless of whether the variable exists or not. Defaults to "".<br/>
+          Variable references $(VAR_NAME) are expanded
+using the previously defined environment variables in the container and
+any service environment variables. If a variable cannot be resolved,
+the reference in the input string will be unchanged. Double $$ are reduced
+to a single $, which allows for escaping the $(VAR_NAME) syntax: i.e.
+"$$(VAR_NAME)" will produce the string literal "$(VAR_NAME)".
+Escaped references will never be expanded, regardless of whether the variable
+exists or not.
+Defaults to "".<br/>
         </td>
         <td>false</td>
       </tr><tr>
@@ -9507,14 +10181,16 @@ Source for the environment variable's value. Cannot be used if value is not empt
         <td><b><a href="#grafanaspecdeploymentenvindexvaluefromfieldref">fieldRef</a></b></td>
         <td>object</td>
         <td>
-          Selects a field of the pod: supports metadata.name, metadata.namespace, `metadata.labels['<KEY>']`, `metadata.annotations['<KEY>']`, spec.nodeName, spec.serviceAccountName, status.hostIP, status.podIP, status.podIPs.<br/>
+          Selects a field of the pod: supports metadata.name, metadata.namespace, `metadata.labels['<KEY>']`, `metadata.annotations['<KEY>']`,
+spec.nodeName, spec.serviceAccountName, status.hostIP, status.podIP, status.podIPs.<br/>
         </td>
         <td>false</td>
       </tr><tr>
         <td><b><a href="#grafanaspecdeploymentenvindexvaluefromresourcefieldref">resourceFieldRef</a></b></td>
         <td>object</td>
         <td>
-          Selects a resource of the container: only resources limits and requests (limits.cpu, limits.memory, limits.ephemeral-storage, requests.cpu, requests.memory and requests.ephemeral-storage) are currently supported.<br/>
+          Selects a resource of the container: only resources limits and requests
+(limits.cpu, limits.memory, limits.ephemeral-storage, requests.cpu, requests.memory and requests.ephemeral-storage) are currently supported.<br/>
         </td>
         <td>false</td>
       </tr><tr>
@@ -9555,7 +10231,9 @@ Selects a key of a ConfigMap.
         <td><b>name</b></td>
         <td>string</td>
         <td>
-          Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names TODO: Add other useful fields. apiVersion, kind, uid?<br/>
+          Name of the referent.
+More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+TODO: Add other useful fields. apiVersion, kind, uid?<br/>
         </td>
         <td>false</td>
       </tr><tr>
@@ -9574,7 +10252,8 @@ Selects a key of a ConfigMap.
 
 
 
-Selects a field of the pod: supports metadata.name, metadata.namespace, `metadata.labels['<KEY>']`, `metadata.annotations['<KEY>']`, spec.nodeName, spec.serviceAccountName, status.hostIP, status.podIP, status.podIPs.
+Selects a field of the pod: supports metadata.name, metadata.namespace, `metadata.labels['<KEY>']`, `metadata.annotations['<KEY>']`,
+spec.nodeName, spec.serviceAccountName, status.hostIP, status.podIP, status.podIPs.
 
 <table>
     <thead>
@@ -9608,7 +10287,8 @@ Selects a field of the pod: supports metadata.name, metadata.namespace, `metadat
 
 
 
-Selects a resource of the container: only resources limits and requests (limits.cpu, limits.memory, limits.ephemeral-storage, requests.cpu, requests.memory and requests.ephemeral-storage) are currently supported.
+Selects a resource of the container: only resources limits and requests
+(limits.cpu, limits.memory, limits.ephemeral-storage, requests.cpu, requests.memory and requests.ephemeral-storage) are currently supported.
 
 <table>
     <thead>
@@ -9671,7 +10351,9 @@ Selects a key of a secret in the pod's namespace
         <td><b>name</b></td>
         <td>string</td>
         <td>
-          Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names TODO: Add other useful fields. apiVersion, kind, uid?<br/>
+          Name of the referent.
+More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+TODO: Add other useful fields. apiVersion, kind, uid?<br/>
         </td>
         <td>false</td>
       </tr><tr>
@@ -9746,7 +10428,9 @@ The ConfigMap to select from
         <td><b>name</b></td>
         <td>string</td>
         <td>
-          Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names TODO: Add other useful fields. apiVersion, kind, uid?<br/>
+          Name of the referent.
+More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+TODO: Add other useful fields. apiVersion, kind, uid?<br/>
         </td>
         <td>false</td>
       </tr><tr>
@@ -9780,7 +10464,9 @@ The Secret to select from
         <td><b>name</b></td>
         <td>string</td>
         <td>
-          Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names TODO: Add other useful fields. apiVersion, kind, uid?<br/>
+          Name of the referent.
+More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+TODO: Add other useful fields. apiVersion, kind, uid?<br/>
         </td>
         <td>false</td>
       </tr><tr>
@@ -9814,7 +10500,8 @@ VolumeMount describes a mounting of a Volume within a container.
         <td><b>mountPath</b></td>
         <td>string</td>
         <td>
-          Path within the container at which the volume should be mounted.  Must not contain ':'.<br/>
+          Path within the container at which the volume should be mounted.  Must
+not contain ':'.<br/>
         </td>
         <td>true</td>
       </tr><tr>
@@ -9828,28 +10515,36 @@ VolumeMount describes a mounting of a Volume within a container.
         <td><b>mountPropagation</b></td>
         <td>string</td>
         <td>
-          mountPropagation determines how mounts are propagated from the host to container and the other way around. When not set, MountPropagationNone is used. This field is beta in 1.10.<br/>
+          mountPropagation determines how mounts are propagated from the host
+to container and the other way around.
+When not set, MountPropagationNone is used.
+This field is beta in 1.10.<br/>
         </td>
         <td>false</td>
       </tr><tr>
         <td><b>readOnly</b></td>
         <td>boolean</td>
         <td>
-          Mounted read-only if true, read-write otherwise (false or unspecified). Defaults to false.<br/>
+          Mounted read-only if true, read-write otherwise (false or unspecified).
+Defaults to false.<br/>
         </td>
         <td>false</td>
       </tr><tr>
         <td><b>subPath</b></td>
         <td>string</td>
         <td>
-          Path within the volume from which the container's volume should be mounted. Defaults to "" (volume's root).<br/>
+          Path within the volume from which the container's volume should be mounted.
+Defaults to "" (volume's root).<br/>
         </td>
         <td>false</td>
       </tr><tr>
         <td><b>subPathExpr</b></td>
         <td>string</td>
         <td>
-          Expanded path within the volume from which the container's volume should be mounted. Behaves similarly to SubPath but environment variable references $(VAR_NAME) are expanded using the container's environment. Defaults to "" (volume's root). SubPathExpr and SubPath are mutually exclusive.<br/>
+          Expanded path within the volume from which the container's volume should be mounted.
+Behaves similarly to SubPath but environment variable references $(VAR_NAME) are expanded using the container's environment.
+Defaults to "" (volume's root).
+SubPathExpr and SubPath are mutually exclusive.<br/>
         </td>
         <td>false</td>
       </tr></tbody>
@@ -9876,14 +10571,18 @@ Volume represents a named volume in a pod that may be accessed by any container 
         <td><b>name</b></td>
         <td>string</td>
         <td>
-          name of the volume. Must be a DNS_LABEL and unique within the pod. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names<br/>
+          name of the volume.
+Must be a DNS_LABEL and unique within the pod.
+More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names<br/>
         </td>
         <td>true</td>
       </tr><tr>
         <td><b><a href="#grafanaspecdeploymentextravolumesindexawselasticblockstore">awsElasticBlockStore</a></b></td>
         <td>object</td>
         <td>
-          awsElasticBlockStore represents an AWS Disk resource that is attached to a kubelet's host machine and then exposed to the pod. More info: https://kubernetes.io/docs/concepts/storage/volumes#awselasticblockstore<br/>
+          awsElasticBlockStore represents an AWS Disk resource that is attached to a
+kubelet's host machine and then exposed to the pod.
+More info: https://kubernetes.io/docs/concepts/storage/volumes#awselasticblockstore<br/>
         </td>
         <td>false</td>
       </tr><tr>
@@ -9911,7 +10610,8 @@ Volume represents a named volume in a pod that may be accessed by any container 
         <td><b><a href="#grafanaspecdeploymentextravolumesindexcinder">cinder</a></b></td>
         <td>object</td>
         <td>
-          cinder represents a cinder volume attached and mounted on kubelets host machine. More info: https://examples.k8s.io/mysql-cinder-pd/README.md<br/>
+          cinder represents a cinder volume attached and mounted on kubelets host machine.
+More info: https://examples.k8s.io/mysql-cinder-pd/README.md<br/>
         </td>
         <td>false</td>
       </tr><tr>
@@ -9939,18 +10639,42 @@ Volume represents a named volume in a pod that may be accessed by any container 
         <td><b><a href="#grafanaspecdeploymentextravolumesindexemptydir">emptyDir</a></b></td>
         <td>object</td>
         <td>
-          emptyDir represents a temporary directory that shares a pod's lifetime. More info: https://kubernetes.io/docs/concepts/storage/volumes#emptydir<br/>
+          emptyDir represents a temporary directory that shares a pod's lifetime.
+More info: https://kubernetes.io/docs/concepts/storage/volumes#emptydir<br/>
         </td>
         <td>false</td>
       </tr><tr>
         <td><b><a href="#grafanaspecdeploymentextravolumesindexephemeral">ephemeral</a></b></td>
         <td>object</td>
         <td>
-          ephemeral represents a volume that is handled by a cluster storage driver. The volume's lifecycle is tied to the pod that defines it - it will be created before the pod starts, and deleted when the pod is removed. 
- Use this if: a) the volume is only needed while the pod runs, b) features of normal volumes like restoring from snapshot or capacity    tracking are needed, c) the storage driver is specified through a storage class, and d) the storage driver supports dynamic volume provisioning through    a PersistentVolumeClaim (see EphemeralVolumeSource for more    information on the connection between this volume type    and PersistentVolumeClaim). 
- Use PersistentVolumeClaim or one of the vendor-specific APIs for volumes that persist for longer than the lifecycle of an individual pod. 
- Use CSI for light-weight local ephemeral volumes if the CSI driver is meant to be used that way - see the documentation of the driver for more information. 
- A pod can use both types of ephemeral volumes and persistent volumes at the same time.<br/>
+          ephemeral represents a volume that is handled by a cluster storage driver.
+The volume's lifecycle is tied to the pod that defines it - it will be created before the pod starts,
+and deleted when the pod is removed.
+
+
+Use this if:
+a) the volume is only needed while the pod runs,
+b) features of normal volumes like restoring from snapshot or capacity
+   tracking are needed,
+c) the storage driver is specified through a storage class, and
+d) the storage driver supports dynamic volume provisioning through
+   a PersistentVolumeClaim (see EphemeralVolumeSource for more
+   information on the connection between this volume type
+   and PersistentVolumeClaim).
+
+
+Use PersistentVolumeClaim or one of the vendor-specific
+APIs for volumes that persist for longer than the lifecycle
+of an individual pod.
+
+
+Use CSI for light-weight local ephemeral volumes if the CSI driver is meant to
+be used that way - see the documentation of the driver for
+more information.
+
+
+A pod can use both types of ephemeral volumes and
+persistent volumes at the same time.<br/>
         </td>
         <td>false</td>
       </tr><tr>
@@ -9964,7 +10688,8 @@ Volume represents a named volume in a pod that may be accessed by any container 
         <td><b><a href="#grafanaspecdeploymentextravolumesindexflexvolume">flexVolume</a></b></td>
         <td>object</td>
         <td>
-          flexVolume represents a generic volume resource that is provisioned/attached using an exec based plugin.<br/>
+          flexVolume represents a generic volume resource that is
+provisioned/attached using an exec based plugin.<br/>
         </td>
         <td>false</td>
       </tr><tr>
@@ -9978,49 +10703,67 @@ Volume represents a named volume in a pod that may be accessed by any container 
         <td><b><a href="#grafanaspecdeploymentextravolumesindexgcepersistentdisk">gcePersistentDisk</a></b></td>
         <td>object</td>
         <td>
-          gcePersistentDisk represents a GCE Disk resource that is attached to a kubelet's host machine and then exposed to the pod. More info: https://kubernetes.io/docs/concepts/storage/volumes#gcepersistentdisk<br/>
+          gcePersistentDisk represents a GCE Disk resource that is attached to a
+kubelet's host machine and then exposed to the pod.
+More info: https://kubernetes.io/docs/concepts/storage/volumes#gcepersistentdisk<br/>
         </td>
         <td>false</td>
       </tr><tr>
         <td><b><a href="#grafanaspecdeploymentextravolumesindexgitrepo">gitRepo</a></b></td>
         <td>object</td>
         <td>
-          gitRepo represents a git repository at a particular revision. DEPRECATED: GitRepo is deprecated. To provision a container with a git repo, mount an EmptyDir into an InitContainer that clones the repo using git, then mount the EmptyDir into the Pod's container.<br/>
+          gitRepo represents a git repository at a particular revision.
+DEPRECATED: GitRepo is deprecated. To provision a container with a git repo, mount an
+EmptyDir into an InitContainer that clones the repo using git, then mount the EmptyDir
+into the Pod's container.<br/>
         </td>
         <td>false</td>
       </tr><tr>
         <td><b><a href="#grafanaspecdeploymentextravolumesindexglusterfs">glusterfs</a></b></td>
         <td>object</td>
         <td>
-          glusterfs represents a Glusterfs mount on the host that shares a pod's lifetime. More info: https://examples.k8s.io/volumes/glusterfs/README.md<br/>
+          glusterfs represents a Glusterfs mount on the host that shares a pod's lifetime.
+More info: https://examples.k8s.io/volumes/glusterfs/README.md<br/>
         </td>
         <td>false</td>
       </tr><tr>
         <td><b><a href="#grafanaspecdeploymentextravolumesindexhostpath">hostPath</a></b></td>
         <td>object</td>
         <td>
-          hostPath represents a pre-existing file or directory on the host machine that is directly exposed to the container. This is generally used for system agents or other privileged things that are allowed to see the host machine. Most containers will NOT need this. More info: https://kubernetes.io/docs/concepts/storage/volumes#hostpath --- TODO(jonesdl) We need to restrict who can use host directory mounts and who can/can not mount host directories as read/write.<br/>
+          hostPath represents a pre-existing file or directory on the host
+machine that is directly exposed to the container. This is generally
+used for system agents or other privileged things that are allowed
+to see the host machine. Most containers will NOT need this.
+More info: https://kubernetes.io/docs/concepts/storage/volumes#hostpath
+---
+TODO(jonesdl) We need to restrict who can use host directory mounts and who can/can not
+mount host directories as read/write.<br/>
         </td>
         <td>false</td>
       </tr><tr>
         <td><b><a href="#grafanaspecdeploymentextravolumesindexiscsi">iscsi</a></b></td>
         <td>object</td>
         <td>
-          iscsi represents an ISCSI Disk resource that is attached to a kubelet's host machine and then exposed to the pod. More info: https://examples.k8s.io/volumes/iscsi/README.md<br/>
+          iscsi represents an ISCSI Disk resource that is attached to a
+kubelet's host machine and then exposed to the pod.
+More info: https://examples.k8s.io/volumes/iscsi/README.md<br/>
         </td>
         <td>false</td>
       </tr><tr>
         <td><b><a href="#grafanaspecdeploymentextravolumesindexnfs">nfs</a></b></td>
         <td>object</td>
         <td>
-          nfs represents an NFS mount on the host that shares a pod's lifetime More info: https://kubernetes.io/docs/concepts/storage/volumes#nfs<br/>
+          nfs represents an NFS mount on the host that shares a pod's lifetime
+More info: https://kubernetes.io/docs/concepts/storage/volumes#nfs<br/>
         </td>
         <td>false</td>
       </tr><tr>
         <td><b><a href="#grafanaspecdeploymentextravolumesindexpersistentvolumeclaim">persistentVolumeClaim</a></b></td>
         <td>object</td>
         <td>
-          persistentVolumeClaimVolumeSource represents a reference to a PersistentVolumeClaim in the same namespace. More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes#persistentvolumeclaims<br/>
+          persistentVolumeClaimVolumeSource represents a reference to a
+PersistentVolumeClaim in the same namespace.
+More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes#persistentvolumeclaims<br/>
         </td>
         <td>false</td>
       </tr><tr>
@@ -10055,7 +10798,8 @@ Volume represents a named volume in a pod that may be accessed by any container 
         <td><b><a href="#grafanaspecdeploymentextravolumesindexrbd">rbd</a></b></td>
         <td>object</td>
         <td>
-          rbd represents a Rados Block Device mount on the host that shares a pod's lifetime. More info: https://examples.k8s.io/volumes/rbd/README.md<br/>
+          rbd represents a Rados Block Device mount on the host that shares a pod's lifetime.
+More info: https://examples.k8s.io/volumes/rbd/README.md<br/>
         </td>
         <td>false</td>
       </tr><tr>
@@ -10069,7 +10813,8 @@ Volume represents a named volume in a pod that may be accessed by any container 
         <td><b><a href="#grafanaspecdeploymentextravolumesindexsecret">secret</a></b></td>
         <td>object</td>
         <td>
-          secret represents a secret that should populate this volume. More info: https://kubernetes.io/docs/concepts/storage/volumes#secret<br/>
+          secret represents a secret that should populate this volume.
+More info: https://kubernetes.io/docs/concepts/storage/volumes#secret<br/>
         </td>
         <td>false</td>
       </tr><tr>
@@ -10095,7 +10840,9 @@ Volume represents a named volume in a pod that may be accessed by any container 
 
 
 
-awsElasticBlockStore represents an AWS Disk resource that is attached to a kubelet's host machine and then exposed to the pod. More info: https://kubernetes.io/docs/concepts/storage/volumes#awselasticblockstore
+awsElasticBlockStore represents an AWS Disk resource that is attached to a
+kubelet's host machine and then exposed to the pod.
+More info: https://kubernetes.io/docs/concepts/storage/volumes#awselasticblockstore
 
 <table>
     <thead>
@@ -10110,21 +10857,29 @@ awsElasticBlockStore represents an AWS Disk resource that is attached to a kubel
         <td><b>volumeID</b></td>
         <td>string</td>
         <td>
-          volumeID is unique ID of the persistent disk resource in AWS (Amazon EBS volume). More info: https://kubernetes.io/docs/concepts/storage/volumes#awselasticblockstore<br/>
+          volumeID is unique ID of the persistent disk resource in AWS (Amazon EBS volume).
+More info: https://kubernetes.io/docs/concepts/storage/volumes#awselasticblockstore<br/>
         </td>
         <td>true</td>
       </tr><tr>
         <td><b>fsType</b></td>
         <td>string</td>
         <td>
-          fsType is the filesystem type of the volume that you want to mount. Tip: Ensure that the filesystem type is supported by the host operating system. Examples: "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified. More info: https://kubernetes.io/docs/concepts/storage/volumes#awselasticblockstore TODO: how do we prevent errors in the filesystem from compromising the machine<br/>
+          fsType is the filesystem type of the volume that you want to mount.
+Tip: Ensure that the filesystem type is supported by the host operating system.
+Examples: "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified.
+More info: https://kubernetes.io/docs/concepts/storage/volumes#awselasticblockstore
+TODO: how do we prevent errors in the filesystem from compromising the machine<br/>
         </td>
         <td>false</td>
       </tr><tr>
         <td><b>partition</b></td>
         <td>integer</td>
         <td>
-          partition is the partition in the volume that you want to mount. If omitted, the default is to mount by volume name. Examples: For volume /dev/sda1, you specify the partition as "1". Similarly, the volume partition for /dev/sda is "0" (or you can leave the property empty).<br/>
+          partition is the partition in the volume that you want to mount.
+If omitted, the default is to mount by volume name.
+Examples: For volume /dev/sda1, you specify the partition as "1".
+Similarly, the volume partition for /dev/sda is "0" (or you can leave the property empty).<br/>
           <br/>
             <i>Format</i>: int32<br/>
         </td>
@@ -10133,7 +10888,8 @@ awsElasticBlockStore represents an AWS Disk resource that is attached to a kubel
         <td><b>readOnly</b></td>
         <td>boolean</td>
         <td>
-          readOnly value true will force the readOnly setting in VolumeMounts. More info: https://kubernetes.io/docs/concepts/storage/volumes#awselasticblockstore<br/>
+          readOnly value true will force the readOnly setting in VolumeMounts.
+More info: https://kubernetes.io/docs/concepts/storage/volumes#awselasticblockstore<br/>
         </td>
         <td>false</td>
       </tr></tbody>
@@ -10181,7 +10937,9 @@ azureDisk represents an Azure Data Disk mount on the host and bind mount to the 
         <td><b>fsType</b></td>
         <td>string</td>
         <td>
-          fsType is Filesystem type to mount. Must be a filesystem type supported by the host operating system. Ex. "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified.<br/>
+          fsType is Filesystem type to mount.
+Must be a filesystem type supported by the host operating system.
+Ex. "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified.<br/>
         </td>
         <td>false</td>
       </tr><tr>
@@ -10195,7 +10953,8 @@ azureDisk represents an Azure Data Disk mount on the host and bind mount to the 
         <td><b>readOnly</b></td>
         <td>boolean</td>
         <td>
-          readOnly Defaults to false (read/write). ReadOnly here will force the ReadOnly setting in VolumeMounts.<br/>
+          readOnly Defaults to false (read/write). ReadOnly here will force
+the ReadOnly setting in VolumeMounts.<br/>
         </td>
         <td>false</td>
       </tr></tbody>
@@ -10236,7 +10995,8 @@ azureFile represents an Azure File Service mount on the host and bind mount to t
         <td><b>readOnly</b></td>
         <td>boolean</td>
         <td>
-          readOnly defaults to false (read/write). ReadOnly here will force the ReadOnly setting in VolumeMounts.<br/>
+          readOnly defaults to false (read/write). ReadOnly here will force
+the ReadOnly setting in VolumeMounts.<br/>
         </td>
         <td>false</td>
       </tr></tbody>
@@ -10263,7 +11023,8 @@ cephFS represents a Ceph FS mount on the host that shares a pod's lifetime
         <td><b>monitors</b></td>
         <td>[]string</td>
         <td>
-          monitors is Required: Monitors is a collection of Ceph monitors More info: https://examples.k8s.io/volumes/cephfs/README.md#how-to-use-it<br/>
+          monitors is Required: Monitors is a collection of Ceph monitors
+More info: https://examples.k8s.io/volumes/cephfs/README.md#how-to-use-it<br/>
         </td>
         <td>true</td>
       </tr><tr>
@@ -10277,28 +11038,33 @@ cephFS represents a Ceph FS mount on the host that shares a pod's lifetime
         <td><b>readOnly</b></td>
         <td>boolean</td>
         <td>
-          readOnly is Optional: Defaults to false (read/write). ReadOnly here will force the ReadOnly setting in VolumeMounts. More info: https://examples.k8s.io/volumes/cephfs/README.md#how-to-use-it<br/>
+          readOnly is Optional: Defaults to false (read/write). ReadOnly here will force
+the ReadOnly setting in VolumeMounts.
+More info: https://examples.k8s.io/volumes/cephfs/README.md#how-to-use-it<br/>
         </td>
         <td>false</td>
       </tr><tr>
         <td><b>secretFile</b></td>
         <td>string</td>
         <td>
-          secretFile is Optional: SecretFile is the path to key ring for User, default is /etc/ceph/user.secret More info: https://examples.k8s.io/volumes/cephfs/README.md#how-to-use-it<br/>
+          secretFile is Optional: SecretFile is the path to key ring for User, default is /etc/ceph/user.secret
+More info: https://examples.k8s.io/volumes/cephfs/README.md#how-to-use-it<br/>
         </td>
         <td>false</td>
       </tr><tr>
         <td><b><a href="#grafanaspecdeploymentextravolumesindexcephfssecretref">secretRef</a></b></td>
         <td>object</td>
         <td>
-          secretRef is Optional: SecretRef is reference to the authentication secret for User, default is empty. More info: https://examples.k8s.io/volumes/cephfs/README.md#how-to-use-it<br/>
+          secretRef is Optional: SecretRef is reference to the authentication secret for User, default is empty.
+More info: https://examples.k8s.io/volumes/cephfs/README.md#how-to-use-it<br/>
         </td>
         <td>false</td>
       </tr><tr>
         <td><b>user</b></td>
         <td>string</td>
         <td>
-          user is optional: User is the rados user name, default is admin More info: https://examples.k8s.io/volumes/cephfs/README.md#how-to-use-it<br/>
+          user is optional: User is the rados user name, default is admin
+More info: https://examples.k8s.io/volumes/cephfs/README.md#how-to-use-it<br/>
         </td>
         <td>false</td>
       </tr></tbody>
@@ -10310,7 +11076,8 @@ cephFS represents a Ceph FS mount on the host that shares a pod's lifetime
 
 
 
-secretRef is Optional: SecretRef is reference to the authentication secret for User, default is empty. More info: https://examples.k8s.io/volumes/cephfs/README.md#how-to-use-it
+secretRef is Optional: SecretRef is reference to the authentication secret for User, default is empty.
+More info: https://examples.k8s.io/volumes/cephfs/README.md#how-to-use-it
 
 <table>
     <thead>
@@ -10325,7 +11092,9 @@ secretRef is Optional: SecretRef is reference to the authentication secret for U
         <td><b>name</b></td>
         <td>string</td>
         <td>
-          Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names TODO: Add other useful fields. apiVersion, kind, uid?<br/>
+          Name of the referent.
+More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+TODO: Add other useful fields. apiVersion, kind, uid?<br/>
         </td>
         <td>false</td>
       </tr></tbody>
@@ -10337,7 +11106,8 @@ secretRef is Optional: SecretRef is reference to the authentication secret for U
 
 
 
-cinder represents a cinder volume attached and mounted on kubelets host machine. More info: https://examples.k8s.io/mysql-cinder-pd/README.md
+cinder represents a cinder volume attached and mounted on kubelets host machine.
+More info: https://examples.k8s.io/mysql-cinder-pd/README.md
 
 <table>
     <thead>
@@ -10352,28 +11122,35 @@ cinder represents a cinder volume attached and mounted on kubelets host machine.
         <td><b>volumeID</b></td>
         <td>string</td>
         <td>
-          volumeID used to identify the volume in cinder. More info: https://examples.k8s.io/mysql-cinder-pd/README.md<br/>
+          volumeID used to identify the volume in cinder.
+More info: https://examples.k8s.io/mysql-cinder-pd/README.md<br/>
         </td>
         <td>true</td>
       </tr><tr>
         <td><b>fsType</b></td>
         <td>string</td>
         <td>
-          fsType is the filesystem type to mount. Must be a filesystem type supported by the host operating system. Examples: "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified. More info: https://examples.k8s.io/mysql-cinder-pd/README.md<br/>
+          fsType is the filesystem type to mount.
+Must be a filesystem type supported by the host operating system.
+Examples: "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified.
+More info: https://examples.k8s.io/mysql-cinder-pd/README.md<br/>
         </td>
         <td>false</td>
       </tr><tr>
         <td><b>readOnly</b></td>
         <td>boolean</td>
         <td>
-          readOnly defaults to false (read/write). ReadOnly here will force the ReadOnly setting in VolumeMounts. More info: https://examples.k8s.io/mysql-cinder-pd/README.md<br/>
+          readOnly defaults to false (read/write). ReadOnly here will force
+the ReadOnly setting in VolumeMounts.
+More info: https://examples.k8s.io/mysql-cinder-pd/README.md<br/>
         </td>
         <td>false</td>
       </tr><tr>
         <td><b><a href="#grafanaspecdeploymentextravolumesindexcindersecretref">secretRef</a></b></td>
         <td>object</td>
         <td>
-          secretRef is optional: points to a secret object containing parameters used to connect to OpenStack.<br/>
+          secretRef is optional: points to a secret object containing parameters used to connect
+to OpenStack.<br/>
         </td>
         <td>false</td>
       </tr></tbody>
@@ -10385,7 +11162,8 @@ cinder represents a cinder volume attached and mounted on kubelets host machine.
 
 
 
-secretRef is optional: points to a secret object containing parameters used to connect to OpenStack.
+secretRef is optional: points to a secret object containing parameters used to connect
+to OpenStack.
 
 <table>
     <thead>
@@ -10400,7 +11178,9 @@ secretRef is optional: points to a secret object containing parameters used to c
         <td><b>name</b></td>
         <td>string</td>
         <td>
-          Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names TODO: Add other useful fields. apiVersion, kind, uid?<br/>
+          Name of the referent.
+More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+TODO: Add other useful fields. apiVersion, kind, uid?<br/>
         </td>
         <td>false</td>
       </tr></tbody>
@@ -10427,7 +11207,13 @@ configMap represents a configMap that should populate this volume
         <td><b>defaultMode</b></td>
         <td>integer</td>
         <td>
-          defaultMode is optional: mode bits used to set permissions on created files by default. Must be an octal value between 0000 and 0777 or a decimal value between 0 and 511. YAML accepts both octal and decimal values, JSON requires decimal values for mode bits. Defaults to 0644. Directories within the path are not affected by this setting. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.<br/>
+          defaultMode is optional: mode bits used to set permissions on created files by default.
+Must be an octal value between 0000 and 0777 or a decimal value between 0 and 511.
+YAML accepts both octal and decimal values, JSON requires decimal values for mode bits.
+Defaults to 0644.
+Directories within the path are not affected by this setting.
+This might be in conflict with other options that affect the file
+mode, like fsGroup, and the result can be other mode bits set.<br/>
           <br/>
             <i>Format</i>: int32<br/>
         </td>
@@ -10436,14 +11222,22 @@ configMap represents a configMap that should populate this volume
         <td><b><a href="#grafanaspecdeploymentextravolumesindexconfigmapitemsindex">items</a></b></td>
         <td>[]object</td>
         <td>
-          items if unspecified, each key-value pair in the Data field of the referenced ConfigMap will be projected into the volume as a file whose name is the key and content is the value. If specified, the listed keys will be projected into the specified paths, and unlisted keys will not be present. If a key is specified which is not present in the ConfigMap, the volume setup will error unless it is marked optional. Paths must be relative and may not contain the '..' path or start with '..'.<br/>
+          items if unspecified, each key-value pair in the Data field of the referenced
+ConfigMap will be projected into the volume as a file whose name is the
+key and content is the value. If specified, the listed keys will be
+projected into the specified paths, and unlisted keys will not be
+present. If a key is specified which is not present in the ConfigMap,
+the volume setup will error unless it is marked optional. Paths must be
+relative and may not contain the '..' path or start with '..'.<br/>
         </td>
         <td>false</td>
       </tr><tr>
         <td><b>name</b></td>
         <td>string</td>
         <td>
-          Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names TODO: Add other useful fields. apiVersion, kind, uid?<br/>
+          Name of the referent.
+More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+TODO: Add other useful fields. apiVersion, kind, uid?<br/>
         </td>
         <td>false</td>
       </tr><tr>
@@ -10484,14 +11278,22 @@ Maps a string key to a path within a volume.
         <td><b>path</b></td>
         <td>string</td>
         <td>
-          path is the relative path of the file to map the key to. May not be an absolute path. May not contain the path element '..'. May not start with the string '..'.<br/>
+          path is the relative path of the file to map the key to.
+May not be an absolute path.
+May not contain the path element '..'.
+May not start with the string '..'.<br/>
         </td>
         <td>true</td>
       </tr><tr>
         <td><b>mode</b></td>
         <td>integer</td>
         <td>
-          mode is Optional: mode bits used to set permissions on this file. Must be an octal value between 0000 and 0777 or a decimal value between 0 and 511. YAML accepts both octal and decimal values, JSON requires decimal values for mode bits. If not specified, the volume defaultMode will be used. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.<br/>
+          mode is Optional: mode bits used to set permissions on this file.
+Must be an octal value between 0000 and 0777 or a decimal value between 0 and 511.
+YAML accepts both octal and decimal values, JSON requires decimal values for mode bits.
+If not specified, the volume defaultMode will be used.
+This might be in conflict with other options that affect the file
+mode, like fsGroup, and the result can be other mode bits set.<br/>
           <br/>
             <i>Format</i>: int32<br/>
         </td>
@@ -10520,35 +11322,44 @@ csi (Container Storage Interface) represents ephemeral storage that is handled b
         <td><b>driver</b></td>
         <td>string</td>
         <td>
-          driver is the name of the CSI driver that handles this volume. Consult with your admin for the correct name as registered in the cluster.<br/>
+          driver is the name of the CSI driver that handles this volume.
+Consult with your admin for the correct name as registered in the cluster.<br/>
         </td>
         <td>true</td>
       </tr><tr>
         <td><b>fsType</b></td>
         <td>string</td>
         <td>
-          fsType to mount. Ex. "ext4", "xfs", "ntfs". If not provided, the empty value is passed to the associated CSI driver which will determine the default filesystem to apply.<br/>
+          fsType to mount. Ex. "ext4", "xfs", "ntfs".
+If not provided, the empty value is passed to the associated CSI driver
+which will determine the default filesystem to apply.<br/>
         </td>
         <td>false</td>
       </tr><tr>
         <td><b><a href="#grafanaspecdeploymentextravolumesindexcsinodepublishsecretref">nodePublishSecretRef</a></b></td>
         <td>object</td>
         <td>
-          nodePublishSecretRef is a reference to the secret object containing sensitive information to pass to the CSI driver to complete the CSI NodePublishVolume and NodeUnpublishVolume calls. This field is optional, and  may be empty if no secret is required. If the secret object contains more than one secret, all secret references are passed.<br/>
+          nodePublishSecretRef is a reference to the secret object containing
+sensitive information to pass to the CSI driver to complete the CSI
+NodePublishVolume and NodeUnpublishVolume calls.
+This field is optional, and  may be empty if no secret is required. If the
+secret object contains more than one secret, all secret references are passed.<br/>
         </td>
         <td>false</td>
       </tr><tr>
         <td><b>readOnly</b></td>
         <td>boolean</td>
         <td>
-          readOnly specifies a read-only configuration for the volume. Defaults to false (read/write).<br/>
+          readOnly specifies a read-only configuration for the volume.
+Defaults to false (read/write).<br/>
         </td>
         <td>false</td>
       </tr><tr>
         <td><b>volumeAttributes</b></td>
         <td>map[string]string</td>
         <td>
-          volumeAttributes stores driver-specific properties that are passed to the CSI driver. Consult your driver's documentation for supported values.<br/>
+          volumeAttributes stores driver-specific properties that are passed to the CSI
+driver. Consult your driver's documentation for supported values.<br/>
         </td>
         <td>false</td>
       </tr></tbody>
@@ -10560,7 +11371,11 @@ csi (Container Storage Interface) represents ephemeral storage that is handled b
 
 
 
-nodePublishSecretRef is a reference to the secret object containing sensitive information to pass to the CSI driver to complete the CSI NodePublishVolume and NodeUnpublishVolume calls. This field is optional, and  may be empty if no secret is required. If the secret object contains more than one secret, all secret references are passed.
+nodePublishSecretRef is a reference to the secret object containing
+sensitive information to pass to the CSI driver to complete the CSI
+NodePublishVolume and NodeUnpublishVolume calls.
+This field is optional, and  may be empty if no secret is required. If the
+secret object contains more than one secret, all secret references are passed.
 
 <table>
     <thead>
@@ -10575,7 +11390,9 @@ nodePublishSecretRef is a reference to the secret object containing sensitive in
         <td><b>name</b></td>
         <td>string</td>
         <td>
-          Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names TODO: Add other useful fields. apiVersion, kind, uid?<br/>
+          Name of the referent.
+More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+TODO: Add other useful fields. apiVersion, kind, uid?<br/>
         </td>
         <td>false</td>
       </tr></tbody>
@@ -10602,7 +11419,14 @@ downwardAPI represents downward API about the pod that should populate this volu
         <td><b>defaultMode</b></td>
         <td>integer</td>
         <td>
-          Optional: mode bits to use on created files by default. Must be a Optional: mode bits used to set permissions on created files by default. Must be an octal value between 0000 and 0777 or a decimal value between 0 and 511. YAML accepts both octal and decimal values, JSON requires decimal values for mode bits. Defaults to 0644. Directories within the path are not affected by this setting. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.<br/>
+          Optional: mode bits to use on created files by default. Must be a
+Optional: mode bits used to set permissions on created files by default.
+Must be an octal value between 0000 and 0777 or a decimal value between 0 and 511.
+YAML accepts both octal and decimal values, JSON requires decimal values for mode bits.
+Defaults to 0644.
+Directories within the path are not affected by this setting.
+This might be in conflict with other options that affect the file
+mode, like fsGroup, and the result can be other mode bits set.<br/>
           <br/>
             <i>Format</i>: int32<br/>
         </td>
@@ -10652,7 +11476,12 @@ DownwardAPIVolumeFile represents information to create the file containing the p
         <td><b>mode</b></td>
         <td>integer</td>
         <td>
-          Optional: mode bits used to set permissions on this file, must be an octal value between 0000 and 0777 or a decimal value between 0 and 511. YAML accepts both octal and decimal values, JSON requires decimal values for mode bits. If not specified, the volume defaultMode will be used. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.<br/>
+          Optional: mode bits used to set permissions on this file, must be an octal value
+between 0000 and 0777 or a decimal value between 0 and 511.
+YAML accepts both octal and decimal values, JSON requires decimal values for mode bits.
+If not specified, the volume defaultMode will be used.
+This might be in conflict with other options that affect the file
+mode, like fsGroup, and the result can be other mode bits set.<br/>
           <br/>
             <i>Format</i>: int32<br/>
         </td>
@@ -10661,7 +11490,8 @@ DownwardAPIVolumeFile represents information to create the file containing the p
         <td><b><a href="#grafanaspecdeploymentextravolumesindexdownwardapiitemsindexresourcefieldref">resourceFieldRef</a></b></td>
         <td>object</td>
         <td>
-          Selects a resource of the container: only resources limits and requests (limits.cpu, limits.memory, requests.cpu and requests.memory) are currently supported.<br/>
+          Selects a resource of the container: only resources limits and requests
+(limits.cpu, limits.memory, requests.cpu and requests.memory) are currently supported.<br/>
         </td>
         <td>false</td>
       </tr></tbody>
@@ -10707,7 +11537,8 @@ Required: Selects a field of the pod: only annotations, labels, name and namespa
 
 
 
-Selects a resource of the container: only resources limits and requests (limits.cpu, limits.memory, requests.cpu and requests.memory) are currently supported.
+Selects a resource of the container: only resources limits and requests
+(limits.cpu, limits.memory, requests.cpu and requests.memory) are currently supported.
 
 <table>
     <thead>
@@ -10748,7 +11579,8 @@ Selects a resource of the container: only resources limits and requests (limits.
 
 
 
-emptyDir represents a temporary directory that shares a pod's lifetime. More info: https://kubernetes.io/docs/concepts/storage/volumes#emptydir
+emptyDir represents a temporary directory that shares a pod's lifetime.
+More info: https://kubernetes.io/docs/concepts/storage/volumes#emptydir
 
 <table>
     <thead>
@@ -10763,14 +11595,22 @@ emptyDir represents a temporary directory that shares a pod's lifetime. More inf
         <td><b>medium</b></td>
         <td>string</td>
         <td>
-          medium represents what type of storage medium should back this directory. The default is "" which means to use the node's default medium. Must be an empty string (default) or Memory. More info: https://kubernetes.io/docs/concepts/storage/volumes#emptydir<br/>
+          medium represents what type of storage medium should back this directory.
+The default is "" which means to use the node's default medium.
+Must be an empty string (default) or Memory.
+More info: https://kubernetes.io/docs/concepts/storage/volumes#emptydir<br/>
         </td>
         <td>false</td>
       </tr><tr>
         <td><b>sizeLimit</b></td>
         <td>int or string</td>
         <td>
-          sizeLimit is the total amount of local storage required for this EmptyDir volume. The size limit is also applicable for memory medium. The maximum usage on memory medium EmptyDir would be the minimum value between the SizeLimit specified here and the sum of memory limits of all containers in a pod. The default is nil which means that the limit is undefined. More info: http://kubernetes.io/docs/user-guide/volumes#emptydir<br/>
+          sizeLimit is the total amount of local storage required for this EmptyDir volume.
+The size limit is also applicable for memory medium.
+The maximum usage on memory medium EmptyDir would be the minimum value between
+the SizeLimit specified here and the sum of memory limits of all containers in a pod.
+The default is nil which means that the limit is undefined.
+More info: http://kubernetes.io/docs/user-guide/volumes#emptydir<br/>
         </td>
         <td>false</td>
       </tr></tbody>
@@ -10782,11 +11622,34 @@ emptyDir represents a temporary directory that shares a pod's lifetime. More inf
 
 
 
-ephemeral represents a volume that is handled by a cluster storage driver. The volume's lifecycle is tied to the pod that defines it - it will be created before the pod starts, and deleted when the pod is removed. 
- Use this if: a) the volume is only needed while the pod runs, b) features of normal volumes like restoring from snapshot or capacity    tracking are needed, c) the storage driver is specified through a storage class, and d) the storage driver supports dynamic volume provisioning through    a PersistentVolumeClaim (see EphemeralVolumeSource for more    information on the connection between this volume type    and PersistentVolumeClaim). 
- Use PersistentVolumeClaim or one of the vendor-specific APIs for volumes that persist for longer than the lifecycle of an individual pod. 
- Use CSI for light-weight local ephemeral volumes if the CSI driver is meant to be used that way - see the documentation of the driver for more information. 
- A pod can use both types of ephemeral volumes and persistent volumes at the same time.
+ephemeral represents a volume that is handled by a cluster storage driver.
+The volume's lifecycle is tied to the pod that defines it - it will be created before the pod starts,
+and deleted when the pod is removed.
+
+
+Use this if:
+a) the volume is only needed while the pod runs,
+b) features of normal volumes like restoring from snapshot or capacity
+   tracking are needed,
+c) the storage driver is specified through a storage class, and
+d) the storage driver supports dynamic volume provisioning through
+   a PersistentVolumeClaim (see EphemeralVolumeSource for more
+   information on the connection between this volume type
+   and PersistentVolumeClaim).
+
+
+Use PersistentVolumeClaim or one of the vendor-specific
+APIs for volumes that persist for longer than the lifecycle
+of an individual pod.
+
+
+Use CSI for light-weight local ephemeral volumes if the CSI driver is meant to
+be used that way - see the documentation of the driver for
+more information.
+
+
+A pod can use both types of ephemeral volumes and
+persistent volumes at the same time.
 
 <table>
     <thead>
@@ -10801,10 +11664,30 @@ ephemeral represents a volume that is handled by a cluster storage driver. The v
         <td><b><a href="#grafanaspecdeploymentextravolumesindexephemeralvolumeclaimtemplate">volumeClaimTemplate</a></b></td>
         <td>object</td>
         <td>
-          Will be used to create a stand-alone PVC to provision the volume. The pod in which this EphemeralVolumeSource is embedded will be the owner of the PVC, i.e. the PVC will be deleted together with the pod.  The name of the PVC will be `<pod name>-<volume name>` where `<volume name>` is the name from the `PodSpec.Volumes` array entry. Pod validation will reject the pod if the concatenated name is not valid for a PVC (for example, too long). 
- An existing PVC with that name that is not owned by the pod will *not* be used for the pod to avoid using an unrelated volume by mistake. Starting the pod is then blocked until the unrelated PVC is removed. If such a pre-created PVC is meant to be used by the pod, the PVC has to updated with an owner reference to the pod once the pod exists. Normally this should not be necessary, but it may be useful when manually reconstructing a broken cluster. 
- This field is read-only and no changes will be made by Kubernetes to the PVC after it has been created. 
- Required, must not be nil.<br/>
+          Will be used to create a stand-alone PVC to provision the volume.
+The pod in which this EphemeralVolumeSource is embedded will be the
+owner of the PVC, i.e. the PVC will be deleted together with the
+pod.  The name of the PVC will be `<pod name>-<volume name>` where
+`<volume name>` is the name from the `PodSpec.Volumes` array
+entry. Pod validation will reject the pod if the concatenated name
+is not valid for a PVC (for example, too long).
+
+
+An existing PVC with that name that is not owned by the pod
+will *not* be used for the pod to avoid using an unrelated
+volume by mistake. Starting the pod is then blocked until
+the unrelated PVC is removed. If such a pre-created PVC is
+meant to be used by the pod, the PVC has to updated with an
+owner reference to the pod once the pod exists. Normally
+this should not be necessary, but it may be useful when
+manually reconstructing a broken cluster.
+
+
+This field is read-only and no changes will be made by Kubernetes
+to the PVC after it has been created.
+
+
+Required, must not be nil.<br/>
         </td>
         <td>false</td>
       </tr></tbody>
@@ -10816,10 +11699,30 @@ ephemeral represents a volume that is handled by a cluster storage driver. The v
 
 
 
-Will be used to create a stand-alone PVC to provision the volume. The pod in which this EphemeralVolumeSource is embedded will be the owner of the PVC, i.e. the PVC will be deleted together with the pod.  The name of the PVC will be `<pod name>-<volume name>` where `<volume name>` is the name from the `PodSpec.Volumes` array entry. Pod validation will reject the pod if the concatenated name is not valid for a PVC (for example, too long). 
- An existing PVC with that name that is not owned by the pod will *not* be used for the pod to avoid using an unrelated volume by mistake. Starting the pod is then blocked until the unrelated PVC is removed. If such a pre-created PVC is meant to be used by the pod, the PVC has to updated with an owner reference to the pod once the pod exists. Normally this should not be necessary, but it may be useful when manually reconstructing a broken cluster. 
- This field is read-only and no changes will be made by Kubernetes to the PVC after it has been created. 
- Required, must not be nil.
+Will be used to create a stand-alone PVC to provision the volume.
+The pod in which this EphemeralVolumeSource is embedded will be the
+owner of the PVC, i.e. the PVC will be deleted together with the
+pod.  The name of the PVC will be `<pod name>-<volume name>` where
+`<volume name>` is the name from the `PodSpec.Volumes` array
+entry. Pod validation will reject the pod if the concatenated name
+is not valid for a PVC (for example, too long).
+
+
+An existing PVC with that name that is not owned by the pod
+will *not* be used for the pod to avoid using an unrelated
+volume by mistake. Starting the pod is then blocked until
+the unrelated PVC is removed. If such a pre-created PVC is
+meant to be used by the pod, the PVC has to updated with an
+owner reference to the pod once the pod exists. Normally
+this should not be necessary, but it may be useful when
+manually reconstructing a broken cluster.
+
+
+This field is read-only and no changes will be made by Kubernetes
+to the PVC after it has been created.
+
+
+Required, must not be nil.
 
 <table>
     <thead>
@@ -10834,14 +11737,19 @@ Will be used to create a stand-alone PVC to provision the volume. The pod in whi
         <td><b><a href="#grafanaspecdeploymentextravolumesindexephemeralvolumeclaimtemplatespec">spec</a></b></td>
         <td>object</td>
         <td>
-          The specification for the PersistentVolumeClaim. The entire content is copied unchanged into the PVC that gets created from this template. The same fields as in a PersistentVolumeClaim are also valid here.<br/>
+          The specification for the PersistentVolumeClaim. The entire content is
+copied unchanged into the PVC that gets created from this
+template. The same fields as in a PersistentVolumeClaim
+are also valid here.<br/>
         </td>
         <td>true</td>
       </tr><tr>
         <td><b>metadata</b></td>
         <td>object</td>
         <td>
-          May contain labels and annotations that will be copied into the PVC when creating it. No other fields are allowed and will be rejected during validation.<br/>
+          May contain labels and annotations that will be copied into the PVC
+when creating it. No other fields are allowed and will be rejected during
+validation.<br/>
         </td>
         <td>false</td>
       </tr></tbody>
@@ -10853,7 +11761,10 @@ Will be used to create a stand-alone PVC to provision the volume. The pod in whi
 
 
 
-The specification for the PersistentVolumeClaim. The entire content is copied unchanged into the PVC that gets created from this template. The same fields as in a PersistentVolumeClaim are also valid here.
+The specification for the PersistentVolumeClaim. The entire content is
+copied unchanged into the PVC that gets created from this
+template. The same fields as in a PersistentVolumeClaim
+are also valid here.
 
 <table>
     <thead>
@@ -10868,28 +11779,55 @@ The specification for the PersistentVolumeClaim. The entire content is copied un
         <td><b>accessModes</b></td>
         <td>[]string</td>
         <td>
-          accessModes contains the desired access modes the volume should have. More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes#access-modes-1<br/>
+          accessModes contains the desired access modes the volume should have.
+More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes#access-modes-1<br/>
         </td>
         <td>false</td>
       </tr><tr>
         <td><b><a href="#grafanaspecdeploymentextravolumesindexephemeralvolumeclaimtemplatespecdatasource">dataSource</a></b></td>
         <td>object</td>
         <td>
-          dataSource field can be used to specify either: * An existing VolumeSnapshot object (snapshot.storage.k8s.io/VolumeSnapshot) * An existing PVC (PersistentVolumeClaim) If the provisioner or an external controller can support the specified data source, it will create a new volume based on the contents of the specified data source. If the AnyVolumeDataSource feature gate is enabled, this field will always have the same contents as the DataSourceRef field.<br/>
+          dataSource field can be used to specify either:
+* An existing VolumeSnapshot object (snapshot.storage.k8s.io/VolumeSnapshot)
+* An existing PVC (PersistentVolumeClaim)
+If the provisioner or an external controller can support the specified data source,
+it will create a new volume based on the contents of the specified data source.
+If the AnyVolumeDataSource feature gate is enabled, this field will always have
+the same contents as the DataSourceRef field.<br/>
         </td>
         <td>false</td>
       </tr><tr>
         <td><b><a href="#grafanaspecdeploymentextravolumesindexephemeralvolumeclaimtemplatespecdatasourceref">dataSourceRef</a></b></td>
         <td>object</td>
         <td>
-          dataSourceRef specifies the object from which to populate the volume with data, if a non-empty volume is desired. This may be any local object from a non-empty API group (non core object) or a PersistentVolumeClaim object. When this field is specified, volume binding will only succeed if the type of the specified object matches some installed volume populator or dynamic provisioner. This field will replace the functionality of the DataSource field and as such if both fields are non-empty, they must have the same value. For backwards compatibility, both fields (DataSource and DataSourceRef) will be set to the same value automatically if one of them is empty and the other is non-empty. There are two important differences between DataSource and DataSourceRef: * While DataSource only allows two specific types of objects, DataSourceRef   allows any non-core object, as well as PersistentVolumeClaim objects. * While DataSource ignores disallowed values (dropping them), DataSourceRef   preserves all values, and generates an error if a disallowed value is   specified. (Beta) Using this field requires the AnyVolumeDataSource feature gate to be enabled.<br/>
+          dataSourceRef specifies the object from which to populate the volume with data, if a non-empty
+volume is desired. This may be any local object from a non-empty API group (non
+core object) or a PersistentVolumeClaim object.
+When this field is specified, volume binding will only succeed if the type of
+the specified object matches some installed volume populator or dynamic
+provisioner.
+This field will replace the functionality of the DataSource field and as such
+if both fields are non-empty, they must have the same value. For backwards
+compatibility, both fields (DataSource and DataSourceRef) will be set to the same
+value automatically if one of them is empty and the other is non-empty.
+There are two important differences between DataSource and DataSourceRef:
+* While DataSource only allows two specific types of objects, DataSourceRef
+  allows any non-core object, as well as PersistentVolumeClaim objects.
+* While DataSource ignores disallowed values (dropping them), DataSourceRef
+  preserves all values, and generates an error if a disallowed value is
+  specified.
+(Beta) Using this field requires the AnyVolumeDataSource feature gate to be enabled.<br/>
         </td>
         <td>false</td>
       </tr><tr>
         <td><b><a href="#grafanaspecdeploymentextravolumesindexephemeralvolumeclaimtemplatespecresources">resources</a></b></td>
         <td>object</td>
         <td>
-          resources represents the minimum resources the volume should have. If RecoverVolumeExpansionFailure feature is enabled users are allowed to specify resource requirements that are lower than previous value but must still be higher than capacity recorded in the status field of the claim. More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes#resources<br/>
+          resources represents the minimum resources the volume should have.
+If RecoverVolumeExpansionFailure feature is enabled users are allowed to specify resource requirements
+that are lower than previous value but must still be higher than capacity recorded in the
+status field of the claim.
+More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes#resources<br/>
         </td>
         <td>false</td>
       </tr><tr>
@@ -10903,14 +11841,16 @@ The specification for the PersistentVolumeClaim. The entire content is copied un
         <td><b>storageClassName</b></td>
         <td>string</td>
         <td>
-          storageClassName is the name of the StorageClass required by the claim. More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes#class-1<br/>
+          storageClassName is the name of the StorageClass required by the claim.
+More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes#class-1<br/>
         </td>
         <td>false</td>
       </tr><tr>
         <td><b>volumeMode</b></td>
         <td>string</td>
         <td>
-          volumeMode defines what type of volume is required by the claim. Value of Filesystem is implied when not included in claim spec.<br/>
+          volumeMode defines what type of volume is required by the claim.
+Value of Filesystem is implied when not included in claim spec.<br/>
         </td>
         <td>false</td>
       </tr><tr>
@@ -10929,7 +11869,13 @@ The specification for the PersistentVolumeClaim. The entire content is copied un
 
 
 
-dataSource field can be used to specify either: * An existing VolumeSnapshot object (snapshot.storage.k8s.io/VolumeSnapshot) * An existing PVC (PersistentVolumeClaim) If the provisioner or an external controller can support the specified data source, it will create a new volume based on the contents of the specified data source. If the AnyVolumeDataSource feature gate is enabled, this field will always have the same contents as the DataSourceRef field.
+dataSource field can be used to specify either:
+* An existing VolumeSnapshot object (snapshot.storage.k8s.io/VolumeSnapshot)
+* An existing PVC (PersistentVolumeClaim)
+If the provisioner or an external controller can support the specified data source,
+it will create a new volume based on the contents of the specified data source.
+If the AnyVolumeDataSource feature gate is enabled, this field will always have
+the same contents as the DataSourceRef field.
 
 <table>
     <thead>
@@ -10958,7 +11904,9 @@ dataSource field can be used to specify either: * An existing VolumeSnapshot obj
         <td><b>apiGroup</b></td>
         <td>string</td>
         <td>
-          APIGroup is the group for the resource being referenced. If APIGroup is not specified, the specified Kind must be in the core API group. For any other third-party types, APIGroup is required.<br/>
+          APIGroup is the group for the resource being referenced.
+If APIGroup is not specified, the specified Kind must be in the core API group.
+For any other third-party types, APIGroup is required.<br/>
         </td>
         <td>false</td>
       </tr></tbody>
@@ -10970,7 +11918,23 @@ dataSource field can be used to specify either: * An existing VolumeSnapshot obj
 
 
 
-dataSourceRef specifies the object from which to populate the volume with data, if a non-empty volume is desired. This may be any local object from a non-empty API group (non core object) or a PersistentVolumeClaim object. When this field is specified, volume binding will only succeed if the type of the specified object matches some installed volume populator or dynamic provisioner. This field will replace the functionality of the DataSource field and as such if both fields are non-empty, they must have the same value. For backwards compatibility, both fields (DataSource and DataSourceRef) will be set to the same value automatically if one of them is empty and the other is non-empty. There are two important differences between DataSource and DataSourceRef: * While DataSource only allows two specific types of objects, DataSourceRef   allows any non-core object, as well as PersistentVolumeClaim objects. * While DataSource ignores disallowed values (dropping them), DataSourceRef   preserves all values, and generates an error if a disallowed value is   specified. (Beta) Using this field requires the AnyVolumeDataSource feature gate to be enabled.
+dataSourceRef specifies the object from which to populate the volume with data, if a non-empty
+volume is desired. This may be any local object from a non-empty API group (non
+core object) or a PersistentVolumeClaim object.
+When this field is specified, volume binding will only succeed if the type of
+the specified object matches some installed volume populator or dynamic
+provisioner.
+This field will replace the functionality of the DataSource field and as such
+if both fields are non-empty, they must have the same value. For backwards
+compatibility, both fields (DataSource and DataSourceRef) will be set to the same
+value automatically if one of them is empty and the other is non-empty.
+There are two important differences between DataSource and DataSourceRef:
+* While DataSource only allows two specific types of objects, DataSourceRef
+  allows any non-core object, as well as PersistentVolumeClaim objects.
+* While DataSource ignores disallowed values (dropping them), DataSourceRef
+  preserves all values, and generates an error if a disallowed value is
+  specified.
+(Beta) Using this field requires the AnyVolumeDataSource feature gate to be enabled.
 
 <table>
     <thead>
@@ -10999,7 +11963,9 @@ dataSourceRef specifies the object from which to populate the volume with data, 
         <td><b>apiGroup</b></td>
         <td>string</td>
         <td>
-          APIGroup is the group for the resource being referenced. If APIGroup is not specified, the specified Kind must be in the core API group. For any other third-party types, APIGroup is required.<br/>
+          APIGroup is the group for the resource being referenced.
+If APIGroup is not specified, the specified Kind must be in the core API group.
+For any other third-party types, APIGroup is required.<br/>
         </td>
         <td>false</td>
       </tr></tbody>
@@ -11011,7 +11977,11 @@ dataSourceRef specifies the object from which to populate the volume with data, 
 
 
 
-resources represents the minimum resources the volume should have. If RecoverVolumeExpansionFailure feature is enabled users are allowed to specify resource requirements that are lower than previous value but must still be higher than capacity recorded in the status field of the claim. More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes#resources
+resources represents the minimum resources the volume should have.
+If RecoverVolumeExpansionFailure feature is enabled users are allowed to specify resource requirements
+that are lower than previous value but must still be higher than capacity recorded in the
+status field of the claim.
+More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes#resources
 
 <table>
     <thead>
@@ -11026,14 +11996,18 @@ resources represents the minimum resources the volume should have. If RecoverVol
         <td><b>limits</b></td>
         <td>map[string]int or string</td>
         <td>
-          Limits describes the maximum amount of compute resources allowed. More info: https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/<br/>
+          Limits describes the maximum amount of compute resources allowed.
+More info: https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/<br/>
         </td>
         <td>false</td>
       </tr><tr>
         <td><b>requests</b></td>
         <td>map[string]int or string</td>
         <td>
-          Requests describes the minimum amount of compute resources required. If Requests is omitted for a container, it defaults to Limits if that is explicitly specified, otherwise to an implementation-defined value. More info: https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/<br/>
+          Requests describes the minimum amount of compute resources required.
+If Requests is omitted for a container, it defaults to Limits if that is explicitly specified,
+otherwise to an implementation-defined value.
+More info: https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/<br/>
         </td>
         <td>false</td>
       </tr></tbody>
@@ -11067,7 +12041,9 @@ selector is a label query over volumes to consider for binding.
         <td><b>matchLabels</b></td>
         <td>map[string]string</td>
         <td>
-          matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels map is equivalent to an element of matchExpressions, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.<br/>
+          matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels
+map is equivalent to an element of matchExpressions, whose key field is "key", the
+operator is "In", and the values array contains only "value". The requirements are ANDed.<br/>
         </td>
         <td>false</td>
       </tr></tbody>
@@ -11079,7 +12055,8 @@ selector is a label query over volumes to consider for binding.
 
 
 
-A label selector requirement is a selector that contains values, a key, and an operator that relates the key and values.
+A label selector requirement is a selector that contains values, a key, and an operator that
+relates the key and values.
 
 <table>
     <thead>
@@ -11101,14 +12078,18 @@ A label selector requirement is a selector that contains values, a key, and an o
         <td><b>operator</b></td>
         <td>string</td>
         <td>
-          operator represents a key's relationship to a set of values. Valid operators are In, NotIn, Exists and DoesNotExist.<br/>
+          operator represents a key's relationship to a set of values.
+Valid operators are In, NotIn, Exists and DoesNotExist.<br/>
         </td>
         <td>true</td>
       </tr><tr>
         <td><b>values</b></td>
         <td>[]string</td>
         <td>
-          values is an array of string values. If the operator is In or NotIn, the values array must be non-empty. If the operator is Exists or DoesNotExist, the values array must be empty. This array is replaced during a strategic merge patch.<br/>
+          values is an array of string values. If the operator is In or NotIn,
+the values array must be non-empty. If the operator is Exists or DoesNotExist,
+the values array must be empty. This array is replaced during a strategic
+merge patch.<br/>
         </td>
         <td>false</td>
       </tr></tbody>
@@ -11135,7 +12116,10 @@ fc represents a Fibre Channel resource that is attached to a kubelet's host mach
         <td><b>fsType</b></td>
         <td>string</td>
         <td>
-          fsType is the filesystem type to mount. Must be a filesystem type supported by the host operating system. Ex. "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified. TODO: how do we prevent errors in the filesystem from compromising the machine<br/>
+          fsType is the filesystem type to mount.
+Must be a filesystem type supported by the host operating system.
+Ex. "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified.
+TODO: how do we prevent errors in the filesystem from compromising the machine<br/>
         </td>
         <td>false</td>
       </tr><tr>
@@ -11151,7 +12135,8 @@ fc represents a Fibre Channel resource that is attached to a kubelet's host mach
         <td><b>readOnly</b></td>
         <td>boolean</td>
         <td>
-          readOnly is Optional: Defaults to false (read/write). ReadOnly here will force the ReadOnly setting in VolumeMounts.<br/>
+          readOnly is Optional: Defaults to false (read/write). ReadOnly here will force
+the ReadOnly setting in VolumeMounts.<br/>
         </td>
         <td>false</td>
       </tr><tr>
@@ -11165,7 +12150,8 @@ fc represents a Fibre Channel resource that is attached to a kubelet's host mach
         <td><b>wwids</b></td>
         <td>[]string</td>
         <td>
-          wwids Optional: FC volume world wide identifiers (wwids) Either wwids or combination of targetWWNs and lun must be set, but not both simultaneously.<br/>
+          wwids Optional: FC volume world wide identifiers (wwids)
+Either wwids or combination of targetWWNs and lun must be set, but not both simultaneously.<br/>
         </td>
         <td>false</td>
       </tr></tbody>
@@ -11177,7 +12163,8 @@ fc represents a Fibre Channel resource that is attached to a kubelet's host mach
 
 
 
-flexVolume represents a generic volume resource that is provisioned/attached using an exec based plugin.
+flexVolume represents a generic volume resource that is
+provisioned/attached using an exec based plugin.
 
 <table>
     <thead>
@@ -11199,7 +12186,9 @@ flexVolume represents a generic volume resource that is provisioned/attached usi
         <td><b>fsType</b></td>
         <td>string</td>
         <td>
-          fsType is the filesystem type to mount. Must be a filesystem type supported by the host operating system. Ex. "ext4", "xfs", "ntfs". The default filesystem depends on FlexVolume script.<br/>
+          fsType is the filesystem type to mount.
+Must be a filesystem type supported by the host operating system.
+Ex. "ext4", "xfs", "ntfs". The default filesystem depends on FlexVolume script.<br/>
         </td>
         <td>false</td>
       </tr><tr>
@@ -11213,14 +12202,19 @@ flexVolume represents a generic volume resource that is provisioned/attached usi
         <td><b>readOnly</b></td>
         <td>boolean</td>
         <td>
-          readOnly is Optional: defaults to false (read/write). ReadOnly here will force the ReadOnly setting in VolumeMounts.<br/>
+          readOnly is Optional: defaults to false (read/write). ReadOnly here will force
+the ReadOnly setting in VolumeMounts.<br/>
         </td>
         <td>false</td>
       </tr><tr>
         <td><b><a href="#grafanaspecdeploymentextravolumesindexflexvolumesecretref">secretRef</a></b></td>
         <td>object</td>
         <td>
-          secretRef is Optional: secretRef is reference to the secret object containing sensitive information to pass to the plugin scripts. This may be empty if no secret object is specified. If the secret object contains more than one secret, all secrets are passed to the plugin scripts.<br/>
+          secretRef is Optional: secretRef is reference to the secret object containing
+sensitive information to pass to the plugin scripts. This may be
+empty if no secret object is specified. If the secret object
+contains more than one secret, all secrets are passed to the plugin
+scripts.<br/>
         </td>
         <td>false</td>
       </tr></tbody>
@@ -11232,7 +12226,11 @@ flexVolume represents a generic volume resource that is provisioned/attached usi
 
 
 
-secretRef is Optional: secretRef is reference to the secret object containing sensitive information to pass to the plugin scripts. This may be empty if no secret object is specified. If the secret object contains more than one secret, all secrets are passed to the plugin scripts.
+secretRef is Optional: secretRef is reference to the secret object containing
+sensitive information to pass to the plugin scripts. This may be
+empty if no secret object is specified. If the secret object
+contains more than one secret, all secrets are passed to the plugin
+scripts.
 
 <table>
     <thead>
@@ -11247,7 +12245,9 @@ secretRef is Optional: secretRef is reference to the secret object containing se
         <td><b>name</b></td>
         <td>string</td>
         <td>
-          Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names TODO: Add other useful fields. apiVersion, kind, uid?<br/>
+          Name of the referent.
+More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+TODO: Add other useful fields. apiVersion, kind, uid?<br/>
         </td>
         <td>false</td>
       </tr></tbody>
@@ -11274,7 +12274,8 @@ flocker represents a Flocker volume attached to a kubelet's host machine. This d
         <td><b>datasetName</b></td>
         <td>string</td>
         <td>
-          datasetName is Name of the dataset stored as metadata -> name on the dataset for Flocker should be considered as deprecated<br/>
+          datasetName is Name of the dataset stored as metadata -> name on the dataset for Flocker
+should be considered as deprecated<br/>
         </td>
         <td>false</td>
       </tr><tr>
@@ -11293,7 +12294,9 @@ flocker represents a Flocker volume attached to a kubelet's host machine. This d
 
 
 
-gcePersistentDisk represents a GCE Disk resource that is attached to a kubelet's host machine and then exposed to the pod. More info: https://kubernetes.io/docs/concepts/storage/volumes#gcepersistentdisk
+gcePersistentDisk represents a GCE Disk resource that is attached to a
+kubelet's host machine and then exposed to the pod.
+More info: https://kubernetes.io/docs/concepts/storage/volumes#gcepersistentdisk
 
 <table>
     <thead>
@@ -11308,21 +12311,30 @@ gcePersistentDisk represents a GCE Disk resource that is attached to a kubelet's
         <td><b>pdName</b></td>
         <td>string</td>
         <td>
-          pdName is unique name of the PD resource in GCE. Used to identify the disk in GCE. More info: https://kubernetes.io/docs/concepts/storage/volumes#gcepersistentdisk<br/>
+          pdName is unique name of the PD resource in GCE. Used to identify the disk in GCE.
+More info: https://kubernetes.io/docs/concepts/storage/volumes#gcepersistentdisk<br/>
         </td>
         <td>true</td>
       </tr><tr>
         <td><b>fsType</b></td>
         <td>string</td>
         <td>
-          fsType is filesystem type of the volume that you want to mount. Tip: Ensure that the filesystem type is supported by the host operating system. Examples: "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified. More info: https://kubernetes.io/docs/concepts/storage/volumes#gcepersistentdisk TODO: how do we prevent errors in the filesystem from compromising the machine<br/>
+          fsType is filesystem type of the volume that you want to mount.
+Tip: Ensure that the filesystem type is supported by the host operating system.
+Examples: "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified.
+More info: https://kubernetes.io/docs/concepts/storage/volumes#gcepersistentdisk
+TODO: how do we prevent errors in the filesystem from compromising the machine<br/>
         </td>
         <td>false</td>
       </tr><tr>
         <td><b>partition</b></td>
         <td>integer</td>
         <td>
-          partition is the partition in the volume that you want to mount. If omitted, the default is to mount by volume name. Examples: For volume /dev/sda1, you specify the partition as "1". Similarly, the volume partition for /dev/sda is "0" (or you can leave the property empty). More info: https://kubernetes.io/docs/concepts/storage/volumes#gcepersistentdisk<br/>
+          partition is the partition in the volume that you want to mount.
+If omitted, the default is to mount by volume name.
+Examples: For volume /dev/sda1, you specify the partition as "1".
+Similarly, the volume partition for /dev/sda is "0" (or you can leave the property empty).
+More info: https://kubernetes.io/docs/concepts/storage/volumes#gcepersistentdisk<br/>
           <br/>
             <i>Format</i>: int32<br/>
         </td>
@@ -11331,7 +12343,9 @@ gcePersistentDisk represents a GCE Disk resource that is attached to a kubelet's
         <td><b>readOnly</b></td>
         <td>boolean</td>
         <td>
-          readOnly here will force the ReadOnly setting in VolumeMounts. Defaults to false. More info: https://kubernetes.io/docs/concepts/storage/volumes#gcepersistentdisk<br/>
+          readOnly here will force the ReadOnly setting in VolumeMounts.
+Defaults to false.
+More info: https://kubernetes.io/docs/concepts/storage/volumes#gcepersistentdisk<br/>
         </td>
         <td>false</td>
       </tr></tbody>
@@ -11343,7 +12357,10 @@ gcePersistentDisk represents a GCE Disk resource that is attached to a kubelet's
 
 
 
-gitRepo represents a git repository at a particular revision. DEPRECATED: GitRepo is deprecated. To provision a container with a git repo, mount an EmptyDir into an InitContainer that clones the repo using git, then mount the EmptyDir into the Pod's container.
+gitRepo represents a git repository at a particular revision.
+DEPRECATED: GitRepo is deprecated. To provision a container with a git repo, mount an
+EmptyDir into an InitContainer that clones the repo using git, then mount the EmptyDir
+into the Pod's container.
 
 <table>
     <thead>
@@ -11365,7 +12382,10 @@ gitRepo represents a git repository at a particular revision. DEPRECATED: GitRep
         <td><b>directory</b></td>
         <td>string</td>
         <td>
-          directory is the target directory name. Must not contain or start with '..'.  If '.' is supplied, the volume directory will be the git repository.  Otherwise, if specified, the volume will contain the git repository in the subdirectory with the given name.<br/>
+          directory is the target directory name.
+Must not contain or start with '..'.  If '.' is supplied, the volume directory will be the
+git repository.  Otherwise, if specified, the volume will contain the git repository in
+the subdirectory with the given name.<br/>
         </td>
         <td>false</td>
       </tr><tr>
@@ -11384,7 +12404,8 @@ gitRepo represents a git repository at a particular revision. DEPRECATED: GitRep
 
 
 
-glusterfs represents a Glusterfs mount on the host that shares a pod's lifetime. More info: https://examples.k8s.io/volumes/glusterfs/README.md
+glusterfs represents a Glusterfs mount on the host that shares a pod's lifetime.
+More info: https://examples.k8s.io/volumes/glusterfs/README.md
 
 <table>
     <thead>
@@ -11399,21 +12420,25 @@ glusterfs represents a Glusterfs mount on the host that shares a pod's lifetime.
         <td><b>endpoints</b></td>
         <td>string</td>
         <td>
-          endpoints is the endpoint name that details Glusterfs topology. More info: https://examples.k8s.io/volumes/glusterfs/README.md#create-a-pod<br/>
+          endpoints is the endpoint name that details Glusterfs topology.
+More info: https://examples.k8s.io/volumes/glusterfs/README.md#create-a-pod<br/>
         </td>
         <td>true</td>
       </tr><tr>
         <td><b>path</b></td>
         <td>string</td>
         <td>
-          path is the Glusterfs volume path. More info: https://examples.k8s.io/volumes/glusterfs/README.md#create-a-pod<br/>
+          path is the Glusterfs volume path.
+More info: https://examples.k8s.io/volumes/glusterfs/README.md#create-a-pod<br/>
         </td>
         <td>true</td>
       </tr><tr>
         <td><b>readOnly</b></td>
         <td>boolean</td>
         <td>
-          readOnly here will force the Glusterfs volume to be mounted with read-only permissions. Defaults to false. More info: https://examples.k8s.io/volumes/glusterfs/README.md#create-a-pod<br/>
+          readOnly here will force the Glusterfs volume to be mounted with read-only permissions.
+Defaults to false.
+More info: https://examples.k8s.io/volumes/glusterfs/README.md#create-a-pod<br/>
         </td>
         <td>false</td>
       </tr></tbody>
@@ -11425,7 +12450,14 @@ glusterfs represents a Glusterfs mount on the host that shares a pod's lifetime.
 
 
 
-hostPath represents a pre-existing file or directory on the host machine that is directly exposed to the container. This is generally used for system agents or other privileged things that are allowed to see the host machine. Most containers will NOT need this. More info: https://kubernetes.io/docs/concepts/storage/volumes#hostpath --- TODO(jonesdl) We need to restrict who can use host directory mounts and who can/can not mount host directories as read/write.
+hostPath represents a pre-existing file or directory on the host
+machine that is directly exposed to the container. This is generally
+used for system agents or other privileged things that are allowed
+to see the host machine. Most containers will NOT need this.
+More info: https://kubernetes.io/docs/concepts/storage/volumes#hostpath
+---
+TODO(jonesdl) We need to restrict who can use host directory mounts and who can/can not
+mount host directories as read/write.
 
 <table>
     <thead>
@@ -11440,14 +12472,18 @@ hostPath represents a pre-existing file or directory on the host machine that is
         <td><b>path</b></td>
         <td>string</td>
         <td>
-          path of the directory on the host. If the path is a symlink, it will follow the link to the real path. More info: https://kubernetes.io/docs/concepts/storage/volumes#hostpath<br/>
+          path of the directory on the host.
+If the path is a symlink, it will follow the link to the real path.
+More info: https://kubernetes.io/docs/concepts/storage/volumes#hostpath<br/>
         </td>
         <td>true</td>
       </tr><tr>
         <td><b>type</b></td>
         <td>string</td>
         <td>
-          type for HostPath Volume Defaults to "" More info: https://kubernetes.io/docs/concepts/storage/volumes#hostpath<br/>
+          type for HostPath Volume
+Defaults to ""
+More info: https://kubernetes.io/docs/concepts/storage/volumes#hostpath<br/>
         </td>
         <td>false</td>
       </tr></tbody>
@@ -11459,7 +12495,9 @@ hostPath represents a pre-existing file or directory on the host machine that is
 
 
 
-iscsi represents an ISCSI Disk resource that is attached to a kubelet's host machine and then exposed to the pod. More info: https://examples.k8s.io/volumes/iscsi/README.md
+iscsi represents an ISCSI Disk resource that is attached to a
+kubelet's host machine and then exposed to the pod.
+More info: https://examples.k8s.io/volumes/iscsi/README.md
 
 <table>
     <thead>
@@ -11490,7 +12528,8 @@ iscsi represents an ISCSI Disk resource that is attached to a kubelet's host mac
         <td><b>targetPortal</b></td>
         <td>string</td>
         <td>
-          targetPortal is iSCSI Target Portal. The Portal is either an IP or ip_addr:port if the port is other than default (typically TCP ports 860 and 3260).<br/>
+          targetPortal is iSCSI Target Portal. The Portal is either an IP or ip_addr:port if the port
+is other than default (typically TCP ports 860 and 3260).<br/>
         </td>
         <td>true</td>
       </tr><tr>
@@ -11511,35 +12550,44 @@ iscsi represents an ISCSI Disk resource that is attached to a kubelet's host mac
         <td><b>fsType</b></td>
         <td>string</td>
         <td>
-          fsType is the filesystem type of the volume that you want to mount. Tip: Ensure that the filesystem type is supported by the host operating system. Examples: "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified. More info: https://kubernetes.io/docs/concepts/storage/volumes#iscsi TODO: how do we prevent errors in the filesystem from compromising the machine<br/>
+          fsType is the filesystem type of the volume that you want to mount.
+Tip: Ensure that the filesystem type is supported by the host operating system.
+Examples: "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified.
+More info: https://kubernetes.io/docs/concepts/storage/volumes#iscsi
+TODO: how do we prevent errors in the filesystem from compromising the machine<br/>
         </td>
         <td>false</td>
       </tr><tr>
         <td><b>initiatorName</b></td>
         <td>string</td>
         <td>
-          initiatorName is the custom iSCSI Initiator Name. If initiatorName is specified with iscsiInterface simultaneously, new iSCSI interface <target portal>:<volume name> will be created for the connection.<br/>
+          initiatorName is the custom iSCSI Initiator Name.
+If initiatorName is specified with iscsiInterface simultaneously, new iSCSI interface
+<target portal>:<volume name> will be created for the connection.<br/>
         </td>
         <td>false</td>
       </tr><tr>
         <td><b>iscsiInterface</b></td>
         <td>string</td>
         <td>
-          iscsiInterface is the interface Name that uses an iSCSI transport. Defaults to 'default' (tcp).<br/>
+          iscsiInterface is the interface Name that uses an iSCSI transport.
+Defaults to 'default' (tcp).<br/>
         </td>
         <td>false</td>
       </tr><tr>
         <td><b>portals</b></td>
         <td>[]string</td>
         <td>
-          portals is the iSCSI Target Portal List. The portal is either an IP or ip_addr:port if the port is other than default (typically TCP ports 860 and 3260).<br/>
+          portals is the iSCSI Target Portal List. The portal is either an IP or ip_addr:port if the port
+is other than default (typically TCP ports 860 and 3260).<br/>
         </td>
         <td>false</td>
       </tr><tr>
         <td><b>readOnly</b></td>
         <td>boolean</td>
         <td>
-          readOnly here will force the ReadOnly setting in VolumeMounts. Defaults to false.<br/>
+          readOnly here will force the ReadOnly setting in VolumeMounts.
+Defaults to false.<br/>
         </td>
         <td>false</td>
       </tr><tr>
@@ -11573,7 +12621,9 @@ secretRef is the CHAP Secret for iSCSI target and initiator authentication
         <td><b>name</b></td>
         <td>string</td>
         <td>
-          Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names TODO: Add other useful fields. apiVersion, kind, uid?<br/>
+          Name of the referent.
+More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+TODO: Add other useful fields. apiVersion, kind, uid?<br/>
         </td>
         <td>false</td>
       </tr></tbody>
@@ -11585,7 +12635,8 @@ secretRef is the CHAP Secret for iSCSI target and initiator authentication
 
 
 
-nfs represents an NFS mount on the host that shares a pod's lifetime More info: https://kubernetes.io/docs/concepts/storage/volumes#nfs
+nfs represents an NFS mount on the host that shares a pod's lifetime
+More info: https://kubernetes.io/docs/concepts/storage/volumes#nfs
 
 <table>
     <thead>
@@ -11600,21 +12651,25 @@ nfs represents an NFS mount on the host that shares a pod's lifetime More info: 
         <td><b>path</b></td>
         <td>string</td>
         <td>
-          path that is exported by the NFS server. More info: https://kubernetes.io/docs/concepts/storage/volumes#nfs<br/>
+          path that is exported by the NFS server.
+More info: https://kubernetes.io/docs/concepts/storage/volumes#nfs<br/>
         </td>
         <td>true</td>
       </tr><tr>
         <td><b>server</b></td>
         <td>string</td>
         <td>
-          server is the hostname or IP address of the NFS server. More info: https://kubernetes.io/docs/concepts/storage/volumes#nfs<br/>
+          server is the hostname or IP address of the NFS server.
+More info: https://kubernetes.io/docs/concepts/storage/volumes#nfs<br/>
         </td>
         <td>true</td>
       </tr><tr>
         <td><b>readOnly</b></td>
         <td>boolean</td>
         <td>
-          readOnly here will force the NFS export to be mounted with read-only permissions. Defaults to false. More info: https://kubernetes.io/docs/concepts/storage/volumes#nfs<br/>
+          readOnly here will force the NFS export to be mounted with read-only permissions.
+Defaults to false.
+More info: https://kubernetes.io/docs/concepts/storage/volumes#nfs<br/>
         </td>
         <td>false</td>
       </tr></tbody>
@@ -11626,7 +12681,9 @@ nfs represents an NFS mount on the host that shares a pod's lifetime More info: 
 
 
 
-persistentVolumeClaimVolumeSource represents a reference to a PersistentVolumeClaim in the same namespace. More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes#persistentvolumeclaims
+persistentVolumeClaimVolumeSource represents a reference to a
+PersistentVolumeClaim in the same namespace.
+More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes#persistentvolumeclaims
 
 <table>
     <thead>
@@ -11641,14 +12698,16 @@ persistentVolumeClaimVolumeSource represents a reference to a PersistentVolumeCl
         <td><b>claimName</b></td>
         <td>string</td>
         <td>
-          claimName is the name of a PersistentVolumeClaim in the same namespace as the pod using this volume. More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes#persistentvolumeclaims<br/>
+          claimName is the name of a PersistentVolumeClaim in the same namespace as the pod using this volume.
+More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes#persistentvolumeclaims<br/>
         </td>
         <td>true</td>
       </tr><tr>
         <td><b>readOnly</b></td>
         <td>boolean</td>
         <td>
-          readOnly Will force the ReadOnly setting in VolumeMounts. Default false.<br/>
+          readOnly Will force the ReadOnly setting in VolumeMounts.
+Default false.<br/>
         </td>
         <td>false</td>
       </tr></tbody>
@@ -11682,7 +12741,9 @@ photonPersistentDisk represents a PhotonController persistent disk attached and 
         <td><b>fsType</b></td>
         <td>string</td>
         <td>
-          fsType is the filesystem type to mount. Must be a filesystem type supported by the host operating system. Ex. "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified.<br/>
+          fsType is the filesystem type to mount.
+Must be a filesystem type supported by the host operating system.
+Ex. "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified.<br/>
         </td>
         <td>false</td>
       </tr></tbody>
@@ -11716,14 +12777,17 @@ portworxVolume represents a portworx volume attached and mounted on kubelets hos
         <td><b>fsType</b></td>
         <td>string</td>
         <td>
-          fSType represents the filesystem type to mount Must be a filesystem type supported by the host operating system. Ex. "ext4", "xfs". Implicitly inferred to be "ext4" if unspecified.<br/>
+          fSType represents the filesystem type to mount
+Must be a filesystem type supported by the host operating system.
+Ex. "ext4", "xfs". Implicitly inferred to be "ext4" if unspecified.<br/>
         </td>
         <td>false</td>
       </tr><tr>
         <td><b>readOnly</b></td>
         <td>boolean</td>
         <td>
-          readOnly defaults to false (read/write). ReadOnly here will force the ReadOnly setting in VolumeMounts.<br/>
+          readOnly defaults to false (read/write). ReadOnly here will force
+the ReadOnly setting in VolumeMounts.<br/>
         </td>
         <td>false</td>
       </tr></tbody>
@@ -11750,7 +12814,12 @@ projected items for all in one resources secrets, configmaps, and downward API
         <td><b>defaultMode</b></td>
         <td>integer</td>
         <td>
-          defaultMode are the mode bits used to set permissions on created files by default. Must be an octal value between 0000 and 0777 or a decimal value between 0 and 511. YAML accepts both octal and decimal values, JSON requires decimal values for mode bits. Directories within the path are not affected by this setting. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.<br/>
+          defaultMode are the mode bits used to set permissions on created files by default.
+Must be an octal value between 0000 and 0777 or a decimal value between 0 and 511.
+YAML accepts both octal and decimal values, JSON requires decimal values for mode bits.
+Directories within the path are not affected by this setting.
+This might be in conflict with other options that affect the file
+mode, like fsGroup, and the result can be other mode bits set.<br/>
           <br/>
             <i>Format</i>: int32<br/>
         </td>
@@ -11834,14 +12903,22 @@ configMap information about the configMap data to project
         <td><b><a href="#grafanaspecdeploymentextravolumesindexprojectedsourcesindexconfigmapitemsindex">items</a></b></td>
         <td>[]object</td>
         <td>
-          items if unspecified, each key-value pair in the Data field of the referenced ConfigMap will be projected into the volume as a file whose name is the key and content is the value. If specified, the listed keys will be projected into the specified paths, and unlisted keys will not be present. If a key is specified which is not present in the ConfigMap, the volume setup will error unless it is marked optional. Paths must be relative and may not contain the '..' path or start with '..'.<br/>
+          items if unspecified, each key-value pair in the Data field of the referenced
+ConfigMap will be projected into the volume as a file whose name is the
+key and content is the value. If specified, the listed keys will be
+projected into the specified paths, and unlisted keys will not be
+present. If a key is specified which is not present in the ConfigMap,
+the volume setup will error unless it is marked optional. Paths must be
+relative and may not contain the '..' path or start with '..'.<br/>
         </td>
         <td>false</td>
       </tr><tr>
         <td><b>name</b></td>
         <td>string</td>
         <td>
-          Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names TODO: Add other useful fields. apiVersion, kind, uid?<br/>
+          Name of the referent.
+More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+TODO: Add other useful fields. apiVersion, kind, uid?<br/>
         </td>
         <td>false</td>
       </tr><tr>
@@ -11882,14 +12959,22 @@ Maps a string key to a path within a volume.
         <td><b>path</b></td>
         <td>string</td>
         <td>
-          path is the relative path of the file to map the key to. May not be an absolute path. May not contain the path element '..'. May not start with the string '..'.<br/>
+          path is the relative path of the file to map the key to.
+May not be an absolute path.
+May not contain the path element '..'.
+May not start with the string '..'.<br/>
         </td>
         <td>true</td>
       </tr><tr>
         <td><b>mode</b></td>
         <td>integer</td>
         <td>
-          mode is Optional: mode bits used to set permissions on this file. Must be an octal value between 0000 and 0777 or a decimal value between 0 and 511. YAML accepts both octal and decimal values, JSON requires decimal values for mode bits. If not specified, the volume defaultMode will be used. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.<br/>
+          mode is Optional: mode bits used to set permissions on this file.
+Must be an octal value between 0000 and 0777 or a decimal value between 0 and 511.
+YAML accepts both octal and decimal values, JSON requires decimal values for mode bits.
+If not specified, the volume defaultMode will be used.
+This might be in conflict with other options that affect the file
+mode, like fsGroup, and the result can be other mode bits set.<br/>
           <br/>
             <i>Format</i>: int32<br/>
         </td>
@@ -11959,7 +13044,12 @@ DownwardAPIVolumeFile represents information to create the file containing the p
         <td><b>mode</b></td>
         <td>integer</td>
         <td>
-          Optional: mode bits used to set permissions on this file, must be an octal value between 0000 and 0777 or a decimal value between 0 and 511. YAML accepts both octal and decimal values, JSON requires decimal values for mode bits. If not specified, the volume defaultMode will be used. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.<br/>
+          Optional: mode bits used to set permissions on this file, must be an octal value
+between 0000 and 0777 or a decimal value between 0 and 511.
+YAML accepts both octal and decimal values, JSON requires decimal values for mode bits.
+If not specified, the volume defaultMode will be used.
+This might be in conflict with other options that affect the file
+mode, like fsGroup, and the result can be other mode bits set.<br/>
           <br/>
             <i>Format</i>: int32<br/>
         </td>
@@ -11968,7 +13058,8 @@ DownwardAPIVolumeFile represents information to create the file containing the p
         <td><b><a href="#grafanaspecdeploymentextravolumesindexprojectedsourcesindexdownwardapiitemsindexresourcefieldref">resourceFieldRef</a></b></td>
         <td>object</td>
         <td>
-          Selects a resource of the container: only resources limits and requests (limits.cpu, limits.memory, requests.cpu and requests.memory) are currently supported.<br/>
+          Selects a resource of the container: only resources limits and requests
+(limits.cpu, limits.memory, requests.cpu and requests.memory) are currently supported.<br/>
         </td>
         <td>false</td>
       </tr></tbody>
@@ -12014,7 +13105,8 @@ Required: Selects a field of the pod: only annotations, labels, name and namespa
 
 
 
-Selects a resource of the container: only resources limits and requests (limits.cpu, limits.memory, requests.cpu and requests.memory) are currently supported.
+Selects a resource of the container: only resources limits and requests
+(limits.cpu, limits.memory, requests.cpu and requests.memory) are currently supported.
 
 <table>
     <thead>
@@ -12070,14 +13162,22 @@ secret information about the secret data to project
         <td><b><a href="#grafanaspecdeploymentextravolumesindexprojectedsourcesindexsecretitemsindex">items</a></b></td>
         <td>[]object</td>
         <td>
-          items if unspecified, each key-value pair in the Data field of the referenced Secret will be projected into the volume as a file whose name is the key and content is the value. If specified, the listed keys will be projected into the specified paths, and unlisted keys will not be present. If a key is specified which is not present in the Secret, the volume setup will error unless it is marked optional. Paths must be relative and may not contain the '..' path or start with '..'.<br/>
+          items if unspecified, each key-value pair in the Data field of the referenced
+Secret will be projected into the volume as a file whose name is the
+key and content is the value. If specified, the listed keys will be
+projected into the specified paths, and unlisted keys will not be
+present. If a key is specified which is not present in the Secret,
+the volume setup will error unless it is marked optional. Paths must be
+relative and may not contain the '..' path or start with '..'.<br/>
         </td>
         <td>false</td>
       </tr><tr>
         <td><b>name</b></td>
         <td>string</td>
         <td>
-          Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names TODO: Add other useful fields. apiVersion, kind, uid?<br/>
+          Name of the referent.
+More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+TODO: Add other useful fields. apiVersion, kind, uid?<br/>
         </td>
         <td>false</td>
       </tr><tr>
@@ -12118,14 +13218,22 @@ Maps a string key to a path within a volume.
         <td><b>path</b></td>
         <td>string</td>
         <td>
-          path is the relative path of the file to map the key to. May not be an absolute path. May not contain the path element '..'. May not start with the string '..'.<br/>
+          path is the relative path of the file to map the key to.
+May not be an absolute path.
+May not contain the path element '..'.
+May not start with the string '..'.<br/>
         </td>
         <td>true</td>
       </tr><tr>
         <td><b>mode</b></td>
         <td>integer</td>
         <td>
-          mode is Optional: mode bits used to set permissions on this file. Must be an octal value between 0000 and 0777 or a decimal value between 0 and 511. YAML accepts both octal and decimal values, JSON requires decimal values for mode bits. If not specified, the volume defaultMode will be used. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.<br/>
+          mode is Optional: mode bits used to set permissions on this file.
+Must be an octal value between 0000 and 0777 or a decimal value between 0 and 511.
+YAML accepts both octal and decimal values, JSON requires decimal values for mode bits.
+If not specified, the volume defaultMode will be used.
+This might be in conflict with other options that affect the file
+mode, like fsGroup, and the result can be other mode bits set.<br/>
           <br/>
             <i>Format</i>: int32<br/>
         </td>
@@ -12154,21 +13262,30 @@ serviceAccountToken is information about the serviceAccountToken data to project
         <td><b>path</b></td>
         <td>string</td>
         <td>
-          path is the path relative to the mount point of the file to project the token into.<br/>
+          path is the path relative to the mount point of the file to project the
+token into.<br/>
         </td>
         <td>true</td>
       </tr><tr>
         <td><b>audience</b></td>
         <td>string</td>
         <td>
-          audience is the intended audience of the token. A recipient of a token must identify itself with an identifier specified in the audience of the token, and otherwise should reject the token. The audience defaults to the identifier of the apiserver.<br/>
+          audience is the intended audience of the token. A recipient of a token
+must identify itself with an identifier specified in the audience of the
+token, and otherwise should reject the token. The audience defaults to the
+identifier of the apiserver.<br/>
         </td>
         <td>false</td>
       </tr><tr>
         <td><b>expirationSeconds</b></td>
         <td>integer</td>
         <td>
-          expirationSeconds is the requested duration of validity of the service account token. As the token approaches expiration, the kubelet volume plugin will proactively rotate the service account token. The kubelet will start trying to rotate the token if the token is older than 80 percent of its time to live or if the token is older than 24 hours.Defaults to 1 hour and must be at least 10 minutes.<br/>
+          expirationSeconds is the requested duration of validity of the service
+account token. As the token approaches expiration, the kubelet volume
+plugin will proactively rotate the service account token. The kubelet will
+start trying to rotate the token if the token is older than 80 percent of
+its time to live or if the token is older than 24 hours.Defaults to 1 hour
+and must be at least 10 minutes.<br/>
           <br/>
             <i>Format</i>: int64<br/>
         </td>
@@ -12197,7 +13314,9 @@ quobyte represents a Quobyte mount on the host that shares a pod's lifetime
         <td><b>registry</b></td>
         <td>string</td>
         <td>
-          registry represents a single or multiple Quobyte Registry services specified as a string as host:port pair (multiple entries are separated with commas) which acts as the central registry for volumes<br/>
+          registry represents a single or multiple Quobyte Registry services
+specified as a string as host:port pair (multiple entries are separated with commas)
+which acts as the central registry for volumes<br/>
         </td>
         <td>true</td>
       </tr><tr>
@@ -12211,28 +13330,32 @@ quobyte represents a Quobyte mount on the host that shares a pod's lifetime
         <td><b>group</b></td>
         <td>string</td>
         <td>
-          group to map volume access to Default is no group<br/>
+          group to map volume access to
+Default is no group<br/>
         </td>
         <td>false</td>
       </tr><tr>
         <td><b>readOnly</b></td>
         <td>boolean</td>
         <td>
-          readOnly here will force the Quobyte volume to be mounted with read-only permissions. Defaults to false.<br/>
+          readOnly here will force the Quobyte volume to be mounted with read-only permissions.
+Defaults to false.<br/>
         </td>
         <td>false</td>
       </tr><tr>
         <td><b>tenant</b></td>
         <td>string</td>
         <td>
-          tenant owning the given Quobyte volume in the Backend Used with dynamically provisioned Quobyte volumes, value is set by the plugin<br/>
+          tenant owning the given Quobyte volume in the Backend
+Used with dynamically provisioned Quobyte volumes, value is set by the plugin<br/>
         </td>
         <td>false</td>
       </tr><tr>
         <td><b>user</b></td>
         <td>string</td>
         <td>
-          user to map volume access to Defaults to serivceaccount user<br/>
+          user to map volume access to
+Defaults to serivceaccount user<br/>
         </td>
         <td>false</td>
       </tr></tbody>
@@ -12244,7 +13367,8 @@ quobyte represents a Quobyte mount on the host that shares a pod's lifetime
 
 
 
-rbd represents a Rados Block Device mount on the host that shares a pod's lifetime. More info: https://examples.k8s.io/volumes/rbd/README.md
+rbd represents a Rados Block Device mount on the host that shares a pod's lifetime.
+More info: https://examples.k8s.io/volumes/rbd/README.md
 
 <table>
     <thead>
@@ -12259,56 +13383,73 @@ rbd represents a Rados Block Device mount on the host that shares a pod's lifeti
         <td><b>image</b></td>
         <td>string</td>
         <td>
-          image is the rados image name. More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it<br/>
+          image is the rados image name.
+More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it<br/>
         </td>
         <td>true</td>
       </tr><tr>
         <td><b>monitors</b></td>
         <td>[]string</td>
         <td>
-          monitors is a collection of Ceph monitors. More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it<br/>
+          monitors is a collection of Ceph monitors.
+More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it<br/>
         </td>
         <td>true</td>
       </tr><tr>
         <td><b>fsType</b></td>
         <td>string</td>
         <td>
-          fsType is the filesystem type of the volume that you want to mount. Tip: Ensure that the filesystem type is supported by the host operating system. Examples: "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified. More info: https://kubernetes.io/docs/concepts/storage/volumes#rbd TODO: how do we prevent errors in the filesystem from compromising the machine<br/>
+          fsType is the filesystem type of the volume that you want to mount.
+Tip: Ensure that the filesystem type is supported by the host operating system.
+Examples: "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified.
+More info: https://kubernetes.io/docs/concepts/storage/volumes#rbd
+TODO: how do we prevent errors in the filesystem from compromising the machine<br/>
         </td>
         <td>false</td>
       </tr><tr>
         <td><b>keyring</b></td>
         <td>string</td>
         <td>
-          keyring is the path to key ring for RBDUser. Default is /etc/ceph/keyring. More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it<br/>
+          keyring is the path to key ring for RBDUser.
+Default is /etc/ceph/keyring.
+More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it<br/>
         </td>
         <td>false</td>
       </tr><tr>
         <td><b>pool</b></td>
         <td>string</td>
         <td>
-          pool is the rados pool name. Default is rbd. More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it<br/>
+          pool is the rados pool name.
+Default is rbd.
+More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it<br/>
         </td>
         <td>false</td>
       </tr><tr>
         <td><b>readOnly</b></td>
         <td>boolean</td>
         <td>
-          readOnly here will force the ReadOnly setting in VolumeMounts. Defaults to false. More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it<br/>
+          readOnly here will force the ReadOnly setting in VolumeMounts.
+Defaults to false.
+More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it<br/>
         </td>
         <td>false</td>
       </tr><tr>
         <td><b><a href="#grafanaspecdeploymentextravolumesindexrbdsecretref">secretRef</a></b></td>
         <td>object</td>
         <td>
-          secretRef is name of the authentication secret for RBDUser. If provided overrides keyring. Default is nil. More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it<br/>
+          secretRef is name of the authentication secret for RBDUser. If provided
+overrides keyring.
+Default is nil.
+More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it<br/>
         </td>
         <td>false</td>
       </tr><tr>
         <td><b>user</b></td>
         <td>string</td>
         <td>
-          user is the rados user name. Default is admin. More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it<br/>
+          user is the rados user name.
+Default is admin.
+More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it<br/>
         </td>
         <td>false</td>
       </tr></tbody>
@@ -12320,7 +13461,10 @@ rbd represents a Rados Block Device mount on the host that shares a pod's lifeti
 
 
 
-secretRef is name of the authentication secret for RBDUser. If provided overrides keyring. Default is nil. More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it
+secretRef is name of the authentication secret for RBDUser. If provided
+overrides keyring.
+Default is nil.
+More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it
 
 <table>
     <thead>
@@ -12335,7 +13479,9 @@ secretRef is name of the authentication secret for RBDUser. If provided override
         <td><b>name</b></td>
         <td>string</td>
         <td>
-          Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names TODO: Add other useful fields. apiVersion, kind, uid?<br/>
+          Name of the referent.
+More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+TODO: Add other useful fields. apiVersion, kind, uid?<br/>
         </td>
         <td>false</td>
       </tr></tbody>
@@ -12369,7 +13515,8 @@ scaleIO represents a ScaleIO persistent volume attached and mounted on Kubernete
         <td><b><a href="#grafanaspecdeploymentextravolumesindexscaleiosecretref">secretRef</a></b></td>
         <td>object</td>
         <td>
-          secretRef references to the secret for ScaleIO user and other sensitive information. If this is not provided, Login operation will fail.<br/>
+          secretRef references to the secret for ScaleIO user and other
+sensitive information. If this is not provided, Login operation will fail.<br/>
         </td>
         <td>true</td>
       </tr><tr>
@@ -12383,7 +13530,10 @@ scaleIO represents a ScaleIO persistent volume attached and mounted on Kubernete
         <td><b>fsType</b></td>
         <td>string</td>
         <td>
-          fsType is the filesystem type to mount. Must be a filesystem type supported by the host operating system. Ex. "ext4", "xfs", "ntfs". Default is "xfs".<br/>
+          fsType is the filesystem type to mount.
+Must be a filesystem type supported by the host operating system.
+Ex. "ext4", "xfs", "ntfs".
+Default is "xfs".<br/>
         </td>
         <td>false</td>
       </tr><tr>
@@ -12397,7 +13547,8 @@ scaleIO represents a ScaleIO persistent volume attached and mounted on Kubernete
         <td><b>readOnly</b></td>
         <td>boolean</td>
         <td>
-          readOnly Defaults to false (read/write). ReadOnly here will force the ReadOnly setting in VolumeMounts.<br/>
+          readOnly Defaults to false (read/write). ReadOnly here will force
+the ReadOnly setting in VolumeMounts.<br/>
         </td>
         <td>false</td>
       </tr><tr>
@@ -12411,7 +13562,8 @@ scaleIO represents a ScaleIO persistent volume attached and mounted on Kubernete
         <td><b>storageMode</b></td>
         <td>string</td>
         <td>
-          storageMode indicates whether the storage for a volume should be ThickProvisioned or ThinProvisioned. Default is ThinProvisioned.<br/>
+          storageMode indicates whether the storage for a volume should be ThickProvisioned or ThinProvisioned.
+Default is ThinProvisioned.<br/>
         </td>
         <td>false</td>
       </tr><tr>
@@ -12425,7 +13577,8 @@ scaleIO represents a ScaleIO persistent volume attached and mounted on Kubernete
         <td><b>volumeName</b></td>
         <td>string</td>
         <td>
-          volumeName is the name of a volume already created in the ScaleIO system that is associated with this volume source.<br/>
+          volumeName is the name of a volume already created in the ScaleIO system
+that is associated with this volume source.<br/>
         </td>
         <td>false</td>
       </tr></tbody>
@@ -12437,7 +13590,8 @@ scaleIO represents a ScaleIO persistent volume attached and mounted on Kubernete
 
 
 
-secretRef references to the secret for ScaleIO user and other sensitive information. If this is not provided, Login operation will fail.
+secretRef references to the secret for ScaleIO user and other
+sensitive information. If this is not provided, Login operation will fail.
 
 <table>
     <thead>
@@ -12452,7 +13606,9 @@ secretRef references to the secret for ScaleIO user and other sensitive informat
         <td><b>name</b></td>
         <td>string</td>
         <td>
-          Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names TODO: Add other useful fields. apiVersion, kind, uid?<br/>
+          Name of the referent.
+More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+TODO: Add other useful fields. apiVersion, kind, uid?<br/>
         </td>
         <td>false</td>
       </tr></tbody>
@@ -12464,7 +13620,8 @@ secretRef references to the secret for ScaleIO user and other sensitive informat
 
 
 
-secret represents a secret that should populate this volume. More info: https://kubernetes.io/docs/concepts/storage/volumes#secret
+secret represents a secret that should populate this volume.
+More info: https://kubernetes.io/docs/concepts/storage/volumes#secret
 
 <table>
     <thead>
@@ -12479,7 +13636,13 @@ secret represents a secret that should populate this volume. More info: https://
         <td><b>defaultMode</b></td>
         <td>integer</td>
         <td>
-          defaultMode is Optional: mode bits used to set permissions on created files by default. Must be an octal value between 0000 and 0777 or a decimal value between 0 and 511. YAML accepts both octal and decimal values, JSON requires decimal values for mode bits. Defaults to 0644. Directories within the path are not affected by this setting. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.<br/>
+          defaultMode is Optional: mode bits used to set permissions on created files by default.
+Must be an octal value between 0000 and 0777 or a decimal value between 0 and 511.
+YAML accepts both octal and decimal values, JSON requires decimal values
+for mode bits. Defaults to 0644.
+Directories within the path are not affected by this setting.
+This might be in conflict with other options that affect the file
+mode, like fsGroup, and the result can be other mode bits set.<br/>
           <br/>
             <i>Format</i>: int32<br/>
         </td>
@@ -12488,7 +13651,13 @@ secret represents a secret that should populate this volume. More info: https://
         <td><b><a href="#grafanaspecdeploymentextravolumesindexsecretitemsindex">items</a></b></td>
         <td>[]object</td>
         <td>
-          items If unspecified, each key-value pair in the Data field of the referenced Secret will be projected into the volume as a file whose name is the key and content is the value. If specified, the listed keys will be projected into the specified paths, and unlisted keys will not be present. If a key is specified which is not present in the Secret, the volume setup will error unless it is marked optional. Paths must be relative and may not contain the '..' path or start with '..'.<br/>
+          items If unspecified, each key-value pair in the Data field of the referenced
+Secret will be projected into the volume as a file whose name is the
+key and content is the value. If specified, the listed keys will be
+projected into the specified paths, and unlisted keys will not be
+present. If a key is specified which is not present in the Secret,
+the volume setup will error unless it is marked optional. Paths must be
+relative and may not contain the '..' path or start with '..'.<br/>
         </td>
         <td>false</td>
       </tr><tr>
@@ -12502,7 +13671,8 @@ secret represents a secret that should populate this volume. More info: https://
         <td><b>secretName</b></td>
         <td>string</td>
         <td>
-          secretName is the name of the secret in the pod's namespace to use. More info: https://kubernetes.io/docs/concepts/storage/volumes#secret<br/>
+          secretName is the name of the secret in the pod's namespace to use.
+More info: https://kubernetes.io/docs/concepts/storage/volumes#secret<br/>
         </td>
         <td>false</td>
       </tr></tbody>
@@ -12536,14 +13706,22 @@ Maps a string key to a path within a volume.
         <td><b>path</b></td>
         <td>string</td>
         <td>
-          path is the relative path of the file to map the key to. May not be an absolute path. May not contain the path element '..'. May not start with the string '..'.<br/>
+          path is the relative path of the file to map the key to.
+May not be an absolute path.
+May not contain the path element '..'.
+May not start with the string '..'.<br/>
         </td>
         <td>true</td>
       </tr><tr>
         <td><b>mode</b></td>
         <td>integer</td>
         <td>
-          mode is Optional: mode bits used to set permissions on this file. Must be an octal value between 0000 and 0777 or a decimal value between 0 and 511. YAML accepts both octal and decimal values, JSON requires decimal values for mode bits. If not specified, the volume defaultMode will be used. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode bits set.<br/>
+          mode is Optional: mode bits used to set permissions on this file.
+Must be an octal value between 0000 and 0777 or a decimal value between 0 and 511.
+YAML accepts both octal and decimal values, JSON requires decimal values for mode bits.
+If not specified, the volume defaultMode will be used.
+This might be in conflict with other options that affect the file
+mode, like fsGroup, and the result can be other mode bits set.<br/>
           <br/>
             <i>Format</i>: int32<br/>
         </td>
@@ -12572,35 +13750,45 @@ storageOS represents a StorageOS volume attached and mounted on Kubernetes nodes
         <td><b>fsType</b></td>
         <td>string</td>
         <td>
-          fsType is the filesystem type to mount. Must be a filesystem type supported by the host operating system. Ex. "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified.<br/>
+          fsType is the filesystem type to mount.
+Must be a filesystem type supported by the host operating system.
+Ex. "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified.<br/>
         </td>
         <td>false</td>
       </tr><tr>
         <td><b>readOnly</b></td>
         <td>boolean</td>
         <td>
-          readOnly defaults to false (read/write). ReadOnly here will force the ReadOnly setting in VolumeMounts.<br/>
+          readOnly defaults to false (read/write). ReadOnly here will force
+the ReadOnly setting in VolumeMounts.<br/>
         </td>
         <td>false</td>
       </tr><tr>
         <td><b><a href="#grafanaspecdeploymentextravolumesindexstorageossecretref">secretRef</a></b></td>
         <td>object</td>
         <td>
-          secretRef specifies the secret to use for obtaining the StorageOS API credentials.  If not specified, default values will be attempted.<br/>
+          secretRef specifies the secret to use for obtaining the StorageOS API
+credentials.  If not specified, default values will be attempted.<br/>
         </td>
         <td>false</td>
       </tr><tr>
         <td><b>volumeName</b></td>
         <td>string</td>
         <td>
-          volumeName is the human-readable name of the StorageOS volume.  Volume names are only unique within a namespace.<br/>
+          volumeName is the human-readable name of the StorageOS volume.  Volume
+names are only unique within a namespace.<br/>
         </td>
         <td>false</td>
       </tr><tr>
         <td><b>volumeNamespace</b></td>
         <td>string</td>
         <td>
-          volumeNamespace specifies the scope of the volume within StorageOS.  If no namespace is specified then the Pod's namespace will be used.  This allows the Kubernetes name scoping to be mirrored within StorageOS for tighter integration. Set VolumeName to any name to override the default behaviour. Set to "default" if you are not using namespaces within StorageOS. Namespaces that do not pre-exist within StorageOS will be created.<br/>
+          volumeNamespace specifies the scope of the volume within StorageOS.  If no
+namespace is specified then the Pod's namespace will be used.  This allows the
+Kubernetes name scoping to be mirrored within StorageOS for tighter integration.
+Set VolumeName to any name to override the default behaviour.
+Set to "default" if you are not using namespaces within StorageOS.
+Namespaces that do not pre-exist within StorageOS will be created.<br/>
         </td>
         <td>false</td>
       </tr></tbody>
@@ -12612,7 +13800,8 @@ storageOS represents a StorageOS volume attached and mounted on Kubernetes nodes
 
 
 
-secretRef specifies the secret to use for obtaining the StorageOS API credentials.  If not specified, default values will be attempted.
+secretRef specifies the secret to use for obtaining the StorageOS API
+credentials.  If not specified, default values will be attempted.
 
 <table>
     <thead>
@@ -12627,7 +13816,9 @@ secretRef specifies the secret to use for obtaining the StorageOS API credential
         <td><b>name</b></td>
         <td>string</td>
         <td>
-          Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names TODO: Add other useful fields. apiVersion, kind, uid?<br/>
+          Name of the referent.
+More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+TODO: Add other useful fields. apiVersion, kind, uid?<br/>
         </td>
         <td>false</td>
       </tr></tbody>
@@ -12661,7 +13852,9 @@ vsphereVolume represents a vSphere volume attached and mounted on kubelets host 
         <td><b>fsType</b></td>
         <td>string</td>
         <td>
-          fsType is filesystem type to mount. Must be a filesystem type supported by the host operating system. Ex. "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified.<br/>
+          fsType is filesystem type to mount.
+Must be a filesystem type supported by the host operating system.
+Ex. "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified.<br/>
         </td>
         <td>false</td>
       </tr><tr>
@@ -12687,7 +13880,8 @@ vsphereVolume represents a vSphere volume attached and mounted on kubelets host 
 
 
 
-GrafanaHttpProxy provides a means to configure the Grafana deployment to use an HTTP(S) proxy when making requests and resolving plugins.
+GrafanaHttpProxy provides a means to configure the Grafana deployment
+to use an HTTP(S) proxy when making requests and resolving plugins.
 
 <table>
     <thead>
@@ -12735,7 +13929,9 @@ GrafanaHttpProxy provides a means to configure the Grafana deployment to use an 
 
 
 
-PodSecurityContext holds pod-level security attributes and common container settings. Some fields are also present in container.securityContext.  Field values of container.securityContext take precedence over field values of PodSecurityContext.
+PodSecurityContext holds pod-level security attributes and common container settings.
+Some fields are also present in container.securityContext.  Field values of
+container.securityContext take precedence over field values of PodSecurityContext.
 
 <table>
     <thead>
@@ -12750,9 +13946,18 @@ PodSecurityContext holds pod-level security attributes and common container sett
         <td><b>fsGroup</b></td>
         <td>integer</td>
         <td>
-          A special supplemental group that applies to all containers in a pod. Some volume types allow the Kubelet to change the ownership of that volume to be owned by the pod: 
- 1. The owning GID will be the FSGroup 2. The setgid bit is set (new files created in the volume will be owned by FSGroup) 3. The permission bits are OR'd with rw-rw---- 
- If unset, the Kubelet will not modify the ownership and permissions of any volume. Note that this field cannot be set when spec.os.name is windows.<br/>
+          A special supplemental group that applies to all containers in a pod.
+Some volume types allow the Kubelet to change the ownership of that volume
+to be owned by the pod:
+
+
+1. The owning GID will be the FSGroup
+2. The setgid bit is set (new files created in the volume will be owned by FSGroup)
+3. The permission bits are OR'd with rw-rw----
+
+
+If unset, the Kubelet will not modify the ownership and permissions of any volume.
+Note that this field cannot be set when spec.os.name is windows.<br/>
           <br/>
             <i>Format</i>: int64<br/>
         </td>
@@ -12761,14 +13966,25 @@ PodSecurityContext holds pod-level security attributes and common container sett
         <td><b>fsGroupChangePolicy</b></td>
         <td>string</td>
         <td>
-          fsGroupChangePolicy defines behavior of changing ownership and permission of the volume before being exposed inside Pod. This field will only apply to volume types which support fsGroup based ownership(and permissions). It will have no effect on ephemeral volume types such as: secret, configmaps and emptydir. Valid values are "OnRootMismatch" and "Always". If not specified, "Always" is used. Note that this field cannot be set when spec.os.name is windows.<br/>
+          fsGroupChangePolicy defines behavior of changing ownership and permission of the volume
+before being exposed inside Pod. This field will only apply to
+volume types which support fsGroup based ownership(and permissions).
+It will have no effect on ephemeral volume types such as: secret, configmaps
+and emptydir.
+Valid values are "OnRootMismatch" and "Always". If not specified, "Always" is used.
+Note that this field cannot be set when spec.os.name is windows.<br/>
         </td>
         <td>false</td>
       </tr><tr>
         <td><b>runAsGroup</b></td>
         <td>integer</td>
         <td>
-          The GID to run the entrypoint of the container process. Uses runtime default if unset. May also be set in SecurityContext.  If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence for that container. Note that this field cannot be set when spec.os.name is windows.<br/>
+          The GID to run the entrypoint of the container process.
+Uses runtime default if unset.
+May also be set in SecurityContext.  If set in both SecurityContext and
+PodSecurityContext, the value specified in SecurityContext takes precedence
+for that container.
+Note that this field cannot be set when spec.os.name is windows.<br/>
           <br/>
             <i>Format</i>: int64<br/>
         </td>
@@ -12777,14 +13993,24 @@ PodSecurityContext holds pod-level security attributes and common container sett
         <td><b>runAsNonRoot</b></td>
         <td>boolean</td>
         <td>
-          Indicates that the container must run as a non-root user. If true, the Kubelet will validate the image at runtime to ensure that it does not run as UID 0 (root) and fail to start the container if it does. If unset or false, no such validation will be performed. May also be set in SecurityContext.  If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence.<br/>
+          Indicates that the container must run as a non-root user.
+If true, the Kubelet will validate the image at runtime to ensure that it
+does not run as UID 0 (root) and fail to start the container if it does.
+If unset or false, no such validation will be performed.
+May also be set in SecurityContext.  If set in both SecurityContext and
+PodSecurityContext, the value specified in SecurityContext takes precedence.<br/>
         </td>
         <td>false</td>
       </tr><tr>
         <td><b>runAsUser</b></td>
         <td>integer</td>
         <td>
-          The UID to run the entrypoint of the container process. Defaults to user specified in image metadata if unspecified. May also be set in SecurityContext.  If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence for that container. Note that this field cannot be set when spec.os.name is windows.<br/>
+          The UID to run the entrypoint of the container process.
+Defaults to user specified in image metadata if unspecified.
+May also be set in SecurityContext.  If set in both SecurityContext and
+PodSecurityContext, the value specified in SecurityContext takes precedence
+for that container.
+Note that this field cannot be set when spec.os.name is windows.<br/>
           <br/>
             <i>Format</i>: int64<br/>
         </td>
@@ -12793,35 +14019,49 @@ PodSecurityContext holds pod-level security attributes and common container sett
         <td><b><a href="#grafanaspecdeploymentsecuritycontextselinuxoptions">seLinuxOptions</a></b></td>
         <td>object</td>
         <td>
-          The SELinux context to be applied to all containers. If unspecified, the container runtime will allocate a random SELinux context for each container.  May also be set in SecurityContext.  If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence for that container. Note that this field cannot be set when spec.os.name is windows.<br/>
+          The SELinux context to be applied to all containers.
+If unspecified, the container runtime will allocate a random SELinux context for each
+container.  May also be set in SecurityContext.  If set in
+both SecurityContext and PodSecurityContext, the value specified in SecurityContext
+takes precedence for that container.
+Note that this field cannot be set when spec.os.name is windows.<br/>
         </td>
         <td>false</td>
       </tr><tr>
         <td><b><a href="#grafanaspecdeploymentsecuritycontextseccompprofile">seccompProfile</a></b></td>
         <td>object</td>
         <td>
-          The seccomp options to use by the containers in this pod. Note that this field cannot be set when spec.os.name is windows.<br/>
+          The seccomp options to use by the containers in this pod.
+Note that this field cannot be set when spec.os.name is windows.<br/>
         </td>
         <td>false</td>
       </tr><tr>
         <td><b>supplementalGroups</b></td>
         <td>[]integer</td>
         <td>
-          A list of groups applied to the first process run in each container, in addition to the container's primary GID.  If unspecified, no groups will be added to any container. Note that this field cannot be set when spec.os.name is windows.<br/>
+          A list of groups applied to the first process run in each container, in addition
+to the container's primary GID.  If unspecified, no groups will be added to
+any container.
+Note that this field cannot be set when spec.os.name is windows.<br/>
         </td>
         <td>false</td>
       </tr><tr>
         <td><b><a href="#grafanaspecdeploymentsecuritycontextsysctlsindex">sysctls</a></b></td>
         <td>[]object</td>
         <td>
-          Sysctls hold a list of namespaced sysctls used for the pod. Pods with unsupported sysctls (by the container runtime) might fail to launch. Note that this field cannot be set when spec.os.name is windows.<br/>
+          Sysctls hold a list of namespaced sysctls used for the pod. Pods with unsupported
+sysctls (by the container runtime) might fail to launch.
+Note that this field cannot be set when spec.os.name is windows.<br/>
         </td>
         <td>false</td>
       </tr><tr>
         <td><b><a href="#grafanaspecdeploymentsecuritycontextwindowsoptions">windowsOptions</a></b></td>
         <td>object</td>
         <td>
-          The Windows specific settings applied to all containers. If unspecified, the options within a container's SecurityContext will be used. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence. Note that this field cannot be set when spec.os.name is linux.<br/>
+          The Windows specific settings applied to all containers.
+If unspecified, the options within a container's SecurityContext will be used.
+If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence.
+Note that this field cannot be set when spec.os.name is linux.<br/>
         </td>
         <td>false</td>
       </tr></tbody>
@@ -12833,7 +14073,12 @@ PodSecurityContext holds pod-level security attributes and common container sett
 
 
 
-The SELinux context to be applied to all containers. If unspecified, the container runtime will allocate a random SELinux context for each container.  May also be set in SecurityContext.  If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence for that container. Note that this field cannot be set when spec.os.name is windows.
+The SELinux context to be applied to all containers.
+If unspecified, the container runtime will allocate a random SELinux context for each
+container.  May also be set in SecurityContext.  If set in
+both SecurityContext and PodSecurityContext, the value specified in SecurityContext
+takes precedence for that container.
+Note that this field cannot be set when spec.os.name is windows.
 
 <table>
     <thead>
@@ -12881,7 +14126,8 @@ The SELinux context to be applied to all containers. If unspecified, the contain
 
 
 
-The seccomp options to use by the containers in this pod. Note that this field cannot be set when spec.os.name is windows.
+The seccomp options to use by the containers in this pod.
+Note that this field cannot be set when spec.os.name is windows.
 
 <table>
     <thead>
@@ -12896,15 +14142,23 @@ The seccomp options to use by the containers in this pod. Note that this field c
         <td><b>type</b></td>
         <td>string</td>
         <td>
-          type indicates which kind of seccomp profile will be applied. Valid options are: 
- Localhost - a profile defined in a file on the node should be used. RuntimeDefault - the container runtime default profile should be used. Unconfined - no profile should be applied.<br/>
+          type indicates which kind of seccomp profile will be applied.
+Valid options are:
+
+
+Localhost - a profile defined in a file on the node should be used.
+RuntimeDefault - the container runtime default profile should be used.
+Unconfined - no profile should be applied.<br/>
         </td>
         <td>true</td>
       </tr><tr>
         <td><b>localhostProfile</b></td>
         <td>string</td>
         <td>
-          localhostProfile indicates a profile defined in a file on the node should be used. The profile must be preconfigured on the node to work. Must be a descending path, relative to the kubelet's configured seccomp profile location. Must only be set if type is "Localhost".<br/>
+          localhostProfile indicates a profile defined in a file on the node should be used.
+The profile must be preconfigured on the node to work.
+Must be a descending path, relative to the kubelet's configured seccomp profile location.
+Must only be set if type is "Localhost".<br/>
         </td>
         <td>false</td>
       </tr></tbody>
@@ -12950,7 +14204,10 @@ Sysctl defines a kernel parameter to be set
 
 
 
-The Windows specific settings applied to all containers. If unspecified, the options within a container's SecurityContext will be used. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence. Note that this field cannot be set when spec.os.name is linux.
+The Windows specific settings applied to all containers.
+If unspecified, the options within a container's SecurityContext will be used.
+If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence.
+Note that this field cannot be set when spec.os.name is linux.
 
 <table>
     <thead>
@@ -12965,7 +14222,9 @@ The Windows specific settings applied to all containers. If unspecified, the opt
         <td><b>gmsaCredentialSpec</b></td>
         <td>string</td>
         <td>
-          GMSACredentialSpec is where the GMSA admission webhook (https://github.com/kubernetes-sigs/windows-gmsa) inlines the contents of the GMSA credential spec named by the GMSACredentialSpecName field.<br/>
+          GMSACredentialSpec is where the GMSA admission webhook
+(https://github.com/kubernetes-sigs/windows-gmsa) inlines the contents of the
+GMSA credential spec named by the GMSACredentialSpecName field.<br/>
         </td>
         <td>false</td>
       </tr><tr>
@@ -12979,14 +14238,23 @@ The Windows specific settings applied to all containers. If unspecified, the opt
         <td><b>hostProcess</b></td>
         <td>boolean</td>
         <td>
-          HostProcess determines if a container should be run as a 'Host Process' container. This field is alpha-level and will only be honored by components that enable the WindowsHostProcessContainers feature flag. Setting this field without the feature flag will result in errors when validating the Pod. All of a Pod's containers must have the same effective HostProcess value (it is not allowed to have a mix of HostProcess containers and non-HostProcess containers).  In addition, if HostProcess is true then HostNetwork must also be set to true.<br/>
+          HostProcess determines if a container should be run as a 'Host Process' container.
+This field is alpha-level and will only be honored by components that enable the
+WindowsHostProcessContainers feature flag. Setting this field without the feature
+flag will result in errors when validating the Pod. All of a Pod's containers must
+have the same effective HostProcess value (it is not allowed to have a mix of HostProcess
+containers and non-HostProcess containers).  In addition, if HostProcess is true
+then HostNetwork must also be set to true.<br/>
         </td>
         <td>false</td>
       </tr><tr>
         <td><b>runAsUserName</b></td>
         <td>string</td>
         <td>
-          The UserName in Windows to run the entrypoint of the container process. Defaults to the user specified in image metadata if unspecified. May also be set in PodSecurityContext. If set in both SecurityContext and PodSecurityContext, the value specified in SecurityContext takes precedence.<br/>
+          The UserName in Windows to run the entrypoint of the container process.
+Defaults to the user specified in image metadata if unspecified.
+May also be set in PodSecurityContext. If set in both SecurityContext and
+PodSecurityContext, the value specified in SecurityContext takes precedence.<br/>
         </td>
         <td>false</td>
       </tr></tbody>
@@ -13013,7 +14281,11 @@ DeploymentStrategy describes how to replace existing pods with new ones.
         <td><b><a href="#grafanaspecdeploymentstrategyrollingupdate">rollingUpdate</a></b></td>
         <td>object</td>
         <td>
-          Rolling update config params. Present only if DeploymentStrategyType = RollingUpdate. --- TODO: Update this to follow our convention for oneOf, whatever we decide it to be.<br/>
+          Rolling update config params. Present only if DeploymentStrategyType =
+RollingUpdate.
+---
+TODO: Update this to follow our convention for oneOf, whatever we decide it
+to be.<br/>
         </td>
         <td>false</td>
       </tr><tr>
@@ -13032,7 +14304,11 @@ DeploymentStrategy describes how to replace existing pods with new ones.
 
 
 
-Rolling update config params. Present only if DeploymentStrategyType = RollingUpdate. --- TODO: Update this to follow our convention for oneOf, whatever we decide it to be.
+Rolling update config params. Present only if DeploymentStrategyType =
+RollingUpdate.
+---
+TODO: Update this to follow our convention for oneOf, whatever we decide it
+to be.
 
 <table>
     <thead>
@@ -13047,14 +14323,33 @@ Rolling update config params. Present only if DeploymentStrategyType = RollingUp
         <td><b>maxSurge</b></td>
         <td>int or string</td>
         <td>
-          The maximum number of pods that can be scheduled above the desired number of pods. Value can be an absolute number (ex: 5) or a percentage of desired pods (ex: 10%). This can not be 0 if MaxUnavailable is 0. Absolute number is calculated from percentage by rounding up. Defaults to 25%. Example: when this is set to 30%, the new ReplicaSet can be scaled up immediately when the rolling update starts, such that the total number of old and new pods do not exceed 130% of desired pods. Once old pods have been killed, new ReplicaSet can be scaled up further, ensuring that total number of pods running at any time during the update is at most 130% of desired pods.<br/>
+          The maximum number of pods that can be scheduled above the desired number of
+pods.
+Value can be an absolute number (ex: 5) or a percentage of desired pods (ex: 10%).
+This can not be 0 if MaxUnavailable is 0.
+Absolute number is calculated from percentage by rounding up.
+Defaults to 25%.
+Example: when this is set to 30%, the new ReplicaSet can be scaled up immediately when
+the rolling update starts, such that the total number of old and new pods do not exceed
+130% of desired pods. Once old pods have been killed,
+new ReplicaSet can be scaled up further, ensuring that total number of pods running
+at any time during the update is at most 130% of desired pods.<br/>
         </td>
         <td>false</td>
       </tr><tr>
         <td><b>maxUnavailable</b></td>
         <td>int or string</td>
         <td>
-          The maximum number of pods that can be unavailable during the update. Value can be an absolute number (ex: 5) or a percentage of desired pods (ex: 10%). Absolute number is calculated from percentage by rounding down. This can not be 0 if MaxSurge is 0. Defaults to 25%. Example: when this is set to 30%, the old ReplicaSet can be scaled down to 70% of desired pods immediately when the rolling update starts. Once new pods are ready, old ReplicaSet can be scaled down further, followed by scaling up the new ReplicaSet, ensuring that the total number of pods available at all times during the update is at least 70% of desired pods.<br/>
+          The maximum number of pods that can be unavailable during the update.
+Value can be an absolute number (ex: 5) or a percentage of desired pods (ex: 10%).
+Absolute number is calculated from percentage by rounding down.
+This can not be 0 if MaxSurge is 0.
+Defaults to 25%.
+Example: when this is set to 30%, the old ReplicaSet can be scaled down to 70% of desired pods
+immediately when the rolling update starts. Once new pods are ready, old ReplicaSet
+can be scaled down further, followed by scaling up the new ReplicaSet, ensuring
+that the total number of pods available at all times during the update is at
+least 70% of desired pods.<br/>
         </td>
         <td>false</td>
       </tr></tbody>
@@ -13066,7 +14361,8 @@ Rolling update config params. Present only if DeploymentStrategyType = RollingUp
 
 
 
-The pod this Toleration is attached to tolerates any taint that matches the triple <key,value,effect> using the matching operator <operator>.
+The pod this Toleration is attached to tolerates any taint that matches
+the triple <key,value,effect> using the matching operator <operator>.
 
 <table>
     <thead>
@@ -13081,28 +14377,36 @@ The pod this Toleration is attached to tolerates any taint that matches the trip
         <td><b>effect</b></td>
         <td>string</td>
         <td>
-          Effect indicates the taint effect to match. Empty means match all taint effects. When specified, allowed values are NoSchedule, PreferNoSchedule and NoExecute.<br/>
+          Effect indicates the taint effect to match. Empty means match all taint effects.
+When specified, allowed values are NoSchedule, PreferNoSchedule and NoExecute.<br/>
         </td>
         <td>false</td>
       </tr><tr>
         <td><b>key</b></td>
         <td>string</td>
         <td>
-          Key is the taint key that the toleration applies to. Empty means match all taint keys. If the key is empty, operator must be Exists; this combination means to match all values and all keys.<br/>
+          Key is the taint key that the toleration applies to. Empty means match all taint keys.
+If the key is empty, operator must be Exists; this combination means to match all values and all keys.<br/>
         </td>
         <td>false</td>
       </tr><tr>
         <td><b>operator</b></td>
         <td>string</td>
         <td>
-          Operator represents a key's relationship to the value. Valid operators are Exists and Equal. Defaults to Equal. Exists is equivalent to wildcard for value, so that a pod can tolerate all taints of a particular category.<br/>
+          Operator represents a key's relationship to the value.
+Valid operators are Exists and Equal. Defaults to Equal.
+Exists is equivalent to wildcard for value, so that a pod can
+tolerate all taints of a particular category.<br/>
         </td>
         <td>false</td>
       </tr><tr>
         <td><b>tolerationSeconds</b></td>
         <td>integer</td>
         <td>
-          TolerationSeconds represents the period of time the toleration (which must be of effect NoExecute, otherwise this field is ignored) tolerates the taint. By default, it is not set, which means tolerate the taint forever (do not evict). Zero and negative values will be treated as 0 (evict immediately) by the system.<br/>
+          TolerationSeconds represents the period of time the toleration (which must be
+of effect NoExecute, otherwise this field is ignored) tolerates the taint. By default,
+it is not set, which means tolerate the taint forever (do not evict). Zero and
+negative values will be treated as 0 (evict immediately) by the system.<br/>
           <br/>
             <i>Format</i>: int64<br/>
         </td>
@@ -13111,7 +14415,8 @@ The pod this Toleration is attached to tolerates any taint that matches the trip
         <td><b>value</b></td>
         <td>string</td>
         <td>
-          Value is the taint value the toleration matches to. If the operator is Exists, the value should be empty, otherwise just a regular string.<br/>
+          Value is the taint value the toleration matches to.
+If the operator is Exists, the value should be empty, otherwise just a regular string.<br/>
         </td>
         <td>false</td>
       </tr></tbody>
@@ -13194,7 +14499,8 @@ GrafanaIngress provides a means to configure the ingress created
         <td><b>termination</b></td>
         <td>string</td>
         <td>
-          TLSTerminationType dictates where the secure communication will stop TODO: Reconsider this type in v2<br/>
+          TLSTerminationType dictates where the secure communication will stop
+TODO: Reconsider this type in v2<br/>
         </td>
         <td>false</td>
       </tr><tr>
@@ -13235,14 +14541,18 @@ ResourceRequirements describes the compute resource requirements.
         <td><b>limits</b></td>
         <td>map[string]int or string</td>
         <td>
-          Limits describes the maximum amount of compute resources allowed. More info: https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/<br/>
+          Limits describes the maximum amount of compute resources allowed.
+More info: https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/<br/>
         </td>
         <td>false</td>
       </tr><tr>
         <td><b>requests</b></td>
         <td>map[string]int or string</td>
         <td>
-          Requests describes the minimum amount of compute resources required. If Requests is omitted for a container, it defaults to Limits if that is explicitly specified, otherwise to an implementation-defined value. More info: https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/<br/>
+          Requests describes the minimum amount of compute resources required.
+If Requests is omitted for a container, it defaults to Limits if that is explicitly specified,
+otherwise to an implementation-defined value.
+More info: https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/<br/>
         </td>
         <td>false</td>
       </tr></tbody>
@@ -13269,7 +14579,9 @@ ResourceRequirements describes the compute resource requirements.
         <td><b><a href="#grafanaspecjsonnetlibrarylabelselector">libraryLabelSelector</a></b></td>
         <td>object</td>
         <td>
-          A label selector is a label query over a set of resources. The result of matchLabels and matchExpressions are ANDed. An empty label selector matches all objects. A null label selector matches no objects.<br/>
+          A label selector is a label query over a set of resources. The result of matchLabels and
+matchExpressions are ANDed. An empty label selector matches all objects. A null
+label selector matches no objects.<br/>
         </td>
         <td>false</td>
       </tr></tbody>
@@ -13281,7 +14593,9 @@ ResourceRequirements describes the compute resource requirements.
 
 
 
-A label selector is a label query over a set of resources. The result of matchLabels and matchExpressions are ANDed. An empty label selector matches all objects. A null label selector matches no objects.
+A label selector is a label query over a set of resources. The result of matchLabels and
+matchExpressions are ANDed. An empty label selector matches all objects. A null
+label selector matches no objects.
 
 <table>
     <thead>
@@ -13303,7 +14617,9 @@ A label selector is a label query over a set of resources. The result of matchLa
         <td><b>matchLabels</b></td>
         <td>map[string]string</td>
         <td>
-          matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels map is equivalent to an element of matchExpressions, whose key field is "key", the operator is "In", and the values array contains only "value". The requirements are ANDed.<br/>
+          matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels
+map is equivalent to an element of matchExpressions, whose key field is "key", the
+operator is "In", and the values array contains only "value". The requirements are ANDed.<br/>
         </td>
         <td>false</td>
       </tr></tbody>
@@ -13315,7 +14631,8 @@ A label selector is a label query over a set of resources. The result of matchLa
 
 
 
-A label selector requirement is a selector that contains values, a key, and an operator that relates the key and values.
+A label selector requirement is a selector that contains values, a key, and an operator that
+relates the key and values.
 
 <table>
     <thead>
@@ -13337,14 +14654,18 @@ A label selector requirement is a selector that contains values, a key, and an o
         <td><b>operator</b></td>
         <td>string</td>
         <td>
-          operator represents a key's relationship to a set of values. Valid operators are In, NotIn, Exists and DoesNotExist.<br/>
+          operator represents a key's relationship to a set of values.
+Valid operators are In, NotIn, Exists and DoesNotExist.<br/>
         </td>
         <td>true</td>
       </tr><tr>
         <td><b>values</b></td>
         <td>[]string</td>
         <td>
-          values is an array of string values. If the operator is In or NotIn, the values array must be non-empty. If the operator is Exists or DoesNotExist, the values array must be empty. This array is replaced during a strategic merge patch.<br/>
+          values is an array of string values. If the operator is In or NotIn,
+the values array must be non-empty. If the operator is Exists or DoesNotExist,
+the values array must be empty. This array is replaced during a strategic
+merge patch.<br/>
         </td>
         <td>false</td>
       </tr></tbody>
@@ -13515,14 +14836,18 @@ ResourceRequirements describes the compute resource requirements.
         <td><b>limits</b></td>
         <td>map[string]int or string</td>
         <td>
-          Limits describes the maximum amount of compute resources allowed. More info: https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/<br/>
+          Limits describes the maximum amount of compute resources allowed.
+More info: https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/<br/>
         </td>
         <td>false</td>
       </tr><tr>
         <td><b>requests</b></td>
         <td>map[string]int or string</td>
         <td>
-          Requests describes the minimum amount of compute resources required. If Requests is omitted for a container, it defaults to Limits if that is explicitly specified, otherwise to an implementation-defined value. More info: https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/<br/>
+          Requests describes the minimum amount of compute resources required.
+If Requests is omitted for a container, it defaults to Limits if that is explicitly specified,
+otherwise to an implementation-defined value.
+More info: https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/<br/>
         </td>
         <td>false</td>
       </tr></tbody>
@@ -13620,21 +14945,38 @@ ServicePort contains information on service's port.
         <td><b>appProtocol</b></td>
         <td>string</td>
         <td>
-          The application protocol for this port. This field follows standard Kubernetes label syntax. Un-prefixed names are reserved for IANA standard service names (as per RFC-6335 and https://www.iana.org/assignments/service-names). Non-standard protocols should use prefixed names such as mycompany.com/my-custom-protocol.<br/>
+          The application protocol for this port.
+This field follows standard Kubernetes label syntax.
+Un-prefixed names are reserved for IANA standard service names (as per
+RFC-6335 and https://www.iana.org/assignments/service-names).
+Non-standard protocols should use prefixed names such as
+mycompany.com/my-custom-protocol.<br/>
         </td>
         <td>false</td>
       </tr><tr>
         <td><b>name</b></td>
         <td>string</td>
         <td>
-          The name of this port within the service. This must be a DNS_LABEL. All ports within a ServiceSpec must have unique names. When considering the endpoints for a Service, this must match the 'name' field in the EndpointPort. Optional if only one ServicePort is defined on this service.<br/>
+          The name of this port within the service. This must be a DNS_LABEL.
+All ports within a ServiceSpec must have unique names. When considering
+the endpoints for a Service, this must match the 'name' field in the
+EndpointPort.
+Optional if only one ServicePort is defined on this service.<br/>
         </td>
         <td>false</td>
       </tr><tr>
         <td><b>nodePort</b></td>
         <td>integer</td>
         <td>
-          The port on each node on which this service is exposed when type is NodePort or LoadBalancer.  Usually assigned by the system. If a value is specified, in-range, and not in use it will be used, otherwise the operation will fail.  If not specified, a port will be allocated if this Service requires one.  If this field is specified when creating a Service which does not need it, creation will fail. This field will be wiped when updating a Service to no longer need it (e.g. changing type from NodePort to ClusterIP). More info: https://kubernetes.io/docs/concepts/services-networking/service/#type-nodeport<br/>
+          The port on each node on which this service is exposed when type is
+NodePort or LoadBalancer.  Usually assigned by the system. If a value is
+specified, in-range, and not in use it will be used, otherwise the
+operation will fail.  If not specified, a port will be allocated if this
+Service requires one.  If this field is specified when creating a
+Service which does not need it, creation will fail. This field will be
+wiped when updating a Service to no longer need it (e.g. changing type
+from NodePort to ClusterIP).
+More info: https://kubernetes.io/docs/concepts/services-networking/service/#type-nodeport<br/>
           <br/>
             <i>Format</i>: int32<br/>
         </td>
@@ -13643,7 +14985,8 @@ ServicePort contains information on service's port.
         <td><b>protocol</b></td>
         <td>string</td>
         <td>
-          The IP protocol for this port. Supports "TCP", "UDP", and "SCTP". Default is TCP.<br/>
+          The IP protocol for this port. Supports "TCP", "UDP", and "SCTP".
+Default is TCP.<br/>
           <br/>
             <i>Default</i>: TCP<br/>
         </td>
@@ -13652,7 +14995,14 @@ ServicePort contains information on service's port.
         <td><b>targetPort</b></td>
         <td>int or string</td>
         <td>
-          Number or name of the port to access on the pods targeted by the service. Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME. If this is a string, it will be looked up as a named port in the target Pod's container ports. If this is not specified, the value of the 'port' field is used (an identity map). This field is ignored for services with clusterIP=None, and should be omitted or set equal to the 'port' field. More info: https://kubernetes.io/docs/concepts/services-networking/service/#defining-a-service<br/>
+          Number or name of the port to access on the pods targeted by the service.
+Number must be in the range 1 to 65535. Name must be an IANA_SVC_NAME.
+If this is a string, it will be looked up as a named port in the
+target Pod's container ports. If this is not specified, the value
+of the 'port' field is used (an identity map).
+This field is ignored for services with clusterIP=None, and should be
+omitted or set equal to the 'port' field.
+More info: https://kubernetes.io/docs/concepts/services-networking/service/#defining-a-service<br/>
         </td>
         <td>false</td>
       </tr></tbody>
@@ -13712,7 +15062,8 @@ ServicePort contains information on service's port.
 
 
 
-LocalObjectReference contains enough information to let you locate the referenced object inside the same namespace.
+LocalObjectReference contains enough information to let you locate the
+referenced object inside the same namespace.
 
 <table>
     <thead>
@@ -13727,7 +15078,9 @@ LocalObjectReference contains enough information to let you locate the reference
         <td><b>name</b></td>
         <td>string</td>
         <td>
-          Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names TODO: Add other useful fields. apiVersion, kind, uid?<br/>
+          Name of the referent.
+More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+TODO: Add other useful fields. apiVersion, kind, uid?<br/>
         </td>
         <td>false</td>
       </tr></tbody>
@@ -13801,7 +15154,8 @@ GrafanaStatus defines the observed state of Grafana
 
 
 
-GrafanaDashboardRef is used to keep a dashboard reference without having access to the dashboard struct itself
+GrafanaDashboardRef is used to keep a dashboard reference without having access to the dashboard
+struct itself
 
 <table>
     <thead>
