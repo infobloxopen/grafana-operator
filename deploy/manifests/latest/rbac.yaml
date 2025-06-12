@@ -44,7 +44,6 @@ rules:
 apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRole
 metadata:
-  creationTimestamp: null
   name: manager-role
 rules:
 - apiGroups:
@@ -99,85 +98,9 @@ rules:
   - integreatly.org
   resources:
   - grafanadashboards
-  verbs:
-  - create
-  - delete
-  - get
-  - list
-  - patch
-  - update
-  - watch
-- apiGroups:
-  - integreatly.org
-  resources:
-  - grafanadashboards/status
-  verbs:
-  - get
-  - patch
-  - update
-- apiGroups:
-  - integreatly.org
-  resources:
   - grafanadatasources
-  verbs:
-  - create
-  - delete
-  - get
-  - list
-  - patch
-  - update
-  - watch
-- apiGroups:
-  - integreatly.org
-  resources:
-  - grafanadatasources/status
-  verbs:
-  - get
-  - patch
-  - update
-- apiGroups:
-  - integreatly.org
-  resources:
   - grafanafolders
-  verbs:
-  - create
-  - delete
-  - get
-  - list
-  - patch
-  - update
-  - watch
-- apiGroups:
-  - integreatly.org
-  resources:
-  - grafanafolders/status
-  verbs:
-  - get
-  - patch
-  - update
-- apiGroups:
-  - integreatly.org
-  resources:
   - grafananotificationchannels
-  verbs:
-  - create
-  - delete
-  - get
-  - list
-  - patch
-  - update
-  - watch
-- apiGroups:
-  - integreatly.org
-  resources:
-  - grafananotificationchannels/status
-  verbs:
-  - get
-  - patch
-  - update
-- apiGroups:
-  - integreatly.org
-  resources:
   - grafanas
   - grafanas/finalizers
   verbs:
@@ -191,6 +114,10 @@ rules:
 - apiGroups:
   - integreatly.org
   resources:
+  - grafanadashboards/status
+  - grafanadatasources/status
+  - grafanafolders/status
+  - grafananotificationchannels/status
   - grafanas/status
   verbs:
   - get
