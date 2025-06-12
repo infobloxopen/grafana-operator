@@ -54,7 +54,7 @@ jobs:
           docker buildx build --load -t ${{ env.NAME }}:${{ steps.prep.outputs.VERSION }} .
           kind load docker-image ${{ env.NAME }}:${{ steps.prep.outputs.VERSION }}
       - name: Install Kubectl
-        uses: azure/setup-kubectl@v1
+        uses: azure/setup-kubectl@v4
         with:
           version: "v1.22.1"
       - name: Run e2e
