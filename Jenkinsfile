@@ -6,7 +6,7 @@ pipeline {
     label 'ubuntu_20_04_label'
   }
   tools {
-    go "Go 1.20"
+    go "Go 1.22.4"
   }
   environment {
     PROJECT = "src/github.com/integr8ly/grafana-operator"

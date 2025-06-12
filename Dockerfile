@@ -1,4 +1,4 @@
-ARG BUILDER_IMAGE=golang:1.24
+ARG BUILDER_IMAGE=golang:1.24-alpine
 ARG UBI_MINIMAL_IMAGE=registry.access.redhat.com/ubi10/ubi-minimal:10.0
 ARG UBI_MICRO_IMAGE=registry.access.redhat.com/ubi10/ubi-micro:10.0
 
