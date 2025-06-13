@@ -12,7 +12,7 @@ jobs:
       - name: Clone repo
         uses: actions/checkout@v2.4.2
       - name: Setup go
-        uses: actions/setup-go@v3
+        uses: actions/setup-go@v5
         with:
           go-version: "1.22"
       - name: golangci-lint
@@ -27,7 +27,7 @@ jobs:
       - name: Clone repo
         uses: actions/checkout@v2.4.2
       - name: Setup go
-        uses: actions/setup-go@v3
+        uses: actions/setup-go@v5
         with:
           go-version: "1.22"
       - name: Run fmt
@@ -47,7 +47,7 @@ jobs:
       - name: Clone repo
         uses: actions/checkout@v2.4.2
       - name: Setup go
-        uses: actions/setup-go@v3
+        uses: actions/setup-go@v5
         with:
           go-version: "1.22"
       - name: Run manifests
@@ -67,7 +67,7 @@ jobs:
       - name: Clone repo
         uses: actions/checkout@v2.4.2
       - name: Setup go
-        uses: actions/setup-go@v3
+        uses: actions/setup-go@v5
         with:
           go-version: "1.22"
       - name: Run api-docs
@@ -87,7 +87,7 @@ jobs:
       - name: Clone repo
         uses: actions/checkout@v2.4.2
       - name: Setup go
-        uses: actions/setup-go@v3
+        uses: actions/setup-go@v5
         with:
           go-version: "1.22"
       - name: Run test
@@ -137,7 +137,7 @@ jobs:
         with:
           submodules: recursive
       - name: Setup go
-        uses: actions/setup-go@v3
+        uses: actions/setup-go@v5
         with:
           go-version: "1.22"
       - name: Prepare
