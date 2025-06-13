@@ -33,6 +33,20 @@ else
 GOBIN=$(shell go env GOBIN)
 endif
 
+BIN = $(CURDIR)/bin
+$(BIN):
+	mkdir -p $(BIN)
+CONTROLLER_GEN_VERSION = v0.17.3
+# Download controller-gen locally if necessary
+CONTROLLER_GEN := $(BIN)/controller-gen-$(CONTROLLER_GEN_VERSION)
+$(CONTROLLER_GEN): | $(BIN)
+	{ \
+	set -e ;\
+	OSTYPE=$(shell uname | awk '{print tolower($$0)}') && ARCH=$(shell go env GOARCH) && \
+	curl -sSLo $(CONTROLLER_GEN) https://github.com/kubernetes-sigs/controller-tools/releases/download/$(CONTROLLER_GEN_VERSION)/controller-gen-$${OSTYPE}-$${ARCH} ;\
+	chmod +x $(CONTROLLER_GEN) ;\
+	}
+
 # Setting SHELL to bash allows bash commands to be executed by recipes.
 # This is a requirement for 'setup-envtest.sh' in the test target.
 # Options are set to exit when a recipe line exits non-zero or a piped command fails.
@@ -83,8 +97,8 @@ undeploy:
 	$(KUSTOMIZE) build config/default | kubectl delete -f -
 
 # Generate manifests e.g. CRD, RBAC etc.
-manifests: controller-gen
-	$(CONTROLLER_GEN) rbac:roleName=manager-role webhook paths="./..." object:headerFile=hack/boilerplate.go.txt crd output:crd:artifacts:config=config/crd/bases
+manifests: $(CONTROLLER_GEN) ## Generate WebhookConfiguration, ClusterRole and CustomResourceDefinition objects.
+	$(CONTROLLER_GEN) rbac:roleName=manager-role webhook paths="./..." crd output:crd:artifacts:config=config/crd/bases
 
 # Generate API reference documentation
 api-docs: gen-crd-api-reference-docs kustomize
@@ -104,7 +118,8 @@ vet:
 	go vet ./...
 
 # Generate code
-generate: controller-gen
+.PHONY: generate
+generate: $(CONTROLLER_GEN) ## Generate code containing DeepCopy, DeepCopyInto, and DeepCopyObject method implementations.
 	$(CONTROLLER_GEN) object:headerFile="hack/boilerplate.go.txt" paths="./..."
 
 # Build a single-architecture docker image
@@ -122,10 +137,6 @@ docker-push:
 docker-buildx: test
 	docker buildx build --platform linux/amd64,linux/arm64,linux/s390x,linux/ppc64le --push -t ${IMG} .
 
-# Download controller-gen locally if necessary
-CONTROLLER_GEN = $(shell pwd)/bin/controller-gen
-controller-gen:
-	$(call go-get-tool,$(CONTROLLER_GEN),sigs.k8s.io/controller-tools/cmd/controller-gen@v0.14.0)
 
 # Download kustomize locally if necessary
 KUSTOMIZE = $(shell pwd)/bin/kustomize

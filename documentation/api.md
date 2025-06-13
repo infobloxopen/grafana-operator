@@ -213,8 +213,7 @@ ConfigMapRef is a reference to a ConfigMap data field containing the dashboard's
         <td>string</td>
         <td>
           Name of the referent.
-More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
-TODO: Add other useful fields. apiVersion, kind, uid?<br/>
+More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names<br/>
         </td>
         <td>false</td>
       </tr><tr>
@@ -325,8 +324,7 @@ the dashboard's JSON, compressed with Gzip.
         <td>string</td>
         <td>
           Name of the referent.
-More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
-TODO: Add other useful fields. apiVersion, kind, uid?<br/>
+More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names<br/>
         </td>
         <td>false</td>
       </tr><tr>
@@ -5601,8 +5599,7 @@ Selects a key of a ConfigMap.
         <td>string</td>
         <td>
           Name of the referent.
-More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
-TODO: Add other useful fields. apiVersion, kind, uid?<br/>
+More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names<br/>
         </td>
         <td>false</td>
       </tr><tr>
@@ -5721,8 +5718,7 @@ Selects a key of a secret in the pod's namespace
         <td>string</td>
         <td>
           Name of the referent.
-More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
-TODO: Add other useful fields. apiVersion, kind, uid?<br/>
+More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names<br/>
         </td>
         <td>false</td>
       </tr><tr>
@@ -5798,8 +5794,7 @@ The ConfigMap to select from
         <td>string</td>
         <td>
           Name of the referent.
-More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
-TODO: Add other useful fields. apiVersion, kind, uid?<br/>
+More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names<br/>
         </td>
         <td>false</td>
       </tr><tr>
@@ -5834,8 +5829,7 @@ The Secret to select from
         <td>string</td>
         <td>
           Name of the referent.
-More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
-TODO: Add other useful fields. apiVersion, kind, uid?<br/>
+More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names<br/>
         </td>
         <td>false</td>
       </tr><tr>
@@ -6501,8 +6495,9 @@ This is a beta field and requires enabling GRPCContainerProbe feature gate.
           Service is the name of the service to place in the gRPC HealthCheckRequest
 (see https://github.com/grpc/grpc/blob/master/doc/health-checking.md).
 
-
 If this is not specified, the default behavior is defined by gRPC.<br/>
+          <br/>
+            <i>Default</i>: <br/>
         </td>
         <td>false</td>
       </tr></tbody>
@@ -6891,8 +6886,9 @@ This is a beta field and requires enabling GRPCContainerProbe feature gate.
           Service is the name of the service to place in the gRPC HealthCheckRequest
 (see https://github.com/grpc/grpc/blob/master/doc/health-checking.md).
 
-
 If this is not specified, the default behavior is defined by gRPC.<br/>
+          <br/>
+            <i>Default</i>: <br/>
         </td>
         <td>false</td>
       </tr></tbody>
@@ -7325,7 +7321,6 @@ Note that this field cannot be set when spec.os.name is windows.
           type indicates which kind of seccomp profile will be applied.
 Valid options are:
 
-
 Localhost - a profile defined in a file on the node should be used.
 RuntimeDefault - the container runtime default profile should be used.
 Unconfined - no profile should be applied.<br/>
@@ -7595,8 +7590,9 @@ This is a beta field and requires enabling GRPCContainerProbe feature gate.
           Service is the name of the service to place in the gRPC HealthCheckRequest
 (see https://github.com/grpc/grpc/blob/master/doc/health-checking.md).
 
-
 If this is not specified, the default behavior is defined by gRPC.<br/>
+          <br/>
+            <i>Default</i>: <br/>
         </td>
         <td>false</td>
       </tr></tbody>
@@ -8095,8 +8091,7 @@ SecretKeySelector selects a key of a Secret.
         <td>string</td>
         <td>
           Name of the referent.
-More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
-TODO: Add other useful fields. apiVersion, kind, uid?<br/>
+More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names<br/>
         </td>
         <td>false</td>
       </tr><tr>
@@ -10023,7 +10018,6 @@ Note that this field cannot be set when spec.os.name is windows.
           type indicates which kind of seccomp profile will be applied.
 Valid options are:
 
-
 Localhost - a profile defined in a file on the node should be used.
 RuntimeDefault - the container runtime default profile should be used.
 Unconfined - no profile should be applied.<br/>
@@ -10232,8 +10226,7 @@ Selects a key of a ConfigMap.
         <td>string</td>
         <td>
           Name of the referent.
-More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
-TODO: Add other useful fields. apiVersion, kind, uid?<br/>
+More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names<br/>
         </td>
         <td>false</td>
       </tr><tr>
@@ -10352,8 +10345,7 @@ Selects a key of a secret in the pod's namespace
         <td>string</td>
         <td>
           Name of the referent.
-More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
-TODO: Add other useful fields. apiVersion, kind, uid?<br/>
+More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names<br/>
         </td>
         <td>false</td>
       </tr><tr>
@@ -10429,8 +10421,7 @@ The ConfigMap to select from
         <td>string</td>
         <td>
           Name of the referent.
-More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
-TODO: Add other useful fields. apiVersion, kind, uid?<br/>
+More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names<br/>
         </td>
         <td>false</td>
       </tr><tr>
@@ -10465,8 +10456,7 @@ The Secret to select from
         <td>string</td>
         <td>
           Name of the referent.
-More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
-TODO: Add other useful fields. apiVersion, kind, uid?<br/>
+More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names<br/>
         </td>
         <td>false</td>
       </tr><tr>
@@ -10651,7 +10641,6 @@ More info: https://kubernetes.io/docs/concepts/storage/volumes#emptydir<br/>
 The volume's lifecycle is tied to the pod that defines it - it will be created before the pod starts,
 and deleted when the pod is removed.
 
-
 Use this if:
 a) the volume is only needed while the pod runs,
 b) features of normal volumes like restoring from snapshot or capacity
@@ -10662,16 +10651,13 @@ d) the storage driver supports dynamic volume provisioning through
    information on the connection between this volume type
    and PersistentVolumeClaim).
 
-
 Use PersistentVolumeClaim or one of the vendor-specific
 APIs for volumes that persist for longer than the lifecycle
 of an individual pod.
 
-
 Use CSI for light-weight local ephemeral volumes if the CSI driver is meant to
 be used that way - see the documentation of the driver for
 more information.
-
 
 A pod can use both types of ephemeral volumes and
 persistent volumes at the same time.<br/>
@@ -10734,10 +10720,7 @@ More info: https://examples.k8s.io/volumes/glusterfs/README.md<br/>
 machine that is directly exposed to the container. This is generally
 used for system agents or other privileged things that are allowed
 to see the host machine. Most containers will NOT need this.
-More info: https://kubernetes.io/docs/concepts/storage/volumes#hostpath
----
-TODO(jonesdl) We need to restrict who can use host directory mounts and who can/can not
-mount host directories as read/write.<br/>
+More info: https://kubernetes.io/docs/concepts/storage/volumes#hostpath<br/>
         </td>
         <td>false</td>
       </tr><tr>
@@ -10868,8 +10851,7 @@ More info: https://kubernetes.io/docs/concepts/storage/volumes#awselasticblockst
           fsType is the filesystem type of the volume that you want to mount.
 Tip: Ensure that the filesystem type is supported by the host operating system.
 Examples: "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified.
-More info: https://kubernetes.io/docs/concepts/storage/volumes#awselasticblockstore
-TODO: how do we prevent errors in the filesystem from compromising the machine<br/>
+More info: https://kubernetes.io/docs/concepts/storage/volumes#awselasticblockstore<br/>
         </td>
         <td>false</td>
       </tr><tr>
@@ -11093,8 +11075,7 @@ More info: https://examples.k8s.io/volumes/cephfs/README.md#how-to-use-it
         <td>string</td>
         <td>
           Name of the referent.
-More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
-TODO: Add other useful fields. apiVersion, kind, uid?<br/>
+More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names<br/>
         </td>
         <td>false</td>
       </tr></tbody>
@@ -11179,8 +11160,7 @@ to OpenStack.
         <td>string</td>
         <td>
           Name of the referent.
-More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
-TODO: Add other useful fields. apiVersion, kind, uid?<br/>
+More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names<br/>
         </td>
         <td>false</td>
       </tr></tbody>
@@ -11236,8 +11216,7 @@ relative and may not contain the '..' path or start with '..'.<br/>
         <td>string</td>
         <td>
           Name of the referent.
-More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
-TODO: Add other useful fields. apiVersion, kind, uid?<br/>
+More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names<br/>
         </td>
         <td>false</td>
       </tr><tr>
@@ -11391,8 +11370,7 @@ secret object contains more than one secret, all secret references are passed.
         <td>string</td>
         <td>
           Name of the referent.
-More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
-TODO: Add other useful fields. apiVersion, kind, uid?<br/>
+More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names<br/>
         </td>
         <td>false</td>
       </tr></tbody>
@@ -11626,7 +11604,6 @@ ephemeral represents a volume that is handled by a cluster storage driver.
 The volume's lifecycle is tied to the pod that defines it - it will be created before the pod starts,
 and deleted when the pod is removed.
 
-
 Use this if:
 a) the volume is only needed while the pod runs,
 b) features of normal volumes like restoring from snapshot or capacity
@@ -11637,16 +11614,13 @@ d) the storage driver supports dynamic volume provisioning through
    information on the connection between this volume type
    and PersistentVolumeClaim).
 
-
 Use PersistentVolumeClaim or one of the vendor-specific
 APIs for volumes that persist for longer than the lifecycle
 of an individual pod.
 
-
 Use CSI for light-weight local ephemeral volumes if the CSI driver is meant to
 be used that way - see the documentation of the driver for
 more information.
-
 
 A pod can use both types of ephemeral volumes and
 persistent volumes at the same time.
@@ -11672,7 +11646,6 @@ pod.  The name of the PVC will be `<pod name>-<volume name>` where
 entry. Pod validation will reject the pod if the concatenated name
 is not valid for a PVC (for example, too long).
 
-
 An existing PVC with that name that is not owned by the pod
 will *not* be used for the pod to avoid using an unrelated
 volume by mistake. Starting the pod is then blocked until
@@ -11682,10 +11655,8 @@ owner reference to the pod once the pod exists. Normally
 this should not be necessary, but it may be useful when
 manually reconstructing a broken cluster.
 
-
 This field is read-only and no changes will be made by Kubernetes
 to the PVC after it has been created.
-
 
 Required, must not be nil.<br/>
         </td>
@@ -11707,7 +11678,6 @@ pod.  The name of the PVC will be `<pod name>-<volume name>` where
 entry. Pod validation will reject the pod if the concatenated name
 is not valid for a PVC (for example, too long).
 
-
 An existing PVC with that name that is not owned by the pod
 will *not* be used for the pod to avoid using an unrelated
 volume by mistake. Starting the pod is then blocked until
@@ -11717,10 +11687,8 @@ owner reference to the pod once the pod exists. Normally
 this should not be necessary, but it may be useful when
 manually reconstructing a broken cluster.
 
-
 This field is read-only and no changes will be made by Kubernetes
 to the PVC after it has been created.
-
 
 Required, must not be nil.
 
@@ -12118,8 +12086,7 @@ fc represents a Fibre Channel resource that is attached to a kubelet's host mach
         <td>
           fsType is the filesystem type to mount.
 Must be a filesystem type supported by the host operating system.
-Ex. "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified.
-TODO: how do we prevent errors in the filesystem from compromising the machine<br/>
+Ex. "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified.<br/>
         </td>
         <td>false</td>
       </tr><tr>
@@ -12246,8 +12213,7 @@ scripts.
         <td>string</td>
         <td>
           Name of the referent.
-More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
-TODO: Add other useful fields. apiVersion, kind, uid?<br/>
+More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names<br/>
         </td>
         <td>false</td>
       </tr></tbody>
@@ -12322,8 +12288,7 @@ More info: https://kubernetes.io/docs/concepts/storage/volumes#gcepersistentdisk
           fsType is filesystem type of the volume that you want to mount.
 Tip: Ensure that the filesystem type is supported by the host operating system.
 Examples: "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified.
-More info: https://kubernetes.io/docs/concepts/storage/volumes#gcepersistentdisk
-TODO: how do we prevent errors in the filesystem from compromising the machine<br/>
+More info: https://kubernetes.io/docs/concepts/storage/volumes#gcepersistentdisk<br/>
         </td>
         <td>false</td>
       </tr><tr>
@@ -12455,9 +12420,6 @@ machine that is directly exposed to the container. This is generally
 used for system agents or other privileged things that are allowed
 to see the host machine. Most containers will NOT need this.
 More info: https://kubernetes.io/docs/concepts/storage/volumes#hostpath
----
-TODO(jonesdl) We need to restrict who can use host directory mounts and who can/can not
-mount host directories as read/write.
 
 <table>
     <thead>
@@ -12553,8 +12515,7 @@ is other than default (typically TCP ports 860 and 3260).<br/>
           fsType is the filesystem type of the volume that you want to mount.
 Tip: Ensure that the filesystem type is supported by the host operating system.
 Examples: "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified.
-More info: https://kubernetes.io/docs/concepts/storage/volumes#iscsi
-TODO: how do we prevent errors in the filesystem from compromising the machine<br/>
+More info: https://kubernetes.io/docs/concepts/storage/volumes#iscsi<br/>
         </td>
         <td>false</td>
       </tr><tr>
@@ -12622,8 +12583,7 @@ secretRef is the CHAP Secret for iSCSI target and initiator authentication
         <td>string</td>
         <td>
           Name of the referent.
-More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
-TODO: Add other useful fields. apiVersion, kind, uid?<br/>
+More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names<br/>
         </td>
         <td>false</td>
       </tr></tbody>
@@ -12917,8 +12877,7 @@ relative and may not contain the '..' path or start with '..'.<br/>
         <td>string</td>
         <td>
           Name of the referent.
-More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
-TODO: Add other useful fields. apiVersion, kind, uid?<br/>
+More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names<br/>
         </td>
         <td>false</td>
       </tr><tr>
@@ -13176,8 +13135,7 @@ relative and may not contain the '..' path or start with '..'.<br/>
         <td>string</td>
         <td>
           Name of the referent.
-More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
-TODO: Add other useful fields. apiVersion, kind, uid?<br/>
+More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names<br/>
         </td>
         <td>false</td>
       </tr><tr>
@@ -13402,8 +13360,7 @@ More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it<br/>
           fsType is the filesystem type of the volume that you want to mount.
 Tip: Ensure that the filesystem type is supported by the host operating system.
 Examples: "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified.
-More info: https://kubernetes.io/docs/concepts/storage/volumes#rbd
-TODO: how do we prevent errors in the filesystem from compromising the machine<br/>
+More info: https://kubernetes.io/docs/concepts/storage/volumes#rbd<br/>
         </td>
         <td>false</td>
       </tr><tr>
@@ -13480,8 +13437,7 @@ More info: https://examples.k8s.io/volumes/rbd/README.md#how-to-use-it
         <td>string</td>
         <td>
           Name of the referent.
-More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
-TODO: Add other useful fields. apiVersion, kind, uid?<br/>
+More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names<br/>
         </td>
         <td>false</td>
       </tr></tbody>
@@ -13607,8 +13563,7 @@ sensitive information. If this is not provided, Login operation will fail.
         <td>string</td>
         <td>
           Name of the referent.
-More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
-TODO: Add other useful fields. apiVersion, kind, uid?<br/>
+More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names<br/>
         </td>
         <td>false</td>
       </tr></tbody>
@@ -13817,8 +13772,7 @@ credentials.  If not specified, default values will be attempted.
         <td>string</td>
         <td>
           Name of the referent.
-More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
-TODO: Add other useful fields. apiVersion, kind, uid?<br/>
+More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names<br/>
         </td>
         <td>false</td>
       </tr></tbody>
@@ -13950,11 +13904,9 @@ container.securityContext take precedence over field values of PodSecurityContex
 Some volume types allow the Kubelet to change the ownership of that volume
 to be owned by the pod:
 
-
 1. The owning GID will be the FSGroup
 2. The setgid bit is set (new files created in the volume will be owned by FSGroup)
 3. The permission bits are OR'd with rw-rw----
-
 
 If unset, the Kubelet will not modify the ownership and permissions of any volume.
 Note that this field cannot be set when spec.os.name is windows.<br/>
@@ -14145,7 +14097,6 @@ Note that this field cannot be set when spec.os.name is windows.
           type indicates which kind of seccomp profile will be applied.
 Valid options are:
 
-
 Localhost - a profile defined in a file on the node should be used.
 RuntimeDefault - the container runtime default profile should be used.
 Unconfined - no profile should be applied.<br/>
@@ -14282,10 +14233,7 @@ DeploymentStrategy describes how to replace existing pods with new ones.
         <td>object</td>
         <td>
           Rolling update config params. Present only if DeploymentStrategyType =
-RollingUpdate.
----
-TODO: Update this to follow our convention for oneOf, whatever we decide it
-to be.<br/>
+RollingUpdate.<br/>
         </td>
         <td>false</td>
       </tr><tr>
@@ -14306,9 +14254,6 @@ to be.<br/>
 
 Rolling update config params. Present only if DeploymentStrategyType =
 RollingUpdate.
----
-TODO: Update this to follow our convention for oneOf, whatever we decide it
-to be.
 
 <table>
     <thead>
@@ -14499,8 +14444,7 @@ GrafanaIngress provides a means to configure the ingress created
         <td><b>termination</b></td>
         <td>string</td>
         <td>
-          TLSTerminationType dictates where the secure communication will stop
-TODO: Reconsider this type in v2<br/>
+          TLSTerminationType dictates where the secure communication will stop<br/>
         </td>
         <td>false</td>
       </tr><tr>
@@ -15079,8 +15023,7 @@ referenced object inside the same namespace.
         <td>string</td>
         <td>
           Name of the referent.
-More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
-TODO: Add other useful fields. apiVersion, kind, uid?<br/>
+More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names<br/>
         </td>
         <td>false</td>
       </tr></tbody>
