@@ -162,7 +162,7 @@ jobs:
         with:
           driver-opts: network=host
       - name: Build and push to ephemeral registry
-        uses: docker/build-push-action@v2
+        uses: docker/build-push-action@v7
         with:
           builder: ${{ steps.buildx.outputs.name }}
           platforms: ${{ env.DOCKER_PLATFORMS }}
