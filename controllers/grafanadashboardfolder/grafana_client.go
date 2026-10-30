@@ -94,14 +94,11 @@ func (r *GrafanaClientImpl) getAllFolders() ([]GrafanaFolderResponse, error) {
 	defer resp.Body.Close()
 
 	if resp.StatusCode != 200 {
-		// Grafana might be unavailable, no reason to panic, other checks are in place
-		if resp.StatusCode == 503 {
-			return nil, nil
-		} else {
-			return nil, fmt.Errorf(
-				"error getting folders, expected status 200 but got %v",
-				resp.StatusCode)
-		}
+		// A 503 must not be reported as "no folders": the caller would then
+		// create a duplicate of a folder that already exists.
+		return nil, fmt.Errorf(
+			"error getting folders, expected status 200 but got %v",
+			resp.StatusCode)
 	}
 
 	data, err := io.ReadAll(resp.Body)
